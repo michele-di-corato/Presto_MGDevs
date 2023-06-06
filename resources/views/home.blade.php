@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout namePage="Home">
     <div class="vh-100 container-fluid mt-5 pt-5">
         <div class="row justify-content-evenly">
             @foreach ($announces as $announce)

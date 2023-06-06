@@ -1,10 +1,10 @@
-<x-layout>
+<x-layout namePage="Annunci">
     @if (session('confirm'))
         <div class="alert alert-success mt-5">
             <p>{{ session('confirm') }}</p>
         </div>
     @endif
-    <div class="container-fluid mt-5 pt-5">
+    <div class="container-fluid">
         <div class="row justify-content-evenly">
             @foreach ($announces as $announce)
                 <div class="card col-10 col-md-3 m-md-3">
