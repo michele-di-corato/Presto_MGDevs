@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand fs-2" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,15 +8,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="a-nav1 nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('create_announce')}}">Inserisci annuncio</a>
+                    <a class="a-nav2 nav-link" href="{{route('create_announce')}}">Inserisci annuncio</a>
                 </li>
                 @endauth
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('show_announces')}}">Mostra annunci</a>
+                    <a class="a-nav3 nav-link" href="{{route('show_announces')}}">Mostra annunci</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

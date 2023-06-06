@@ -15,3 +15,53 @@ nav{
     transition: 1s;
     height: 40;
 }
+
+/* Nav Link */
+
+.a-nav1, .a-nav2, .a-nav3 {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.a-nav3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav3:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.a-nav2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.a-nav1:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
