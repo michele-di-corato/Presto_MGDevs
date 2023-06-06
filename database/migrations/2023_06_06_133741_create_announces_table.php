@@ -18,6 +18,8 @@ return new class extends Migration
             $table->text('description');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
@@ -30,6 +32,8 @@ return new class extends Migration
         Schema::dropIfExists('announces', function (Blueprint $table) {
             $table->dropForeign(['user_id']);
             $table->dropColumn('user_id');
+            $table->dropForeign(['category_id']);
+            $table->dropColumn('category_id');
         });
     }
 };
