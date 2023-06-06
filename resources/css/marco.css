@@ -94,3 +94,7 @@ nav{
     color: var(--text);
     font-family: var(--font-body);
 }
+
+.icon-home{
+    font-size: 10dvh;
+} 
