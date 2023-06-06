@@ -1,6 +1,6 @@
 let navbar = document.querySelector('nav');
 
-let navTitle = document.querySelector('.navTitle') 
+let navTitle = document.querySelector('.navTitle');
 
 window.addEventListener('scroll', ()=> {
     if(window.scrollY > 100)

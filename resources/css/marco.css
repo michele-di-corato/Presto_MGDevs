@@ -12,7 +12,7 @@ nav{
     background-color: var(--elem);
     color: var(--text);
     font-family: var(--font-head);
-    transition: 0.5s;
+    transition: 0.4s;
     height: 73px;
 }
 
