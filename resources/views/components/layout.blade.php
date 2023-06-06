@@ -20,7 +20,9 @@
 
     <x-navbar />
 
-    {{$slot}}
+    <main class="mt-5 pt-5">
+        {{$slot}}
+    </main>
 
     <x-footer />
 
