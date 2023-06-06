@@ -1,0 +1,76 @@
+:root {
+    --text: #291711;
+    --bg: #98dbc6;
+    --elem: #ffd8bf;
+    --font-head: "Montserrat", sans-serif;
+    --font-body: "Lato", sans-serif;
+}
+
+/* Navbar */
+
+nav{
+    background-color: var(--elem);
+    color: var(--text);
+    font-family: var(--font-head);
+    transition: 0.5s;
+    height: 73px;
+}
+
+/* Nav Link */
+
+.a-nav1, .a-nav2, .a-nav3 {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.a-nav3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--text);
+    transition: width .3s;
+}
+
+.a-nav3:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.a-nav2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.a-nav1:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navTitle{
+    transition: .2s;
+}
+
+/* .btn-css:hover,
+.btn-css:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--elem);
+} */
