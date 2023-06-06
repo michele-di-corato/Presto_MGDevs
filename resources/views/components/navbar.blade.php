@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="ms-2 navTitle navbar-brand fs-2" href="{{route('home')}}">Presto.it</a>
+        <a class="ms-2 navTitle navbar-brand fs-2" href="{{route('home')}}">
+            <img class="logo" src="/media/presto.png" alt="Logo Presto">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
