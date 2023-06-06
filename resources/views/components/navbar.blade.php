@@ -10,12 +10,37 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
+                @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="{{route('create_announce')}}">Inserisci annuncio</a>
                 </li>
+                @endauth
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="{{route('show_announces')}}">Mostra annunci</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      @auth
+                      Benvenuto, utente
+                      @else
+                      Benvenuto, utente
+                      @endauth
+                    </a>
+                    <ul class="dropdown-menu">
+                    @auth
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li>
+                        <form method="POST" action="{{route('logout')}}">
+                        @csrf
+                        <button type="submit" class="dropdown-item">Logout</button>
+                        </form>
+                      </li>
+                      @else
+                      <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
+                      <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
+                      @endauth
+                    </ul>
+                  </li>
             </ul>
         </div>
     </div>

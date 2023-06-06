@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnounceController;
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/announce/create', [AnnounceController::class, 'create'])->name('create_announce');
+Route::get('/announce/index', [AnnounceController::class, 'index'])->name('show_announces');
+
