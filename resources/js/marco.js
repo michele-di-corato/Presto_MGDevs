@@ -19,3 +19,13 @@ window.addEventListener('scroll', ()=> {
         navTitle.style.padding = ''
     }
 });
+
+// let icon = document.querySelector('.bi-arrow');
+
+// if (icon == 'hover' ()=> {
+//     icon.addEventListener("mouseover", (event) => {
+//         icon.style.transform = 'rotate(10deg)'
+//     })
+// };else{
+//     icon.style.transform = 'rotate(10deg)'
+// });

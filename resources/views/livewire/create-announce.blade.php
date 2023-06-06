@@ -1,6 +1,8 @@
-<div class="container-fluid">
-
-    <form wire:submit.prevent="createAnnounce">
+<div class="container-fluid form-create">
+    <form class="p-5" wire:submit.prevent="createAnnounce">
+        <div class="row">
+            <h2 class="title-form text-center">Crea Annuncio</h1>
+        </div>
         <div class="mb-3">
             <label for="productName" class="form-label">Prodotto</label>
             <input type="text" class="form-control" id="productName" wire:model="name">
@@ -14,13 +16,16 @@
            <textarea class="form-control" id="productDescription" wire:model="description"></textarea>
         </div>
         @foreach($categories as $category)
-        <div class="form-check">
-            <input class="form-check-input" type="radio" value="{{$category->id}}" wire:model="category_id" id="{{$category->id}}">
+        <div class="form-check checkbox-create">
+            <input class="form-check-input mx-3" type="radio" value="{{$category->id}}" wire:model="category_id" id="{{$category->id}}">
             <label class="form-check-label" for="{{$category->id}}">
               {{$category->name}}
             </label>
           </div>
           @endforeach
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="d-flex justify-content-center align-items-center">
+        <button type="submit" class="btn btn-create mt-3 fs-5">Submit</button>
+        <i class="mt-3 bi-arrow bi bi-arrow-left-square"></i>
+          </div>
     </form>
 </div>

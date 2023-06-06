@@ -97,4 +97,34 @@ nav{
 
 .icon-home{
     font-size: 10dvh;
-} 
+}
+
+/* Create Announce */
+
+.form-create{
+    border-radius: 5dvh;
+    background-color: var(--bg);
+    width: 50%;
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+.checkbox-create{
+   display: inline-flex;
+}
+
+.title-form{
+    color: var(--text);
+    font-family: var(--font-head);
+}
+
+.btn-create{
+    font-size: 3dvh !important;
+    width: 15dvh;
+    color: var(--text);
+}
+
+.bi-arrow{
+    font-size: 4dvh !important;
+    transition: 0.6s;
+}
