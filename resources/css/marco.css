@@ -74,3 +74,16 @@ nav{
 .btn-css:focus {
   box-shadow: inset 0 -3.25em 0 0 var(--elem);
 } */
+
+/* Header Home */
+
+
+nav{
+    color: #98dbc6;
+}
+.header-home{
+    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/storage/app/public/media/bg-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
