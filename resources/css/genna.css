@@ -1,4 +1,8 @@
-
+/* Card User */
+.card-user{
+    background-color: var(--bg);
+    border-radius: 10px;
+}
 
 /* Footer */
 #footer-top{
