@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Announce;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,7 +19,7 @@ class AnnounceController extends Controller
      */
     public function index()
     {
-        $announces = Announce::all();
+        $announces = Announce::orderBy('created_at', 'desc')->get();
         return view('announce.index', compact('announces'));
     }
 
