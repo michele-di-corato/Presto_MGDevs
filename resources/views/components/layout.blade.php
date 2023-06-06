@@ -21,9 +21,9 @@
     <x-navbar />
 
     @if ($namePage == "Home")
-    <main class="mt-5 pt-5">
-    @else
     <main>
+    @else
+    <main class="mt-5 pt-5">
     @endif
     
         {{$slot}}
