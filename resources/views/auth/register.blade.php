@@ -1,6 +1,6 @@
 <x-layout namePage="Registrati">
     
-    <div class="container-fluid mt-5 pt-5">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4">
                 <div class="card-user p-5">

@@ -1,4 +1,4 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid">
 
     <form wire:submit.prevent="createAnnounce">
         <div class="mb-3">
