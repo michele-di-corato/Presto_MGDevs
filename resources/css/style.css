@@ -5,3 +5,13 @@
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
 }
+
+/* Navbar */
+
+nav{
+    background-color: var(--elem);
+    color: var(--text);
+    font-family: var(--font-head);
+    transition: 1s;
+    height: 40;
+}
