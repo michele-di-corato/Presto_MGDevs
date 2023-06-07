@@ -1,4 +1,4 @@
-<form class="form-create m-lg-5 p-5" wire:submit.prevent="createAnnounce">
+<form class="form-create m-lg-5 p-4 p-lg-5" wire:submit.prevent="createAnnounce">
     <h2 class="title-form text-center">Crea Annuncio</h1>
         <div class="mb-3">
             <label for="productName" class="form-label">Prodotto</label>
@@ -40,6 +40,11 @@
                     </label>
                 </div>
             @endforeach
+            @error('category_id')
+                <div class="alert alert-danger">
+                    <p>{{ $message }}</p>
+                </div>
+            @enderror
         </div>
         <div class="d-flex justify-content-center align-items-center">
             <button type="submit" class="btn btn-create mt-3 fs-5">Invia</button>
