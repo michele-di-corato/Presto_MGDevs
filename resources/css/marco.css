@@ -199,12 +199,7 @@
 }
 
 .carousel-control-prev-icon{
-    margin-left: 5px;
-    width: 3rem !important;
-    height: 3rem;
-   background-color: var(--elem);
-   border-radius: 3rem;
-   border: 10px solid var(--elem);
+    
 }
 
 

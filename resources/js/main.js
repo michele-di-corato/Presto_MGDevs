@@ -33,6 +33,16 @@ if (icon && btnCreate) {
     });
 }
 
+let carousel = document.querySelector(".carousel");
+if (carousel) {
+    carousel.addEventListener("mouseenter", function () {
+        let carouselControlPrevicon = document.querySelector(".carousel-control-prev-icon");
+        if (.carousel-control-prev-icon) {
+            img.classList.remove("blur");
+        }
+    });
+}
+
 // Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
 window.onload = function () {
