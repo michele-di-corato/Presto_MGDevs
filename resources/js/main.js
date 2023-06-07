@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
 
 // Btn Form Creazione Annuncio
 let icon = document.querySelector('.bi-arrow');
-let btnCreate = document.querySelector('.btn-create')
+let btnCreate = document.querySelector('.btn-create');
 
 btnCreate.addEventListener("mouseover", (event) => {
     icon.style.transform = 'rotate(10deg)';

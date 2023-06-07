@@ -13,8 +13,7 @@
     {{-- Livewire --}}
     @livewireStyles
     {{-- Style --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @vite(['resources/css/app.css'])
 </head>
 
 <body>
@@ -23,20 +22,18 @@
 
     @if(Route::currentRouteName() == 'home')
     <main>
-    @elseif(Route::currentRouteName() == 'create_announce')
-    <main>
     @else
-    <main class="mt-5 pt-5">
+    <main class="pt-5">
     @endif
         {{ $slot }}
     </main>
-
 
     <x-footer />
 
     {{-- Livewire --}}
     @livewireScripts
-    
+    {{-- Script --}}
+    @vite(['resources/js/app.js'])
 </body>
 
 </html>
