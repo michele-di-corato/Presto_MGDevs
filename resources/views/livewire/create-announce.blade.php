@@ -1,4 +1,4 @@
-<form class="form-create p-5" wire:submit.prevent="createAnnounce">
+<form class="form-create m-lg-5 p-5" wire:submit.prevent="createAnnounce">
     <h2 class="title-form text-center">Crea Annuncio</h1>
         <div class="mb-3">
             <label for="productName" class="form-label">Prodotto</label>
