@@ -89,6 +89,8 @@
     transition: background-color 0.3s ease;
     border-radius: 10px;
     height: 5vh;
+    display: flex;
+    align-items: center;
     width: auto;
 }
 
