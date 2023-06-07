@@ -1,6 +1,6 @@
 <x-layout namePage="Login">
     
-    <div class="container-fluid">
+    <div class="container-fluid pt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4">
                 <div class="card-user p-5">
