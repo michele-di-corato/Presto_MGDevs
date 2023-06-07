@@ -17,4 +17,9 @@ class PublicController extends Controller
     {
         return view('announce.perCategory', compact('category'));
     }
+
+    public function showDetail(Announce $announce, $id){
+        $announce = Announce::findOrFail($id);
+        return view('announce.detail', compact('announce'));
+    }
 }
