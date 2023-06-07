@@ -98,19 +98,63 @@ nav{
     background-repeat: no-repeat;
 }
 
+/* Animation Title Home & Para Home */
+
 .title-home{
     color: var(--text);
     font-family: var(--font-head);
+    animation: fade-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+@keyframes fade-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+  
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 .para-home{
     color: var(--text);
     font-family: var(--font-body);
+    animation: fade-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+@keyframes fade-in-right {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+  
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 .icon-home{
     font-size: 10dvh;
+    animation: fade-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+@keyframes fade-in-top {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 
 /* Create Announce */
 
@@ -163,3 +207,16 @@ nav{
 .span-icon {
     line-height: 40%;
     }
+
+    .title-home {
+        
+      }
+      
+      
+    
+      .title-hom{
+       
+      }
+    
+    
+      
