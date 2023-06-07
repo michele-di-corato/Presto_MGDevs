@@ -11,11 +11,12 @@
             </div>
         </div>
     </header>
+
     <div class="container-fluid">
         <div class="row justify-content-evenly">
-            @foreach ($announces as $announce)
-                <x-card :announce="$announce" />
-            @endforeach
+            <x-lastCard 
+                :announces="$announces"
+            />
         </div>
     </div>
 

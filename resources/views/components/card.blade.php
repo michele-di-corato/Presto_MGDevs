@@ -12,13 +12,9 @@
         <div class="col-12 mb-3">
             <p class="card-text">{{ $announce->description }}</p>
         </div>
-        <div class="col-3">
+        <div class="d-flex justify-content-between px-0">
             <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-primary btn-ann">Dettagli</a>
-        </div>
-        <div class="col-3">
             <a href="#" class="btn btn-warning btn-ann">Modifica</a>
-        </div>
-        <div class="col-3">
             <a href="#" class="btn btn-danger btn-ann">Elimina</a>
         </div>
     </div>

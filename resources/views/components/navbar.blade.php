@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg position-fixed w-100">
-    
+<nav id="nav" class="navbar navbar-expand-lg fixed-top">
+
     <div class="container-fluid">
         <a class="ms-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">
             <img class="logo" src="/media/presto.png" alt="Logo Presto">
