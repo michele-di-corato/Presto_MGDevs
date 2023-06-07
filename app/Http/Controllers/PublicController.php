@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Announce;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PublicController extends Controller
 {
@@ -18,8 +19,15 @@ class PublicController extends Controller
         return view('announce.perCategory', compact('category'));
     }
 
-    public function showDetail(Announce $announce, $id){
+    public function showDetail(Announce $announce, $id)
+    {
         $announce = Announce::findOrFail($id);
         return view('announce.detail', compact('announce'));
+    }
+
+    public function profile()
+    {
+        $announces = Announce::where('user_id', Auth::id())->get();
+        return view('profile', compact('announces'));
     }
 }
