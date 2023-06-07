@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 
 let icon = document.querySelector('.bi-arrow');
 
-let btnCreate = document.querySelector('.btn-create')
+let btnCreate = document.querySelector('.btn-create');
 
 
     btnCreate.addEventListener("mouseover", (event) => {
