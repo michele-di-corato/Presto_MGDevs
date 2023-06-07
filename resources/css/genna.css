@@ -8,15 +8,35 @@
     padding-top: 10vh;
 }
 
+p{
+    margin-top: 1rem;
+}
+
+.alert{
+    width: 50vw;
+    background-color: var(--bg);
+    border: 3px solid var(--bglight);
+    border-radius: 10px;
+}
+
 /* Nav Category */
 .nav-category{
     background-color: var(--bg);
 }
 
+/* Dropdown */
+.dropdown-menu{
+    border: 3px solid var(--elemlight);
+}
+
+.dropdown-menu:hover{
+    border: 3px solid var(--bglight);
+}
 
 /* Card User */
 .card-user{
     background-color: var(--bg);
+    border: 3px solid var(--bglight);
     border-radius: 10px;
 }
 
@@ -60,14 +80,12 @@
     transform: translate(-50%, -50%);
 }
 
-
-
 /* Effetti di transizione */
 .card {
     transition: transform 0.3s ease;
     border-radius: 10px;
     background-color: var(--bg);
-    border: 2px solid var(--elem);
+    border: 3px solid var(--bglight);
 }
 
 .card:hover {
@@ -99,12 +117,11 @@
     color: black;
 }
 
-
 /* Footer */
 #footer-top{
     background-color: white;
 }
 
 #footer-bottom{
-    background-color: var(--bg);
+    background-color: var(--elem);
 }

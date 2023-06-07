@@ -155,6 +155,7 @@
 
 .form-create{
     background-color: var(--bg);
+    border: 3px solid var(--bglight);
     color: var(--text);
     border-radius: 10px;
     font-family: var(--font-body);

@@ -1,7 +1,11 @@
 :root {
     --text: #291711;
     --bg: #98dbc6;
+    --bglight: #aeedd9;
+    --bgdark: #3b5e53;
     --elem: #ffd8bf;
+    --elemlight: #ffe4d4;
+    --elemdark: #a3765a;
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
 }

@@ -1,6 +1,7 @@
 <x-layout namePage="{{ $announce->name }}">
 
-    <div class="container-fluid bg-warning">
+    <div class="container-fluid">
+        <div class="card m-5">
         <div class="row justify-content-center align-items-center p-5">
 
             <div class="col-12 col-md-6">
@@ -44,7 +45,7 @@
             <div class="col-2 mt-5"><a class="btn btn-primary" role="button" href="{{ route('show_announces') }}">Torna
                 Indietro</a>
             </div>
-
+            </div>
         </div>
     </div>
 

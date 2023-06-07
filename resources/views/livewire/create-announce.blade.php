@@ -1,19 +1,18 @@
 <form class="form-create m-lg-5 p-5" wire:submit.prevent="createAnnounce">
     <h2 class="title-form text-center">Crea Annuncio</h1>
-        <div class="mb-3">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="productName" placeholder="Prodotto" wire:model="name">
             <label for="productName" class="form-label">Prodotto</label>
-            <input type="text" class="form-control @error('name') is-invalid @enderror" id="productName"
-                wire:model="name">
             @error('name')
                 <div class="alert alert-danger">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
         </div>
-        <div class="mb-3">
-            <label for="productPrice" class="form-label">Prezzo</label>
+        <div class="form-floating mb-3">
             <input type="number"step="0.01" class="form-control @error('price') is-invalid @enderror"
-                id="productPrice" wire:model="price">
+                id="productPrice" placeholder="Prezzo" wire:model="price">
+            <label for="productPrice" class="form-label">Prezzo</label>
             @error('price')
                 <div class="alert alert-danger">
                     <p>{{ $message }}</p>
@@ -21,14 +20,15 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="productDescription" class="form-label">Descrizione</label>
-            <textarea class="form-control @error('description') is-invalid @enderror" id="productDescription"
-                wire:model="description"></textarea>
+            <label for="productDescription">Descrizione</label>
+            <textarea class="form-control @error('description') is-invalid @enderror"id="productDescription" style="height: 100px" wire:model="description"></textarea>
+
             @error('description')
                 <div class="alert alert-danger">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
+
         </div>
         <div class="row justify-content-around">
             @foreach ($categories as $category)
