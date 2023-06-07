@@ -1,4 +1,5 @@
-// Navbar
+// Animazione Navbar
+
 let navbar = document.querySelector('nav');
 let navTitle = document.querySelector('.navTitle');
 
@@ -18,7 +19,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Btn Form Creazione Annuncio
+
+ // Animazione Button Form Create Announce
 let icon = document.querySelector('.bi-arrow');
 let btnCreate = document.querySelector('.btn-create');
 
@@ -34,6 +36,22 @@ btnCreate.addEventListener("click", (event) => {
 });
 
 // Card Prodotti
+    btnCreate.addEventListener("mouseenter", function () {
+        icon.style.transform = 'rotate(10deg)';
+        btnCreate.style.backgroundColor = 'white';
+    });
+
+    btnCreate.addEventListener("mouseleave", function () {
+        icon.style.transform = '';
+        btnCreate.style.backgroundColor = '';
+    });
+
+    btnCreate.addEventListener("click", (event) => {
+        icon.style.transform = 'rotate(180deg)';
+        icon.style.padding = '0px';
+    });
+
+    // Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
 window.onload = function () {
     let img = document.querySelector('.card-img-top');

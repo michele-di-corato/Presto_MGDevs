@@ -166,6 +166,7 @@ nav{
 }
 
 .form-create{
+    margin-top: 15dvh;
     border-radius: 5dvh;
     background-color: var(--bg);
     width: 50%;
