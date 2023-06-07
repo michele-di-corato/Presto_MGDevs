@@ -190,3 +190,9 @@ nav{
 .span-icon {
     line-height: 40%;
 }
+
+.nav-category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

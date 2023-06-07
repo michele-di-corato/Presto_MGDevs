@@ -1,4 +1,4 @@
-<div class="card col-10 col-md-3 m-md-3">
+<div class="card col-10 col-lg-3 m-3 col-md-5">
     <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top img-rounded mt-2"
         alt="Immagine annuncio">
     <div class="card-body row justify-content-evenly">
