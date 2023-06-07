@@ -51,22 +51,26 @@ btnCreate.addEventListener("click", () => {
         icon.style.padding = '0px';
     });
 
-    // Card Prodotti
+// Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
-window.onload = function () {
-    let img = document.querySelector('.card-img-top');
-    img.classList.add('blur');
+window.onload = function() {
+    var img = document.querySelector('.card-img-top');
+    if (img !== null) {
+        img.classList.add('blur');
+    }
 };
 
+let cardElement = document.querySelector('.card');
+if (cardElement !== null) {
 
-// Rimuove l'effetto di sfocatura all'immagine al passaggio del mouse
-document.querySelector('.card').addEventListener('mouseenter', function () {
-    let img = document.querySelector('.card-img-top');
-    img.classList.remove('blur');
-});
+    cardElement.addEventListener('mouseenter', function() {
+        let img = document.querySelector('.card-img-top');
+        img.classList.add('blur');
+    });
 
-// Aggiunge l'effetto di sfocatura all'immagine al mouseleave della card
-document.querySelector('.card').addEventListener('mouseleave', function () {
-    let img = document.querySelector('.card-img-top');
-    img.classList.add('blur');
-});
+    cardElement.addEventListener('mouseleave', function () {
+        let img = document.querySelector('.card-img-top');
+        img.classList.add('blur');
+    });
+    
+}

@@ -1,3 +1,10 @@
+:root {
+    --text: #291711;
+    --bg: #98dbc6;
+    --elem: #ffd8bf;
+    --font-head: "Montserrat", sans-serif;
+    --font-body: "Lato", sans-serif;
+}
 
 .carousel{
     height:47dvh;

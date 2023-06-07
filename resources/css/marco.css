@@ -1,13 +1,4 @@
-:root {
-    --text: #291711;
-    --bg: #98dbc6;
-    --elem: #ffd8bf;
-    --font-head: "Montserrat", sans-serif;
-    --font-body: "Lato", sans-serif;
-}
-
 /* Navbar */
-
 nav{
     background-color: var(--elem);
     color: var(--text);
@@ -17,7 +8,6 @@ nav{
 }
 
 /* Nav Link */
-
 .a-nav1, .a-nav2, .a-nav3 {
     display: inline-block;
     color: var(--text);
@@ -85,7 +75,7 @@ nav{
 
 /* .btn-css:hover,
 .btn-css:focus {
-  box-shadow: inset 0 -3.25em 0 0 var(--elem);
+    box-shadow: inset 0 -3.25em 0 0 var(--elem);
 } */
 
 /* Header Home */
@@ -96,11 +86,9 @@ nav{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
 }
 
 /* Animation Title Home, Para Home & Icon Home */
-
 .title-home{
     color: var(--text);
     font-family: var(--font-head);
@@ -109,16 +97,16 @@ nav{
 
 @keyframes fade-in-left {
     0% {
-      transform: translateX(-50px);
-      opacity: 0;
-  
+        transform: translateX(-50px);
+        opacity: 0;
+        
     }
-  
+    
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
+}
 
 .para-home{
     color: var(--text);
@@ -128,16 +116,16 @@ nav{
 
 @keyframes fade-in-right {
     0% {
-      transform: translateX(50px);
-      opacity: 0;
-  
+        transform: translateX(50px);
+        opacity: 0;
+        
     }
-  
+    
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
+}
 
 .icon-home{
     font-size: 10dvh;
@@ -146,19 +134,17 @@ nav{
 
 @keyframes fade-in-top {
     0% {
-      transform: translateY(-10px);
-      opacity: 0;
-  
+        transform: translateY(-10px);
+        opacity: 0;
     }
-  
+    
     100% {
-      transform: translateY(0px);
-      opacity: 1;
+        transform: translateY(0px);
+        opacity: 1;
     }
-  }
+}
 
 /* Create Announce */
-
 .bg-create{
     background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/public/media/bg-create3.jpg);
     background-size: cover;
@@ -167,11 +153,9 @@ nav{
 }
 
 .form-create{
-    margin-top: 15dvh;
-    border-radius: 5dvh;
     background-color: var(--bg);
-    width: 50%;
     color: var(--text);
+    border-radius: 10px;
     font-family: var(--font-body);
 }
 
@@ -205,4 +189,4 @@ nav{
 
 .span-icon {
     line-height: 40%;
-    }
+}

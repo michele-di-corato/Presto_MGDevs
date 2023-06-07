@@ -1,6 +1,7 @@
 <x-layout namePage="Home">
+    
     <header class="container-fluid header-home">
-        <div class="row align-items-center">
+        <div class="row align-items-center vh-100 pt-5">
             <div class="col-12 col-md-6">
                 <h1 class="title-home text-center">Benvenuto Nel Sito!</h1>
             </div>
@@ -17,4 +18,5 @@
             @endforeach
         </div>
     </div>
+
 </x-layout>

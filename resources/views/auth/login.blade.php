@@ -5,6 +5,7 @@
             <div class="col-12 col-md-4">
                 <div class="card-user p-5">
                     <h1 class="display-6 text-center pb-5">Accedi</h1>
+
                     <form method="POST" action="{{route('login')}}">
                         @csrf
                         <div class="form-floating mb-3">

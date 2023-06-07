@@ -1,7 +1,8 @@
 <x-layout namePage="{{ $announce->name }}">
+  
   <div class="container-fluid">
     <div class="row ms-5 my-5">
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <h2>{{ $announce->name }}</h2>
         <h3>{{ $announce->category->name }}</h3>
         <h3>{{ $announce->price }} €</h3>
@@ -9,7 +10,7 @@
         <h5>Creato da: {{ $announce->user->name }}</h5>
         <h5>Creato il: {{ $announce->created_at->format('d/m/Y') }}</h5>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -38,4 +39,5 @@
       
     </div>
   </div>
+  
 </x-layout>
