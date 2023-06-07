@@ -24,12 +24,12 @@ window.addEventListener('scroll', () => {
 let icon = document.querySelector('.bi-arrow');
 let btnCreate = document.querySelector('.btn-create');
 
-btnCreate.addEventListener("mouseover", (event) => {
+btnCreate.addEventListener("mouseover", () => {
     icon.style.transform = 'rotate(10deg)';
     btnCreate.style.backgroundColor = 'white';
 });
 
-btnCreate.addEventListener("click", (event) => {
+btnCreate.addEventListener("click", () => {
     icon.style.transform = 'rotate(180deg)';
     icon.style.color = 'white';
     icon.style.padding = '0px';
