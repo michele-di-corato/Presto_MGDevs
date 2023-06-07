@@ -14,8 +14,8 @@
         </div>
         <div class="d-flex justify-content-between px-0">
             <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-primary btn-ann">Dettagli</a>
-            <a href="#" class="btn btn-warning btn-ann">Modifica</a>
-            <a href="#" class="btn btn-danger btn-ann">Elimina</a>
+            <a href="{{route('edit_announce',compact('announce'))}}" class="btn btn-warning btn-ann">Modifica</a>
+            @livewire('delete-announce',compact('announce'))
         </div>
     </div>
 </div>
