@@ -37,15 +37,19 @@ let carousel = document.querySelector(".carousel");
 
 if (carousel) {
     carousel.addEventListener("mouseenter", function () {
-        let carouselControlPrevicon = document.querySelector(".carousel-control-prev-icon");
-        if (carouselControlPrevicon ) {
+        let carouselControlPrevicon = document.querySelector(
+            ".carousel-control-prev-icon"
+        );
+        if (carouselControlPrevicon) {
             carouselControlPrevicon.classList.add("d-block");
             carouselControlPrevicon.classList.remove("d-none");
         }
     });
 
     carousel.addEventListener("mouseleave", function () {
-        let carouselControlPrevicon = document.querySelector(".carousel-control-prev-icon");
+        let carouselControlPrevicon = document.querySelector(
+            ".carousel-control-prev-icon"
+        );
         if (carouselControlPrevicon) {
             carouselControlPrevicon.classList.add("d-none");
             carouselControlPrevicon.classList.remove("d-block");
@@ -55,7 +59,9 @@ if (carousel) {
 
 if (carousel) {
     carousel.addEventListener("mouseenter", function () {
-        let carouselControlNexticon = document.querySelector(".carousel-control-next-icon");
+        let carouselControlNexticon = document.querySelector(
+            ".carousel-control-next-icon"
+        );
         if (carouselControlNexticon) {
             carouselControlNexticon.classList.add("d-block");
             carouselControlNexticon.classList.remove("d-none");
@@ -63,7 +69,9 @@ if (carousel) {
     });
 
     carousel.addEventListener("mouseleave", function () {
-        let carouselControlNexticon = document.querySelector(".carousel-control-next-icon");
+        let carouselControlNexticon = document.querySelector(
+            ".carousel-control-next-icon"
+        );
         if (carouselControlNexticon) {
             carouselControlNexticon.classList.add("d-none");
             carouselControlNexticon.classList.remove("d-block");
@@ -101,19 +109,19 @@ if (card) {
 
 // Nav Category
 // Seleziona il bottone
-let button = document.getElementById('bottone-category');
+let button = document.getElementById("bottone-category");
 if (button) {
-    button.addEventListener('click', function() {
+    button.addEventListener("click", function () {
         // Seleziona l'elemento icona
-        let icon = document.getElementById('icona-row');
-        
+        let icon = document.getElementById("icona-row");
+
         // Cambia la classe dell'icona
-        if (icon && icon.classList.contains('bi-arrow-down-short')) {
-            icon.classList.remove('bi-arrow-down-short');
-            icon.classList.add('bi-arrow-up-short');
+        if (icon && icon.classList.contains("bi-arrow-down-short")) {
+            icon.classList.remove("bi-arrow-down-short");
+            icon.classList.add("bi-arrow-up-short");
         } else {
-            icon.classList.remove('bi-arrow-up-short');
-            icon.classList.add('bi-arrow-down-short');
+            icon.classList.remove("bi-arrow-up-short");
+            icon.classList.add("bi-arrow-down-short");
         }
     });
 }

@@ -14,9 +14,7 @@
 
     <div class="container-fluid">
         <div class="row justify-content-evenly">
-            <x-lastCard 
-                :announces="$announces"
-            />
+            <x-lastCard :announces="$announces" />
         </div>
     </div>
 
