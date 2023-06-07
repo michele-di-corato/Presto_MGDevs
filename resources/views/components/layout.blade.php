@@ -13,14 +13,17 @@
     {{-- Livewire --}}
     @livewireStyles
     {{-- Style --}}
-    @vite(['resources/css/app.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 
 <body>
 
     <x-navbar />
 
-    @if(Route::currentRouteName() == 'home' || Route::currentRouteName() == 'create_announce')
+    @if(Route::currentRouteName() == 'home')
+    <main>
+    @elseif(Route::currentRouteName() == 'create_announce')
     <main>
     @else
     <main class="mt-5 pt-5">
@@ -33,8 +36,7 @@
 
     {{-- Livewire --}}
     @livewireScripts
-    {{-- Script --}}
-    @vite(['resources/js/app.js'])
+    
 </body>
 
 </html>
