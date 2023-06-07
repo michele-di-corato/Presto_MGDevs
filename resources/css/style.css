@@ -7,8 +7,7 @@
 }
 
 .carousel{
-    height:47dvh;
+    height:48dvh;
     width:50%;
-    background: black;
-
+    background-position: 10dvh;
 }

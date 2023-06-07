@@ -34,7 +34,6 @@ btnCreate.addEventListener("mouseleave", function () {
     icon.style.transform = "";
     btnCreate.style.backgroundColor = "";
 });
-
 // Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
 window.onload = function () {
