@@ -9,6 +9,39 @@
     border-radius: 10px;
 }
 
+/* Card Prodotti */
+/* Effetti di transizione */
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    background-color: var(--bg);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Effetto di sfocatura all'immagine */
+.card-img-top {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    filter: none;
+}
+
+/* Animazione dei pulsanti */
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+
 /* Footer */
 #footer-top{
     background-color: white;
