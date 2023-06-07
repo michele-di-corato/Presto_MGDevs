@@ -25,8 +25,7 @@
     @else
     <main class="mt-5 pt-5">
     @endif
-
-    {{ $slot }}
+        {{ $slot }}
     </main>
 
     <x-footer />

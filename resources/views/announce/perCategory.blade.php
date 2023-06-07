@@ -3,7 +3,7 @@
         <div class="row justify-content-around">
             @forelse ($category->announces as $announce)
                 <div class="card col-10 col-md-3 m-md-3">
-                    <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top img-rounded mt-2"
+                    <img src="{{ Storage::url('/public/media/DefaultImage.jpg') }}" class="card-img-top img-rounded mt-2"
                         alt="Immagine annuncio">
                     <div class="card-body row justify-content-evenly">
                         <div class="col-6">
