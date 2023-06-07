@@ -41,8 +41,8 @@
                 </div>
             @endforeach
         </div>
-        <div class="d-flex justify-content-center align-items-center">
-            <button type="submit" class="btn btn-create mt-3 fs-5">Modifica</button>
-            <span class="span-icon"><i class="mt-3 mx-3 bi-arrow bi bi-arrow-left-square"></i></span>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <button type="submit" id="btn-edit" class="btn btn-edit fs-5">Modifica</button>
+            <span class="span-icon"><i class="ms-5 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
 </form>

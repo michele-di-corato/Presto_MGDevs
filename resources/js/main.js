@@ -1,5 +1,5 @@
 // Animazione Navbar
-let navbar = document.querySelector("nav");
+let navbar = document.querySelector("#nav");
 let navTitle = document.querySelector(".navTitle");
 
 window.addEventListener("scroll", () => {
@@ -8,28 +8,48 @@ window.addEventListener("scroll", () => {
         navTitle.style.borderRight = "2px solid var(--text)";
         navTitle.style.borderRadius = "10px";
         navTitle.style.padding = "2dvh";
+        navbar.style.marginTop = "3dvh"
+        navbar.style.marginRight = "8dvh"
+        navbar.style.marginLeft = "8dvh"
     } else {
         navTitle.style.borderLeft = "";
         navTitle.style.borderRight = "";
         navTitle.style.borderRadius = "";
         navTitle.style.padding = "";
+        navbar.style.marginTop = "0px"
+        navbar.style.marginRight = "0px"
+        navbar.style.marginLeft = "0px"
     }
 });
 
 // Animazione Button Form Create Announce
 let icon = document.querySelector(".bi-arrow");
-let btnCreate = document.querySelector(".btn-create");
+let btnCreate = document.querySelector("#btn-create");
+let btnEdit = document.querySelector("#btn-edit");
 
 if (icon && btnCreate) {
     // Card Prodotti
     btnCreate.addEventListener("mouseenter", function () {
         icon.style.transform = "rotate(180deg)";
-        btnCreate.style.backgroundColor = "white";
     });
 
     btnCreate.addEventListener("mouseleave", function () {
         icon.style.transform = "";
         btnCreate.style.backgroundColor = "";
+        btnEdit.style.backgroundColor = "";
+    });
+}
+
+    if (icon && btnEdit) {
+        // Card Prodotti
+        btnEdit.addEventListener("mouseenter", function () {
+            icon.style.transform = "rotate(180deg)";
+        });
+
+    btnEdit.addEventListener("mouseleave", function () {
+        icon.style.transform = "";
+        btnCreate.style.backgroundColor = "";
+        btnEdit.style.backgroundColor = "";
     });
 }
 
@@ -56,6 +76,8 @@ if (carousel) {
         }
     });
 }
+
+// Button Carousel
 
 if (carousel) {
     carousel.addEventListener("mouseenter", function () {

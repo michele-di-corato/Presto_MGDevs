@@ -49,7 +49,7 @@
             @enderror
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <button type="submit" class="btn btn-create mt-3 fs-5">Invia</button>
+            <button type="submit" id="btn-create" class="btn btn-create mt-3 fs-5">Invia</button>
             <span class="span-icon"><i class="mt-3 mx-3 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
 </form>

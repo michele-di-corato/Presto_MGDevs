@@ -4,7 +4,7 @@
     color: var(--text);
     font-family: var(--font-head);
     transition: 0.4s;
-    min-height: 10vh;
+    padding-bottom: 12px;
 }
 
 /* Nav Link */
@@ -185,7 +185,7 @@
 
 .btn-create:hover {
     color: var(--text) !important;
-    background-color: white;
+        background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%)
 }
 
 .bi-arrow {
@@ -203,11 +203,15 @@
     line-height: 40%;
 }
 
+/* Navbar Category */
+
 .nav-category {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+/* Carousel */
 
 .carousel {
     height: 48dvh;
@@ -225,8 +229,23 @@
     margin-bottom: 8dvh;
 }
 
-.btn-ann{
-    
-}
 
+/* Buttons Card */
 
+.btn-ann {
+    transition: .6s;
+  }
+
+  .btn-ann:hover {
+    background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%) !important;
+  }
+
+  /* Btn Edit */
+
+  .btn-edit:hover{
+    background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%)
+  }
+ 
+
+  
+ 

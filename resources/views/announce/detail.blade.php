@@ -27,7 +27,8 @@
                                     class="d-block img-fluid " alt="DefaultImage">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        <div class="container container-control">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -37,6 +38,7 @@
                             <span class="carousel-control-next-icon next" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-2 mt-5"><a class="btn btn-primary" role="button"
