@@ -214,8 +214,19 @@
     width: 50%;
     background-color: var(--bg);
     transition: 0.8s;
+    transition: .8s;
 }
 
 .carousel:hover {
     transform: scale(1.1);
 }
+
+.carousel-control-next, .carousel-control-prev{
+    margin-bottom: 8dvh;
+}
+
+.btn-ann{
+    
+}
+
+
