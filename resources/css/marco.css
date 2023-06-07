@@ -183,13 +183,11 @@ nav{
     width: 15dvh;
     color: var(--text);
     transition: .6s;
-    border: 2px solid var(--text);
 }
 
 .btn-create:hover{
     color: var(--text) !important;
     background-color: white;
-    border: 2px solid var(--text);
 }
 
 .bi-arrow{
