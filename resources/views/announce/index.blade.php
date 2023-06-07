@@ -10,7 +10,8 @@
             <div class="container-fluid category">
                 <div class="col-12 d-flex justify-content-evenly">
                     @foreach ($categories as $category)
-                        <a class="text-decoration-none text-white p-2" href="{{ route('show_per_category', compact('category')) }}">{{ $category->name }}</a>
+                        <a class="text-decoration-none text-white p-2"
+                            href="{{ route('show_per_category', compact('category')) }}">{{ $category->name }}</a>
                     @endforeach
                 </div>
             </div>

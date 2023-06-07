@@ -5,30 +5,30 @@
         <div class="me-5 d-none d-lg-block">
             <span>Collegati con noi sui social network:</span>
         </div>
-        
+
         <!-- Right -->
         <div>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-google"></i>
             </a>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="{{route('home')}}" class="me-4 link-secondary text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 link-secondary text-decoration-none">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </section>
-    
+
     <!-- Section: Links  -->
     <section class="">
         <div class="container text-center text-md-start mt-5">
@@ -41,10 +41,12 @@
                         <i class="fas fa-gem me-3 text-secondary"></i>Presto.it
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nisi eveniet eaque quod accusamus quibusdam rerum iure ipsa officiis sapiente aliquid, ratione tempora quidem necessitatibus ipsum perferendis provident laboriosam sed.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nisi eveniet eaque quod
+                        accusamus quibusdam rerum iure ipsa officiis sapiente aliquid, ratione tempora quidem
+                        necessitatibus ipsum perferendis provident laboriosam sed.
                     </p>
                 </div>
-                
+
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
@@ -52,19 +54,19 @@
                         Prodotti
                     </h6>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                 </div>
-                
+
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
@@ -72,19 +74,19 @@
                         Link Utili
                     </h6>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                     <p>
-                        <a href="{{route('home')}}" class="text-reset">Lorem</a>
+                        <a href="{{ route('home') }}" class="text-reset">Lorem</a>
                     </p>
                 </div>
-                
+
                 <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
@@ -100,10 +102,10 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Copyright -->
     <div id="footer-bottom" class="text-center p-4">
         © 2023 Copyright:
-        <a class="text-reset fw-bold" href="{{route('home')}}">Presto.it</a>
+        <a class="text-reset fw-bold" href="{{ route('home') }}">Presto.it</a>
     </div>
 </footer>

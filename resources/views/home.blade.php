@@ -1,5 +1,5 @@
 <x-layout namePage="Home">
-    
+
     <header class="container-fluid header-home">
         <div class="row align-items-center vh-100 pt-5">
             <div class="col-12 col-md-6">
@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row justify-content-evenly">
             @foreach ($announces as $announce)
-            <x-card :announce="$announce"/>
+                <x-card :announce="$announce" />
             @endforeach
         </div>
     </div>
