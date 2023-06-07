@@ -79,7 +79,7 @@ nav{
 
 
 .header-home{
-    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/storage/app/public/media/bg-home.jpg);
+    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/public/media/bg-home.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +100,13 @@ nav{
 }
 
 /* Create Announce */
+
+.bg-create{
+    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/public/media/bg-create3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .form-create{
     border-radius: 5dvh;
@@ -122,9 +129,26 @@ nav{
     font-size: 3dvh !important;
     width: 15dvh;
     color: var(--text);
+    transition: .6s;
+}
+
+.btn-create:hover{
+    color: var(--text) !important;
 }
 
 .bi-arrow{
     font-size: 4dvh !important;
-    transition: 0.6s;
+    transition: .6s;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    width: auto;
+    line-height: inherit;
+    vertical-align: baseline;
 }
+
+
+
+.span-icon {
+    line-height: 40%;
+    }
