@@ -28,18 +28,18 @@
                       Benvenuto, utente
                       @endauth
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu drop-menu">
                     @auth
-                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item a-profile" href="#">Profilo</a></li>
                       <li>
                         <form method="POST" action="{{route('logout')}}">
                         @csrf
-                        <button type="submit" class="dropdown-item">Logout</button>
+                        <button type="submit" class="dropdown-item a-logout">Logout</button>
                         </form>
                       </li>
                       @else
-                      <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
-                      <li><a class="dropdown-item" href="{{route('login')}}">Login</a></li>
+                      <li><a class="dropdown-item a-register" href="{{route('register')}}">Registrati</a></li>
+                      <li><a class="dropdown-item a-login" href="{{route('login')}}">Login</a></li>
                       @endauth
                     </ul>
                   </li>

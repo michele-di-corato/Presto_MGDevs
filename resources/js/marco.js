@@ -30,8 +30,7 @@ let btnCreate = document.querySelector('.btn-create')
     });
 
     btnCreate.addEventListener("click", (event) => {
-        icon.style.transform = 'rotate(165deg)'
-        icon.style.backgroundColor = 'white'
-        icon.style.color = 'white)'
+        icon.style.transform = 'rotate(180deg)'
+        icon.style.color = 'white'
         icon.style.padding = '0px'
     });
