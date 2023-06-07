@@ -200,9 +200,13 @@
 
 .carousel{
     height:48dvh;
-    width:50%;
+    width: 50%;
     background-color: var(--bg);
-    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75))
+    transition: .8s;
+}
+
+.carousel:hover{
+    transform: scale(1.1);
 }
 
 

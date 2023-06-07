@@ -1,6 +1,6 @@
 <x-layout namePage="{{ $announce->name }}">
 
-    <div class="container-fluid bg-warning">
+    <div class="container-fluid">
         <div class="row justify-content-center align-items-center p-5">
 
             <div class="col-12 col-md-6">
