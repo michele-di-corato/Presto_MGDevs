@@ -122,9 +122,27 @@ nav{
     font-size: 3dvh !important;
     width: 15dvh;
     color: var(--text);
+    transition: .8s;
+}
+
+.btn-create:hover{
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
 }
 
 .bi-arrow{
     font-size: 4dvh !important;
-    transition: 0.6s;
+    transition: .6s;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    width: auto;
+    line-height: inherit;
+    vertical-align: baseline;
 }
+
+
+
+.span-icon {
+    line-height: 40%;
+    }

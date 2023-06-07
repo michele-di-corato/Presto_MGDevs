@@ -24,8 +24,8 @@
           </div>
           @endforeach
           <div class="d-flex justify-content-center align-items-center">
-        <button type="submit" class="btn btn-create mt-3 fs-5">Submit</button>
-        <i class="mt-3 bi-arrow bi bi-arrow-left-square"></i>
+        <button type="submit" class="btn btn-outline-dark btn-create mt-3 fs-5">Submit</button>
+        <span class="span-icon"><i class="mt-3 mx-3 bi-arrow bi bi-arrow-left-square"></i></span>
           </div>
     </form>
 </div>
