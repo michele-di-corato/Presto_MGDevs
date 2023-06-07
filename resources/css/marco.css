@@ -179,18 +179,21 @@ nav{
 }
 
 .btn-create{
-    font-size: 3dvh !important;
+    font-size: 2rem !important;
     width: 15dvh;
     color: var(--text);
     transition: .6s;
+    border: 2px solid var(--text);
 }
 
 .btn-create:hover{
     color: var(--text) !important;
+    background-color: white;
+    border: 2px solid var(--text);
 }
 
 .bi-arrow{
-    font-size: 4dvh !important;
+    font-size: 2rem !important;
     transition: .5s;
     padding: 0px;
     margin: 0px;
