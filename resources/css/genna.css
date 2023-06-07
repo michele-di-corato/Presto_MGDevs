@@ -32,11 +32,12 @@
 }
 
 /* Animazione dei pulsanti */
-.btn {
+.btn-ann {
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
-.btn:hover {
+.btn-ann:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
 }

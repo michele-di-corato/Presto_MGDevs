@@ -12,7 +12,7 @@ Ciò che distingue MGDevs è la loro passione per l'innovazione e la volontà di
 
 MGDevs è un gruppo di web developer altamente collaborativo, che lavora in sinergia per creare prodotti di alta qualità. Sono abili nella gestione dei progetti, nella comunicazione efficace e nella risoluzione di problemi. Con un forte impegno per l'eccellenza e l'innovazione, MGDevs è pronto ad affrontare sfide ambiziose nel mondo dello sviluppo web.
 
-### Developers
+## Developers
 
 - **[Marco Mazza](https://github.com/Marco-Mazza)**
 - **[Giuseppe Cosma](https://github.com/GiuseppeCosma99)**
