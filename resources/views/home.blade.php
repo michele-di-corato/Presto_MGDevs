@@ -10,7 +10,7 @@
             </div>
         </div>
     </header>
-    <div class="vh-100 container-fluid">
+    <div class="container-fluid">
         <div class="row justify-content-evenly">
             @foreach ($announces as $announce)
                 <div class="card col-10 col-md-3 m-md-3">
@@ -40,5 +40,5 @@
                 </div>
             @endforeach
         </div>
-    </div>    
+    </div>
 </x-layout>

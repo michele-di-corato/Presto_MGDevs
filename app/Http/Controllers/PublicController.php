@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Announce;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -11,5 +12,9 @@ class PublicController extends Controller
     {
         $announces = Announce::orderBy('created_at', 'desc')->limit(6)->get();
         return view('home', compact('announces'));
+    }
+    public function categoryShow(Category $category)
+    {
+        return view('announce.perCategory', compact('category'));
     }
 }
