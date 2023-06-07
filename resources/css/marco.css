@@ -13,7 +13,7 @@ nav{
     color: var(--text);
     font-family: var(--font-head);
     transition: 0.4s;
-    height: 73px;
+    min-height: 73px;
 }
 
 /* Nav Link */
@@ -203,18 +203,3 @@ nav{
 .span-icon {
     line-height: 40%;
     }
-
-    .title-home {
-        
-
-
-      }
-      
-      
-    
-      .title-hom{
-       
-      }
-    
-    
-      

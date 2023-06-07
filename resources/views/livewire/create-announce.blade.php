@@ -17,7 +17,7 @@
         </div>
         <div class="row justify-content-around">
             @foreach ($categories as $category)
-                <div class="form-check checkbox-create col-5">
+                <div class="form-check checkbox-create col-5 col-md-6">
                     <input class="form-check-input mx-3" type="radio" value="{{ $category->id }}"
                         wire:model="category_id" id="{{ $category->id }}">
                     <label class="form-check-label" for="{{ $category->id }}">
