@@ -16,10 +16,10 @@
             <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-primary btn-ann">Dettagli</a>
         </div>
         <div class="col-3">
-            <a href="#" class="btn btn-warning btn-ann">Modifica</a>
+            <a href="{{route('edit_announce',compact('announce'))}}" class="btn btn-warning btn-ann">Modifica</a>
         </div>
         <div class="col-3">
-            <a href="#" class="btn btn-danger btn-ann">Elimina</a>
+            @livewire('delete-announce',compact('announce'))
         </div>
     </div>
 </div>

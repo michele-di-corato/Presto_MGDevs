@@ -44,6 +44,6 @@ class AnnounceController extends Controller
      */
     public function edit(Announce $announce)
     {
-        //
+        return view('announce.edit',compact('announce'));
     }
 }
