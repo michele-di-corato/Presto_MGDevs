@@ -18,7 +18,7 @@
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* Effetto di sfocatura all'immagine */
@@ -37,8 +37,8 @@
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
 }
 
 
