@@ -66,6 +66,19 @@ nav{
     transition: width .3s;
 }
 
+.drop-menu{
+    background-color: var(--elem);
+    transition: .6s;
+}
+
+.drop-menu:hover{
+    background-color: var(--bg) !important;
+}
+
+.a-profile, .a-logout, .a-register, .a-login{
+    color: var(--text) !important;
+}
+
 .navTitle{
     transition: .2s;
 }
@@ -138,7 +151,7 @@ nav{
 
 .bi-arrow{
     font-size: 4dvh !important;
-    transition: .6s;
+    transition: .5s;
     padding: 0px;
     margin: 0px;
     display: inline-block;
@@ -146,8 +159,6 @@ nav{
     line-height: inherit;
     vertical-align: baseline;
 }
-
-
 
 .span-icon {
     line-height: 40%;
