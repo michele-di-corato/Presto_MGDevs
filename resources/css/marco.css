@@ -79,7 +79,7 @@ nav{
 
 
 .header-home{
-    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/storage/app/public/media/bg-home.jpg);
+    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/public/media/bg-home.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +100,13 @@ nav{
 }
 
 /* Create Announce */
+
+.bg-create{
+    background-image: linear-gradient( rgba(147, 207, 177, 0.75), rgba(147, 207, 177, 0.75)), url(/public/media/bg-create3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .form-create{
     border-radius: 5dvh;
@@ -122,11 +129,10 @@ nav{
     font-size: 3dvh !important;
     width: 15dvh;
     color: var(--text);
-    transition: .8s;
+    transition: .6s;
 }
 
 .btn-create:hover{
-    background-color: var(--bg) !important;
     color: var(--text) !important;
 }
 

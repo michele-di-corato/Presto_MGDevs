@@ -22,6 +22,8 @@
 
     @if((Route::currentRouteName() == 'home'))
     <main>
+    @elseif((Route::currentRouteName() == 'create_announce'))
+    <main>
     @else
     <main class="mt-5 pt-5">
     @endif

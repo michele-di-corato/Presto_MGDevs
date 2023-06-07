@@ -26,10 +26,10 @@ let btnCreate = document.querySelector('.btn-create')
 
     btnCreate.addEventListener("mouseover", (event) => {
         icon.style.transform = 'rotate(10deg)'
+        btnCreate.style.backgroundColor = 'white'
     });
 
     btnCreate.addEventListener("click", (event) => {
-        btnCreate.style.backgroundColor = 'white'
         icon.style.transform = 'rotate(165deg)'
         icon.style.backgroundColor = 'white'
         icon.style.color = 'white)'
