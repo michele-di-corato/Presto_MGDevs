@@ -26,13 +26,13 @@
                         <div class="col-12 mb-3">
                             <p class="card-text">{{ $announce->description }}</p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#" class="btn btn-warning">Go somewhere</a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#" class="btn btn-danger">Go somewhere</a>
                         </div>
                     </div>
