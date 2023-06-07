@@ -198,4 +198,14 @@
     flex-wrap: wrap;
 }
 
+.carousel-control-prev-icon{
+    width: 3rem;
+    height: 3rem;
+   background-color: green;
+border-radius: 3rem;
+border: 10px solid green;
+}
+
+
+
 
