@@ -1,5 +1,5 @@
 <div class="container-fluid form-create">
-    <form class="p-5 mt-5" wire:submit.prevent="createAnnounce">
+    <form class="p-5" wire:submit.prevent="createAnnounce">
         <div class="row">
             <h2 class="title-form text-center">Crea Annuncio</h1>
         </div>

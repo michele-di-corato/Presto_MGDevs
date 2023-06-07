@@ -98,7 +98,7 @@ nav{
     background-repeat: no-repeat;
 }
 
-/* Animation Title Home & Para Home */
+/* Animation Title Home, Para Home & Icon Home */
 
 .title-home{
     color: var(--text);
@@ -173,10 +173,6 @@ nav{
     font-family: var(--font-body);
 }
 
-.checkbox-create{
-   display: inline-flex;
-}
-
 .title-form{
     color: var(--text);
     font-family: var(--font-head);
@@ -210,6 +206,8 @@ nav{
 
     .title-home {
         
+
+
       }
       
       
