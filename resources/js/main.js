@@ -1,5 +1,5 @@
+// Navbar
 let navbar = document.querySelector('nav');
-
 let navTitle = document.querySelector('.navTitle');
 
 window.addEventListener('scroll', () => {
@@ -18,24 +18,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+// Btn Form Creazione Annuncio
 let icon = document.querySelector('.bi-arrow');
-
 let btnCreate = document.querySelector('.btn-create')
 
+btnCreate.addEventListener("mouseover", (event) => {
+    icon.style.transform = 'rotate(10deg)';
+    btnCreate.style.backgroundColor = 'white';
+});
 
-    btnCreate.addEventListener("mouseover", (event) => {
-        icon.style.transform = 'rotate(10deg)';
-        btnCreate.style.backgroundColor = 'white';
-    });
+btnCreate.addEventListener("click", (event) => {
+    icon.style.transform = 'rotate(180deg)';
+    icon.style.color = 'white';
+    icon.style.padding = '0px';
+});
 
-    btnCreate.addEventListener("click", (event) => {
-        icon.style.transform = 'rotate(180deg)';
-        icon.style.color = 'white';
-        icon.style.padding = '0px';
-    });
-
-    // Card Prodotti
+// Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
 window.onload = function () {
     let img = document.querySelector('.card-img-top');
