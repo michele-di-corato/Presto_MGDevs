@@ -25,7 +25,7 @@ let icon = document.querySelector('.bi-arrow');
 let btnCreate = document.querySelector('.btn-create');
 
 btnCreate.addEventListener("mouseover", () => {
-    icon.style.transform = 'rotate(10deg)';
+    icon.style.transform = 'rotate(180deg)';
     btnCreate.style.backgroundColor = 'white';
 });
 
