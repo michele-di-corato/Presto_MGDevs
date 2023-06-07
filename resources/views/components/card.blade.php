@@ -13,7 +13,7 @@
             <p class="card-text">{{ $announce->description }}</p>
         </div>
         <div class="col-3">
-            <a href="{{route('announce_detail',$announce->id)}}" class="btn btn-primary btn-ann">Dettagli</a>
+            <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-primary btn-ann">Dettagli</a>
         </div>
         <div class="col-3">
             <a href="#" class="btn btn-warning btn-ann">Modifica</a>
