@@ -33,6 +33,44 @@ if (icon && btnCreate) {
     });
 }
 
+let carousel = document.querySelector(".carousel");
+
+if (carousel) {
+    carousel.addEventListener("mouseenter", function () {
+        let carouselControlPrevicon = document.querySelector(".carousel-control-prev-icon");
+        if (carouselControlPrevicon ) {
+            carouselControlPrevicon.classList.add("d-block");
+            carouselControlPrevicon.classList.remove("d-none");
+        }
+    });
+
+    carousel.addEventListener("mouseleave", function () {
+        let carouselControlPrevicon = document.querySelector(".carousel-control-prev-icon");
+        if (carouselControlPrevicon) {
+            carouselControlPrevicon.classList.add("d-none");
+            carouselControlPrevicon.classList.remove("d-block");
+        }
+    });
+}
+
+if (carousel) {
+    carousel.addEventListener("mouseenter", function () {
+        let carouselControlNexticon = document.querySelector(".carousel-control-next-icon");
+        if (carouselControlNexticon) {
+            carouselControlNexticon.classList.add("d-block");
+            carouselControlNexticon.classList.remove("d-none");
+        }
+    });
+
+    carousel.addEventListener("mouseleave", function () {
+        let carouselControlNexticon = document.querySelector(".carousel-control-next-icon");
+        if (carouselControlNexticon) {
+            carouselControlNexticon.classList.add("d-none");
+            carouselControlNexticon.classList.remove("d-block");
+        }
+    });
+}
+
 // Card Prodotti
 // Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
 window.onload = function () {

@@ -199,4 +199,17 @@
     flex-wrap: wrap;
 }
 
+.carousel{
+    height:48dvh;
+    width: 50%;
+    background-color: var(--bg);
+    transition: .8s;
+}
+
+.carousel:hover{
+    transform: scale(1.1);
+}
+
+
+
 

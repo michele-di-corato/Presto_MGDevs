@@ -16,10 +16,10 @@ class CreateAnnounce extends Component
 
 
     protected $rules = [
-    'name' => 'required|min:5',
-    'description' => 'required|min:10',
-    'price' => 'required',
-
+        'name' => 'required|min:5',
+        'description' => 'required|min:10',
+        'price' => 'required',
+        'category_id' => 'required'
 
     ];
 
@@ -28,25 +28,27 @@ class CreateAnnounce extends Component
         'name.min' => 'Il nome deve essere di almeno 5 caratteri',
         'description.required' => 'La descrizione è obbligatoria',
         'description.min' => 'La descrizione deve essere di almeno 10 caratteri',
-        'price.required' => 'Il prezzo è obbligatorio'
+        'price.required' => 'Il prezzo è obbligatorio',
+        'category_id.required' => 'E\' obbligatorio specificare una categoria'
     ];
 
-    public function createAnnounce(){
+    public function createAnnounce()
+    {
         $this->validate();
-        $announce= Announce::create([
-            'name'=> $this->name,
-            'price'=>$this->price,
-            'description'=>$this->description,
-            'user_id'=>Auth::id(),
-            'category_id'=>$this->category_id
-         ]);
+        $announce = Announce::create([
+            'name' => $this->name,
+            'price' => $this->price,
+            'description' => $this->description,
+            'user_id' => Auth::id(),
+            'category_id' => $this->category_id
+        ]);
 
 
 
-        return redirect(route('show_announces'))->with('confirm','Annuncio creato correttamente.');
+        return redirect(route('show_announces'))->with('confirm', 'Annuncio creato correttamente.');
     }
     public function render()
     {
-        return view('livewire.create-announce' , ['categories'=>Category::all()]);
+        return view('livewire.create-announce', ['categories' => Category::all()]);
     }
 }
