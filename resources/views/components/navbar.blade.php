@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav id="nav" class="navbar navbar-expand-lg fixed-top">
 
     <div class="container-fluid">
         <a class="ms-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">

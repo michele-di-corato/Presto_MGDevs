@@ -12,7 +12,7 @@
         <div class="col-12 mb-3">
             <p class="card-text">{{ $announce->description }}</p>
         </div>
-        <div class="col-3">
+        <div class="d-flex justify-content-between px-0">
             <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-primary btn-ann">Dettagli</a>
         </div>
         @if ($announce->user_id == Auth::id() && Auth::check())

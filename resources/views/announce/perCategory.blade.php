@@ -3,20 +3,13 @@
     <div class="container-fluid">
         <div class="row justify-content-around">
 
+            <x-navCategory />
+            
             @forelse ($category->announces as $announce)
                 <x-card :announce="$announce" />
             @empty
                 <p>Nessun annuncio trovato.</p>
             @endforelse
-
-            <div class="container-fluid category">
-                <div class="col-12 d-flex justify-content-evenly">
-                    @foreach ($categories as $category)
-                        <a class="text-decoration-none text-white p-2"
-                            href="{{ route('show_per_category', compact('category')) }}">{{ $category->name }}</a>
-                    @endforeach
-                </div>
-            </div>
 
         </div>
     </div>
