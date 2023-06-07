@@ -17,7 +17,7 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav row">
                             @foreach ($categories as $category)
-                          <li class="nav-item col-12 col-lg-4">
+                          <li class="nav-item col-12 col-lg-3">
                             <a class="nav-link" href="{{route('show_per_category', compact('category'))}}">{{$category->name}}</a>
                           </li>
                           @endforeach
