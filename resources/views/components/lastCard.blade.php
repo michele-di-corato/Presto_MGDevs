@@ -9,8 +9,9 @@
                     <div class="card-overlay">
                         <div class="row text-center align-items-center h-100">
                             <div class="col-12">
-                                <a class="btn btn-light"
-                                    href="{{ route('announce_detail', $announce->id) }}">{{ $announce->name }}</a>
+                                <a class="btn btn-light p-1"
+                                    href="{{ route('announce_detail', $announce->id) }}">{{ $announce->name }}
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -18,8 +19,4 @@
             </div>
         @endforeach
     </div>
-
-
-
-
 </div>

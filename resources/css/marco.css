@@ -236,7 +236,7 @@
 .btn-ann {
     border: 2px solid var(--elem);
     border: radius 1rem;
-    transition: .6s;
+    transition: .2s;
   }
 
   .btn-ann:hover {
@@ -248,7 +248,7 @@
   .btn-edit{
     border: 2px solid var(--elem);
     border-radius:  1rem;
-    transition: .6s;
+    transition: .4s;
   }
 
   .btn-edit:hover{
