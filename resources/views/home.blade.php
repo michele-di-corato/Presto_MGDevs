@@ -19,7 +19,7 @@
         </div>
     @endif
     <div class="container-fluid">
-        <div class="row justify-content-evenly">
+        <div class="row Observe justify-content-evenly">
             <x-lastCard :announces="$announces" />
         </div>
     </div>

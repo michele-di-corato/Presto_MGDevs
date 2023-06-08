@@ -128,6 +128,7 @@ let observerCard = new IntersectionObserver((entries) => {
 
 observerCard.observe(Observe); 
 
+
 // Nav Category
 // Seleziona il bottone
 let button = document.getElementById("bottone-category");
