@@ -109,6 +109,25 @@ if (carousel) {
     });
 }
 
+// Observer Last Card
+
+let cards = document.querySelectorAll('.last-card');
+let Observe = document.querySelector('.Observe');
+
+let observerCard = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            cards.forEach((card, i) => {
+                card.classList.remove('opacity-0');
+                card.classList.add('animationUp');
+                card.style.animationDelay = `${i * 0.5}s`
+            })
+        }
+    })
+})
+
+observerCard.observe(Observe); 
+
 // Nav Category
 // Seleziona il bottone
 let button = document.getElementById("bottone-category");
