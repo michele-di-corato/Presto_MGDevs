@@ -78,10 +78,11 @@
     transition: 0.2s;
 }
 
-/* .btn-css:hover,
-.btn-css:focus {
-    box-shadow: inset 0 -3.25em 0 0 var(--elem);
-} */
+/* Anchor Dropdown */
+
+.a-profile, .a-logout, .a-register, .a-login{
+    
+}
 
 /* Header Home */
 
