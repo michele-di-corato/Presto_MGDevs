@@ -233,18 +233,21 @@
 /* Buttons Card */
 
 .btn-ann {
+    border: 2px solid var(--elem);
+    border: radius 1rem;
     transition: .6s;
   }
 
   .btn-ann:hover {
-    background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%) !important;
+    background-color: var(--elem);
   }
 
   /* Btn Edit */
 
+
   .btn-edit:hover{
-    background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%)
-  }
+    background-color: var(--elem);
+}
  
 
   
