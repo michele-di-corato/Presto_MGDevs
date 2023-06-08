@@ -15,6 +15,11 @@
                     <li class="nav-item">
                         <a class="a-nav1 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
+                    @if(Auth::check() && Auth::user()->is_revisor)
+                    <li class="nav-item">
+                        <a class="a-nav2 nav-link position-relative" href="{{ route('revisor_index') }}">Revisiona annunci<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announce::ToBeRevisionedCount()}} </span> </a>
+                    </li>
+                    @endif
                     @auth
                         <li class="nav-item">
                             <a class="a-nav2 nav-link" href="{{ route('create_announce') }}">Inserisci annuncio</a>

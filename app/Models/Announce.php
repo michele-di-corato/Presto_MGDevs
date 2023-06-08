@@ -17,4 +17,8 @@ class Announce extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public static function ToBeRevisionedCount(){
+        return Announce::where('is_accepted', null)->count();
+    }
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnnounceController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,5 @@ Route::get('/announce/category/{category}', [PublicController::class, 'categoryS
 Route::get('/announce/detail/{id}', [PublicController::class, 'showDetail'])->name('announce_detail');
 Route::get('/announce/edit/{announce}', [AnnounceController::class, 'edit'])->name('edit_announce');
 Route::get('/user_profile', [PublicController::class, 'profile'])->name('show_profile');
+
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
