@@ -42,11 +42,11 @@ if (icon && btnCreate) {
     });
 }
 
-    if (icon && btnEdit) {
-        // Card Prodotti
-        btnEdit.addEventListener("mouseenter", function () {
-            icon.style.transform = "rotate(180deg)";
-        });
+if (icon && btnEdit) {
+    // Card Prodotti
+    btnEdit.addEventListener("mouseenter", function () {
+        icon.style.transform = "rotate(180deg)";
+    });
 
     btnEdit.addEventListener("mouseleave", function () {
         icon.style.transform = "";
@@ -99,34 +99,6 @@ if (carousel) {
         if (carouselControlNexticon) {
             carouselControlNexticon.classList.add("d-none");
             carouselControlNexticon.classList.remove("d-block");
-        }
-    });
-}
-
-// Card Prodotti
-// Aggiunge l'effetto di sfocatura all'immagine all'avvio della pagina
-window.onload = function () {
-    let img = document.querySelector(".card-img-top");
-    if (img) {
-        img.classList.add("blur");
-    }
-};
-
-// Rimuove l'effetto di sfocatura all'immagine al passaggio del mouse
-let card = document.querySelector(".card");
-if (card) {
-    card.addEventListener("mouseenter", function () {
-        let img = document.querySelector(".card-img-top");
-        if (img) {
-            img.classList.remove("blur");
-        }
-    });
-
-    // Aggiunge l'effetto di sfocatura all'immagine al mouseleave della card
-    card.addEventListener("mouseleave", function () {
-        let img = document.querySelector(".card-img-top");
-        if (img) {
-            img.classList.add("blur");
         }
     });
 }
