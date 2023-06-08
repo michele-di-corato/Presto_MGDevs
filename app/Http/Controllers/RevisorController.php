@@ -11,5 +11,18 @@ class RevisorController extends Controller
         $announce_to_check = Announce::where('is_accepted', null)->first();
 
         return view('revisor.index', compact('announce_to_check'));
+
+    }
+
+    public function accept(Announce $announce){
+        $announce->setAccepted(true);
+
+        return redirect()->back()->with('confirm', 'Hai accettato l\'annuncio');
+    }
+
+    public function reject(Announce $announce){
+        $announce->setAccepted(false);
+        return redirect()->back()->with('confirm', 'Hai rifiutato l\'annuncio');
+
     }
 }

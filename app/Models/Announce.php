@@ -21,4 +21,11 @@ class Announce extends Model
     public static function ToBeRevisionedCount(){
         return Announce::where('is_accepted', null)->count();
     }
+
+    public function setAccepted($value){
+        $this->is_accepted = $value;
+        $this->save();
+
+        return true;
+    }
 }

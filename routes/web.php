@@ -25,3 +25,6 @@ Route::get('/announce/edit/{announce}', [AnnounceController::class, 'edit'])->na
 Route::get('/user_profile', [PublicController::class, 'profile'])->name('show_profile');
 
 Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+Route::patch('/revisor/announce/accept/{announce}', [RevisorController::class, 'accept'])->name('accept_announce');
+Route::patch('/revisor/announce/reject/{announce}', [RevisorController::class, 'reject'])->name('reject_announce');
+
