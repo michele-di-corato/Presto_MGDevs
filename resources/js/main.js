@@ -2,27 +2,31 @@
 let navbar = document.querySelector("#nav");
 let navTitle = document.querySelector(".navTitle");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-        navTitle.style.borderLeft = "2px solid var(--text)";
-        navTitle.style.borderRight = "2px solid var(--text)";
-        navTitle.style.borderRadius = "10px";
-        navTitle.style.padding = "2dvh";
-        navbar.style.marginTop = "3dvh";
-        navbar.style.marginRight = "8dvh";
-        navbar.style.marginLeft = "8dvh";
-        navbar.style.borderRadius = "1rem";
-    } else {
-        navTitle.style.borderLeft = "";
-        navTitle.style.borderRight = "";
-        navTitle.style.borderRadius = "";
-        navTitle.style.padding = "";
-        navbar.style.marginTop = "0px";
-        navbar.style.marginRight = "0px";
-        navbar.style.marginLeft = "0px";
-        navbar.style.borderRadius = "0rem";
-    }
-});
+
+if (window.innerWidth > 767) {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            navTitle.style.borderLeft = "2px solid var(--text)";
+            navTitle.style.borderRight = "2px solid var(--text)";
+            navTitle.style.borderRadius = "10px";
+            navTitle.style.padding = "2dvh";
+            navbar.style.marginTop = "3dvh";
+            navbar.style.marginRight = "8dvh";
+            navbar.style.marginLeft = "8dvh";
+            navbar.style.borderRadius = "1rem";
+        } else {
+            navTitle.style.borderLeft = "";
+            navTitle.style.borderRight = "";
+            navTitle.style.borderRadius = "";
+            navTitle.style.padding = "";
+            navbar.style.marginTop = "0px";
+            navbar.style.marginRight = "0px";
+            navbar.style.marginLeft = "0px";
+            navbar.style.borderRadius = "0rem";
+        }
+    });
+}
+
 
 // Animazione Button Form Create Announce
 let icon = document.querySelector(".bi-arrow");
