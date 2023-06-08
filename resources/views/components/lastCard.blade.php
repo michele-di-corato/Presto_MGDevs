@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row justify-content-center p-5">
+    <div class="row justify-content-center p-2 p-md-5">
         <h3>Ultimi articoli caricati:</h3>
         @foreach ($announces as $announce)
             <div class="col-6 col-md-3 my-2">
