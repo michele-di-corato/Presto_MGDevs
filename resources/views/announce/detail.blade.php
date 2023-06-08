@@ -28,21 +28,21 @@
                             </div>
                         </div>
                         <div class="container container-control">
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon next" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-2 mt-5"><a class="btn btn-primary" role="button"
-                        href="{{ route('show_announces') }}">Torna Indietro</a>
+                <div class="col-1 mt-5"><a class="btn btn-ann" href="{{ route('show_announces') }}">Torna
+                        Indietro</a>
                 </div>
             </div>
         </div>

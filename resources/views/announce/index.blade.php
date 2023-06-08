@@ -21,7 +21,9 @@
             @foreach ($announces as $announce)
                 <x-card :announce="$announce" />
             @endforeach
-
+        </div>
+        <div class="mt-4 d-flex justify-content-center">
+            {{ $announces->links() }}
         </div>
     </div>
 

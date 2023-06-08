@@ -5,8 +5,9 @@
             <a class="ms-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">
                 <img class="logo" src="/media/presto.png" alt="Logo Presto">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,7 +27,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             @auth
-                                Benvenuto, {{ Auth::user()->name }}
+                                Ciao, {{ Auth::user()->name }}
                             @else
                                 Benvenuto, utente
                             @endauth
@@ -49,7 +50,7 @@
                 </ul>
             </div>
         </div>
-    
+
     </nav>
-    
+
 </div>
