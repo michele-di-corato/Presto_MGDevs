@@ -177,15 +177,16 @@
 }
 
 .btn-create {
-    font-size: 2rem !important;
     width: 15dvh;
     color: var(--text);
     transition: 0.6s;
+    border: 2px solid var(--elem);
+    border-radius: 1rem;
 }
 
 .btn-create:hover {
     color: var(--text) !important;
-        background-image: linear-gradient(to right, #1D976C 0%, #1D976C 100%,  #93F9B9  51%)
+    background-color: var(--elem);
 }
 
 .bi-arrow {
@@ -244,6 +245,11 @@
 
   /* Btn Edit */
 
+  .btn-edit{
+    border: 2px solid var(--elem);
+    border-radius:  1rem;
+    transition: .6s;
+  }
 
   .btn-edit:hover{
     background-color: var(--elem);
