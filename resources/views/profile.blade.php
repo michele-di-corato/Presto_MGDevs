@@ -1,6 +1,6 @@
 <x-layout namePage="{{ Auth::user()->name }}">
 
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-3">
                 <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
