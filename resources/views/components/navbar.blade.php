@@ -39,7 +39,7 @@
                         </a>
                         <ul class="dropdown-menu drop-menu">
                             @auth
-                                <li><a class="dropdown-item a-profile" href="{{ route('show_profile') }}">Profilo</a></li>
+                                <li><a class="dropdown-item a-profile" onmouseover="document.a.style.backgroundColor ='blue'" href="{{ route('show_profile') }}">Profilo</a></li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf

@@ -14,6 +14,7 @@ if (window.innerWidth > 767) {
             navbar.style.marginRight = "8dvh";
             navbar.style.marginLeft = "8dvh";
             navbar.style.borderRadius = "1rem";
+            navbar.style.opacity = "0.8";
         } else {
             navTitle.style.borderLeft = "";
             navTitle.style.borderRight = "";
@@ -23,6 +24,7 @@ if (window.innerWidth > 767) {
             navbar.style.marginRight = "0px";
             navbar.style.marginLeft = "0px";
             navbar.style.borderRadius = "0rem";
+            navbar.style.opacity = "";
         }
     });
 }
