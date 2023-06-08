@@ -15,8 +15,8 @@ class PublicController extends Controller
         return view('home', compact('announces'));
     }
     public function categoryShow(Category $category)
-    {   
-        return view('announce.perCategory', compact('category'));
+    {   $announces = Announce::where('category_id', $category->id)->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);
+        return view('announce.perCategory', compact('category','announces'));
     }
 
     public function showDetail(Announce $announce, $id)

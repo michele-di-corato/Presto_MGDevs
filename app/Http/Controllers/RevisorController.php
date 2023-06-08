@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class RevisorController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('isRevisor');
+    }
+
+
     public function index(){
         $announce_to_check = Announce::where('is_accepted', null)->first();
 
