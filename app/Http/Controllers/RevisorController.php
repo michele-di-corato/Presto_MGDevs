@@ -2,14 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Announce;
+use App\Mail\RevisorMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class RevisorController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('isRevisor');
+        $this->middleware('isRevisor')->except('becomeRevisor','makeRevisor');
     }
 
 
@@ -30,5 +35,18 @@ class RevisorController extends Controller
         $announce->setAccepted(false);
         return redirect()->back()->with('confirm', 'Hai rifiutato l\'annuncio');
 
+    }
+
+    public function becomeRevisor(){
+
+        Mail::to('admin@presto.it')->send(new RevisorMail(Auth::user()));
+        return redirect()->back()->with('confirm', 'La candidatura è stata inviata con successo');
+    }
+
+    public function makeRevisor(User $user){
+
+        Artisan::call('app:makeUserRevisor',['email'=> $user->email]);
+
+        return redirect('/')->with('confirm','L\'utente è diventato Revisore');
     }
 }

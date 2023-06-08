@@ -45,6 +45,11 @@
                     accusamus quibusdam rerum iure ipsa officiis sapiente aliquid, ratione tempora quidem
                     necessitatibus ipsum perferendis provident laboriosam sed.
                 </p>
+
+                <h6 class="text-uppercase fw-bold my-2 ">Lavora con noi</h6>
+                <p>Registrati e candidati qui</p>
+                <a href="{{route('become_revisor')}}" class="btn btn-outline-info">Diventa revisore</a>
+
             </div>
             
             <!-- Grid column -->
