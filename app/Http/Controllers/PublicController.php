@@ -11,7 +11,7 @@ class PublicController extends Controller
 {
     public function home()
     {
-        $announces = Announce::orderBy('created_at', 'desc')->limit(6)->get();
+        $announces = Announce::orderBy('created_at', 'desc')->limit(4)->get();
         return view('home', compact('announces'));
     }
     public function categoryShow(Category $category)
