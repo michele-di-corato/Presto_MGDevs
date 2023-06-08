@@ -11,11 +11,11 @@ class PublicController extends Controller
 {
     public function home()
     {
-        $announces = Announce::orderBy('created_at', 'desc')->limit(4)->get();
+        $announces = Announce::where('is_accepted', true)->orderBy('created_at', 'desc')->limit(4)->get();
         return view('home', compact('announces'));
     }
     public function categoryShow(Category $category)
-    {
+    {   
         return view('announce.perCategory', compact('category'));
     }
 

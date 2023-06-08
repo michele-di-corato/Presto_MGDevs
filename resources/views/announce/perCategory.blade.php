@@ -6,12 +6,11 @@
             <div class="col-12 text-center">
                 <h1>{{ $category->name }}</h1>
             </div>
-            @forelse ($category->announces as $announce)
+            @forelse ($category->$announces as $announce)
                 <x-card :announce="$announce" />
             @empty
                 <p>Nessun annuncio trovato.</p>
             @endforelse
-
         </div>
     </div>
 
