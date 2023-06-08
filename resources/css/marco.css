@@ -177,16 +177,18 @@
 }
 
 .btn-create {
-    width: 15dvh;
-    color: var(--text);
-    transition: 0.6s;
-    border: 2px solid var(--elem);
-    border-radius: 1rem;
+    width: 6rem;
+    background-color: var(--text);
+    transition: .3s;
+    color: var(--bglight);
 }
 
 .btn-create:hover {
-    color: var(--text) !important;
-    background-color: var(--elem);
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
 }
 
 .bi-arrow {
@@ -231,30 +233,27 @@
 }
 
 
-/* Buttons Card */
+/* Buttons Card & Button Edit*/
 
-.btn-ann {
-    border: 2px solid var(--elem);
-    border: radius 1rem;
-    transition: .2s;
+.btn-ann, .btn-edit {
+    background-color: var(--text);
+    transition: .3s;
+    color: var(--bglight);
   }
 
   .btn-ann:hover {
-    background-color: var(--elem);
-  }
-
-  /* Btn Edit */
-
-  .btn-edit{
-    border: 2px solid var(--elem);
-    border-radius:  1rem;
-    transition: .4s;
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
   }
 
   .btn-edit:hover{
-    background-color: var(--elem);
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
 }
- 
 
-  
- 
