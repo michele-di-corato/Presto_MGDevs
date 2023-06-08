@@ -2,7 +2,7 @@
     <div class="row justify-content-center p-2 p-md-5">
         <h3>Ultimi articoli caricati:</h3>
         @foreach ($announces as $announce)
-            <div class="col-6 col-md-3 my-2">
+            <div class="animationUp last-card col-6 col-md-3 my-2">
                 <div class="card">
                     <img class="card-img-top img-fluid img-last" src="{{ Storage::url('public/media/DefaultImage.jpg') }}"
                         alt="Immagine">

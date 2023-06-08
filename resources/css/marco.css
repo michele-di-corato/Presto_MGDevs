@@ -233,13 +233,38 @@
     margin-bottom: 8dvh;
 }
 
+.animationUp {
+    animation: fade-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-fill-mode: backwards;
+  }
 
-/* Buttons Card & Button Edit*/
+  @keyframes fade-in-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+  
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-.btn-ann, .btn-edit {
+/* Buttons Card Button Back & Button Edit*/
+
+.btn-ann, .btn-edit, .btn-back {
     background-color: var(--text);
     transition: .3s;
     color: var(--bglight);
+  }
+
+  .btn-back:hover {
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
   }
 
   .btn-ann:hover {

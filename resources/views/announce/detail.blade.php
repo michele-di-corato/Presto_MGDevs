@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-1 mt-5"><a class="btn btn-ann" href="{{ route('show_announces') }}">Torna
+                <div class="col-2 mt-5"><a class="btn btn-back" href="{{ route('show_announces') }}">Torna
                         Indietro</a>
                 </div>
             </div>
