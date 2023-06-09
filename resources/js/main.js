@@ -1,6 +1,7 @@
 // Animazione Navbar
 let navbar = document.querySelector("#nav");
 let navTitle = document.querySelector(".navTitle");
+let navLink = document.querySelectorAll(".nav-link")
 
 
 if (window.innerWidth > 767) {
@@ -14,7 +15,8 @@ if (window.innerWidth > 767) {
             navbar.style.marginRight = "8dvh";
             navbar.style.marginLeft = "8dvh";
             navbar.style.borderRadius = "1rem";
-            navbar.style.opacity = "0.8";
+            navbar.style.backgroundColor = "var(--elemtransp)";
+            navbar.style.border = "3px solid var(--elemlighttransp)";
         } else {
             navTitle.style.borderLeft = "";
             navTitle.style.borderRight = "";
@@ -24,7 +26,8 @@ if (window.innerWidth > 767) {
             navbar.style.marginRight = "0px";
             navbar.style.marginLeft = "0px";
             navbar.style.borderRadius = "0rem";
-            navbar.style.opacity = "";
+            navbar.style.backgroundColor = "";
+            navbar.style.border = "";
         }
     });
 }
@@ -111,22 +114,7 @@ if (carousel) {
 
 // Observer Last Card
 
-let cards = document.querySelectorAll('.last-card');
-let Target = document.querySelector('.target');
-
-let observerCard = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            cards.forEach((card, i) => {
-                card.classList.remove('opacity-0');
-                card.classList.add('animationUp');
-                card.style.animationDelay = `${i * 0.5}s`
-            })
-        }
-    })
-})
-
-observerCard.observe(Target);  
+  
 
 
 // Nav Category
