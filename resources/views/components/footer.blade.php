@@ -46,13 +46,6 @@
                     necessitatibus ipsum perferendis provident laboriosam sed.
                 </p>
 
-<<<<<<< HEAD
-=======
-                <h6 class="text-uppercase fw-bold my-2 ">Lavora con noi</h6>
-                <p>Registrati e candidati qui</p>
-                <a href="{{route('become_revisor')}}" class="btn btn-revisor">Diventa revisore</a>
-
->>>>>>> 1f35b9fd2cbbea6930f45cfd68a5fb7f31346fdc
             </div>
             
             <!-- Grid column -->
