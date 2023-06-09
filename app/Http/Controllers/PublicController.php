@@ -15,8 +15,9 @@ class PublicController extends Controller
         return view('home', compact('announces'));
     }
     public function categoryShow(Category $category)
-    {   $announces = Announce::where('category_id', $category->id)->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);
-        return view('announce.perCategory', compact('category','announces'));
+    {
+        $announces = Announce::where('category_id', $category->id)->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);
+        return view('announce.perCategory', compact('category', 'announces'));
     }
 
     public function showDetail(Announce $announce, $id)
@@ -27,7 +28,9 @@ class PublicController extends Controller
 
     public function profile()
     {
-        $announces = Announce::where('user_id', Auth::id())->get();
-        return view('profile', compact('announces'));
+        $approved_announces = Announce::where('user_id', Auth::id())->where('is_accepted', true)->limit(3)->get();
+        $pending_announces = Announce::where('user_id', Auth::id())->where('is_accepted', null)->limit(3)->get();
+        $rejected_announces = Announce::where('user_id', Auth::id())->where('is_accepted', false)->limit(3)->get();
+        return view('profile', compact('approved_announces', 'pending_announces', 'rejected_announces'));
     }
 }

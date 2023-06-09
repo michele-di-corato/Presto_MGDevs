@@ -10,7 +10,26 @@
             </div>
             <div class="col-9">
                 <div class="row justify-content-evenly">
-                    @foreach ($announces as $announce)
+                    <div class="col-12">
+                        <h2>Annunci approvati</h2>
+                    </div>
+                    @foreach ($approved_announces as $announce)
+                        <x-card :announce="$announce" />
+                    @endforeach
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-12">
+                        <h2>Annunci in attesa di approvazione</h2>
+                    </div>
+                    @foreach ($pending_announces as $announce)
+                        <x-card :announce="$announce" />
+                    @endforeach
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-12">
+                        <h2>Annunci rifiutati</h2>
+                    </div>
+                    @foreach ($rejected_announces as $announce)
                         <x-card :announce="$announce" />
                     @endforeach
                 </div>
