@@ -15,11 +15,6 @@
                     <li class="nav-item">
                         <a class="a-nav1 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
-                    @if(Auth::check() && Auth::user()->is_revisor)
-                    <li class="nav-item">
-                        <a class="a-nav2 nav-link position-relative" href="{{ route('revisor_index') }}">Revisiona annunci<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announce::ToBeRevisionedCount()}} </span> </a>
-                    </li>
-                    @endif
                     @auth
                         <li class="nav-item">
                             <a class="a-nav2 nav-link" href="{{ route('create_announce') }}">Inserisci annuncio</a>
@@ -38,8 +33,27 @@
                             @endauth
                         </a>
                         <ul class="dropdown-menu drop-menu">
-                            @auth
-                                <li><a class="dropdown-item a-profile" onmouseover="document.a.style.backgroundColor ='blue'" href="{{ route('show_profile') }}">Profilo</a></li>
+                            @if (Auth::check() && Auth::user()->is_revisor)
+                                <li>
+                                    <a class="dropdown-item position-relative"
+                                        href="{{ route('revisor_index') }}">Revisiona
+                                        annunci<span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announce::ToBeRevisionedCount() }}
+                                        </span> </a>
+                                </li>
+                                <li><a class="dropdown-item a-profile"
+                                        onmouseover="document.a.style.backgroundColor ='blue'"
+                                        href="{{ route('show_profile') }}">Profilo</a></li>
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item a-logout">Logout</button>
+                                    </form>
+                                </li>
+                            @elseif (Auth::check())
+                                <li><a class="dropdown-item a-profile"
+                                        onmouseover="document.a.style.backgroundColor ='blue'"
+                                        href="{{ route('show_profile') }}">Profilo</a></li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
@@ -47,9 +61,10 @@
                                     </form>
                                 </li>
                             @else
-                                <li><a class="dropdown-item a-register" href="{{ route('register') }}">Registrati</a></li>
+                                <li><a class="dropdown-item a-register" href="{{ route('register') }}">Registrati</a>
+                                </li>
                                 <li><a class="dropdown-item a-login" href="{{ route('login') }}">Login</a></li>
-                            @endauth
+                            @endif
                         </ul>
                     </li>
                 </ul>
