@@ -11,7 +11,14 @@ use Laravel\Fortify\Contracts\CreatesNewUsers;
 class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
-
+    protected $messages = [
+        'name.required'  => 'Devi inserire un nome',
+        'email.required' => 'Devi inserire un\'email',
+        'email.email' => 'L\'email deve essere valida',
+        'password.required' => 'Devi inserire una password',
+        'password.min' => 'La password deve essere lunga almeno 8 caratteri',
+        'password.confirmed' => 'Devi confermare la password'
+    ];
     /**
      * Validate and create a newly registered user.
      *
@@ -29,7 +36,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-        ])->validate();
+        ], $this->messages)->validate();
 
         return User::create([
             'name' => $input['name'],
