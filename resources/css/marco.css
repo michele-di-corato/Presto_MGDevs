@@ -253,7 +253,7 @@
 
 /* Buttons Card Button Back & Button Edit*/
 
-.btn-ann, .btn-edit, .btn-back {
+.btn-ann, .btn-edit, .btn-back, .btn-revisor {
     background-color: var(--text);
     transition: .3s;
     color: var(--bglight);
@@ -283,3 +283,10 @@
     border-radius: 6px;
 }
 
+.btn-revisor:hover{
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
+}
