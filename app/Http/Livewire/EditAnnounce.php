@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Announce;
 
 class EditAnnounce extends Component
 {
@@ -20,10 +21,8 @@ class EditAnnounce extends Component
             'description' => $this->description,
             'category_id' => $this->category_id
         ]);
-        if ($this->announce->is_accepted == 0) {
-            $this->announce->update([
-                'is_accepted' => null
-            ]);
+        if ($this->announce->is_accepted == false) {
+            $this->announce->setAccepted(null);
         }
         return redirect(route('show_announces'))->with('confirm', 'Annuncio modificato correttamente');
     }
