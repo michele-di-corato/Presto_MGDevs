@@ -112,7 +112,7 @@ if (carousel) {
 // Observer Last Card
 
 let cards = document.querySelectorAll('.last-card');
-let Observe = document.querySelector('.Observe');
+let Target = document.querySelector('.target');
 
 let observerCard = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -126,7 +126,7 @@ let observerCard = new IntersectionObserver((entries) => {
     })
 })
 
-observerCard.observe(Observe); 
+observerCard.observe(Target);  
 
 
 // Nav Category
