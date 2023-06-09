@@ -15,7 +15,7 @@ if (window.innerWidth > 767) {
             navbar.style.marginRight = "8dvh";
             navbar.style.marginLeft = "8dvh";
             navbar.style.borderRadius = "1rem";
-            navbar.style.opacity = "0.8";
+            navbar.style.opacity = "0.9";
 
         } else {
             navTitle.style.borderLeft = "";
