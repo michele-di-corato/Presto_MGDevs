@@ -1,7 +1,7 @@
 <div class="card col-8 col-lg-3 m-3 col-md-5">
     <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top img-rounded mt-2"
         alt="Immagine annuncio">
-    <div class="card-body row justify-content-evenly">
+    <div class="card-body justify-content-evenly">
         <div class="col-6">
             <h4 class="card-title">{{ $announce->name }}</h4>
             <h6 class="card-title">Categoria: {{ $announce->category->name }}</h6>

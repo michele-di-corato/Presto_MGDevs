@@ -209,10 +209,22 @@
 
 /* Navbar Category */
 
-.nav-category {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.nav-category{
+    border: 2px solid var(--bglight);
+    border-radius: 1rem;
+}
+
+@media (min-width: 992px) 
+{
+    .nav-category{
+        position: absolute;
+        margin-top: 9dvh;
+        z-index: 5;
+    }
+}
+
+#icona-row{
+    font-size: 2rem;
 }
 
 /* Carousel */
