@@ -1,11 +1,18 @@
 :root {
     --text: #291711;
+
     --bg: #98dbc6;
+    --bgtransp: rgba(152, 219, 198, 0.7);
     --bglight: #aeedd9;
+    --bglighttransp: rgb(174, 237, 217, 0.7);
     --bgdark: #3b5e53;
+
     --elem: #ffd8bf;
-    --elemlight: #ffe4d4;
-    --elemdark: #a3765a;
+    --elemtransp: rgba(255, 216, 191, 0.7);
+    --elemlight: rgb(255, 228, 212);
+    --elemlighttransp: rgba(255, 228, 212, 0.7);
+    --elemdark: rgb(163, 118, 90);
+    
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
 }

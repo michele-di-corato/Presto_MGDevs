@@ -40,15 +40,11 @@
                 <h6 class="text-uppercase fw-bold mb-4">
                     <i class="fas fa-gem text-secondary"></i>Presto.it
                 </h6>
-                <p>
+                <p class="pe-md-5">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nisi eveniet eaque quod
                     accusamus quibusdam rerum iure ipsa officiis sapiente aliquid, ratione tempora quidem
                     necessitatibus ipsum perferendis provident laboriosam sed.
                 </p>
-
-                <h6 class="text-uppercase fw-bold my-2 ">Lavora con noi</h6>
-                <p>Registrati e candidati qui</p>
-                <a href="{{route('become_revisor')}}" class="btn btn-revisor">Diventa revisore</a>
 
             </div>
             
@@ -93,7 +89,7 @@
             </div>
             
             <!-- Grid column -->
-            <div class="col-12 col-md-3 mb-4">
+            <div class="col-12 col-md-2 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p><i class="fas fa-home me-3 text-secondary"></i> New York, US</p>
@@ -104,6 +100,17 @@
                 <p><i class="fas fa-phone me-3 text-secondary"></i>+ 01 234 567 88</p>
                 <p><i class="fas fa-print me-3 text-secondary"></i>+ 01 234 567 89</p>
             </div>
+
+            <!-- Grid column -->
+            <div class="col-12 col-md-2 mb-4">
+                <!-- Lavora con noi -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Lavora con noi
+                </h6>
+                <p>Registrati e candidati qui</p>
+                <a href="{{route('become_revisor')}}" class="btn btn-outline-info">Diventa revisore</a>
+            </div>
+
         </div>
     </div>
     
