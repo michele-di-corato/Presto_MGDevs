@@ -1,4 +1,4 @@
-<div class="nav-category">
+<div class="nav-category sticky">
     <div class="container-fluid">
         <div class="row align-items-center text-center">
             <div class="col-12">
