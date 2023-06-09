@@ -9,11 +9,13 @@
 }
 
 p {
-    margin-top: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .alert {
-    width: 50vw;
+    height: 8vh;
+    width: auto;
     background-color: var(--bg);
     border: 3px solid var(--bglight);
     border-radius: 10px;

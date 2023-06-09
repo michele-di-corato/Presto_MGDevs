@@ -14,8 +14,9 @@
     @if (session('confirm'))
         <div class="alert alert-success fade show d-flex" role="alert">
             {{ session('confirm') }}
-            <button type="button" class="btn-close align-self-center ms-auto" data-bs-dismiss="alert"
-                aria-label="Close"></button>
+            <button type="button" class="btn-close align-self-center ms-3" data-bs-dismiss="alert"
+                aria-label="Close">
+            </button>
         </div>
     @endif
     <div class="container-fluid">

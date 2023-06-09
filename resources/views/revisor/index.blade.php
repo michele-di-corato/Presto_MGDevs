@@ -13,7 +13,7 @@
             @if (session('confirm'))
                 <div class="alert alert-success fade show d-flex" role="alert">
                     {{ session('confirm') }}
-                    <button type="button" class="btn-close align-self-center ms-auto" data-bs-dismiss="alert"
+                    <button type="button" class="btn-close align-self-center ms-3" data-bs-dismiss="alert"
                         aria-label="Close"></button>
                 </div>
             @endif
@@ -22,7 +22,7 @@
     @if ($announce_to_check)
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="card m-5">
                         <div class="row justify-content-center align-items-center p-5">
                             <div class="col-12 col-md-6">

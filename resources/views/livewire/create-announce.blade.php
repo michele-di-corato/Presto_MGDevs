@@ -5,7 +5,7 @@
                 placeholder="Prodotto" wire:model="name">
             <label for="productName" class="form-label">Prodotto</label>
             @error('name')
-                <div class="alert alert-danger">
+                <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
@@ -15,7 +15,7 @@
                 id="productPrice" placeholder="Prezzo" wire:model="price">
             <label for="productPrice" class="form-label">Prezzo</label>
             @error('price')
-                <div class="alert alert-danger">
+                <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
@@ -26,7 +26,7 @@
                 wire:model="description"></textarea>
 
             @error('description')
-                <div class="alert alert-danger">
+                <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
@@ -43,7 +43,7 @@
                 </div>
             @endforeach
             @error('category_id')
-                <div class="alert alert-danger">
+                <div class="text-danger text-center mt-1">
                     <p>{{ $message }}</p>
                 </div>
             @enderror
