@@ -33,4 +33,9 @@ class PublicController extends Controller
         $rejected_announces = Announce::where('user_id', Auth::id())->where('is_accepted', false)->limit(3)->get();
         return view('profile', compact('approved_announces', 'pending_announces', 'rejected_announces'));
     }
+    public function searchAnnounce(Request $request)
+    {
+        $announces = Announce::search($request->searched)->where('is_accepted', true)->paginate(6);
+        return view('announce.index', compact('announces'));
+    }
 }
