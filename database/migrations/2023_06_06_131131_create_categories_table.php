@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        $categories = ['Abbigliamento e accessori', 'Articoli per la casa', 'Elettronica', 'Sport e tempo libero', 'Libri e articoli per la lettura', 'Strumenti e attrezzature', 'Giochi e giocattoli', 'Articoli vintage e da collezione', 'Bellezza e cura personale', 'Articoli per animali domestici'];
+        $categories = ['Abbigliamento e accessori', 'Arredamento e oggetti da casa', 'Elettronica', 'Sport e tempo libero', 'Libri e fumetti', 'Strumenti e attrezzature', 'Giochi e giocattoli', 'Vintage e collezionismo', 'Bellezza e cura personale', 'Articoli per animali domestici'];
 
         foreach ($categories as $category) {
             Category::create([
