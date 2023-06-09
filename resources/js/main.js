@@ -27,7 +27,7 @@ if (window.innerWidth > 767) {
             navbar.style.marginLeft = "0px";
             navbar.style.borderRadius = "0rem";
             navbar.style.backgroundColor = "";
-            navbar.style.border = "";
+            navbar.style.border = ""
         }
     });
 }
@@ -115,6 +115,12 @@ if (carousel) {
 // Observer Last Card
 
   
+let navCategory = document.querySelector('.nav-category');
+
+if (window.innerWidth > 767) {
+    navCategory.style.marginLeft = "1390px";
+    navCategory.style.zIndex = "4";
+}
 
 
 // Nav Category
