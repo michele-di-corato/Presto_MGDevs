@@ -72,7 +72,7 @@
             <form class="form-inline my-2 my-lg-0 d-flex" method="GET" action="{{ route('search_announce') }}">
                 <input class="form-control me-sm-2" type="search" placeholder="Cerca" aria-label="Search"
                     name='searched'>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+                <button class="btn btn-navbar ms-2 my-2 my-sm-0" type="submit">Cerca</button>
             </form>
         </div>
 

@@ -218,7 +218,7 @@
 {
     .nav-category{
         position: absolute;
-        margin-top: 9dvh;
+        margin-top: 2dvh;
         z-index: 5;
     }
 }
@@ -265,7 +265,7 @@
 
 /* Buttons Card Button Back & Button Edit*/
 
-.btn-ann, .btn-edit, .btn-back, .btn-revisor {
+.btn-ann, .btn-edit, .btn-back, .btn-revisor, .btn-navbar {
     background-color: var(--text);
     transition: .3s;
     color: var(--bglight);
@@ -296,6 +296,14 @@
 }
 
 .btn-revisor:hover{
+    background-color: var(--bglight);
+    transform: scale(1.1);
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    border-radius: 6px;
+}
+
+.btn-navbar:hover{
     background-color: var(--bglight);
     transform: scale(1.1);
     border-left: 2px solid var(--text);
