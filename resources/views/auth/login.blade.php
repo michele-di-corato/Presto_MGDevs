@@ -10,7 +10,7 @@
                         @csrf
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                id="inputEmail" name="email" placeholder="Email">
+                                id="inputEmail" value="{{ old('email') }}" name="email" placeholder="Email">
                             <label for="inputEmail" class="form-label">Email</label>
                             @error('email')
                                 <div class="text-danger pt-1">
@@ -38,5 +38,4 @@
             </div>
         </div>
     </div>
-
 </x-layout>

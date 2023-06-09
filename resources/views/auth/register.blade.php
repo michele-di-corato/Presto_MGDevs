@@ -10,7 +10,7 @@
                         @csrf
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="inputName"
-                                name="name" placeholder="Name">
+                                name="name" value="{{ old('name') }}" placeholder="Name">
                             <label for="inputName">Name</label>
                             @error('name')
                                 <div class="text-danger pt-1">
@@ -20,7 +20,7 @@
                         </div>
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                id="inputEmail" name="email" placeholder="Email">
+                                id="inputEmail" value="{{ old('email') }}" name="email" placeholder="Email">
                             <label for="inputEmail" class="form-label">Email</label>
                             @error('email')
                                 <div class="text-danger pt-1">
