@@ -1,18 +1,24 @@
 :root {
     --text: #291711;
 
-    --bg: #98dbc6;
+    --bg: rgb(152, 219, 198);
     --bgtransp: rgba(152, 219, 198, 0.7);
-    --bglight: #aeedd9;
+    --bglight: rgb(174, 237, 217);
     --bglighttransp: rgb(174, 237, 217, 0.7);
-    --bgdark: #3b5e53;
+    --bgdark: rgb(59, 94, 83);
+    --bgdarktransp: rgba(59, 94, 83, 0.6);
 
-    --elem: #ffd8bf;
+    --elem: rgb(255, 216, 191);
     --elemtransp: rgba(255, 216, 191, 0.7);
     --elemlight: rgb(255, 228, 212);
     --elemlighttransp: rgba(255, 228, 212, 0.7);
     --elemdark: rgb(163, 118, 90);
+    --elemdarktransp: rgba(163, 118, 90, 0.8);
     
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
+}
+
+.col-text{
+    color: var(--text);
 }

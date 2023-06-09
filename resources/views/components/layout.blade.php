@@ -20,12 +20,12 @@
 
     <x-navbar />
 
-    @if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'create_announce')
-        <main>
-        @else
-            <main id="main">
-    @endif
-    {{ $slot }}
+    {{-- @if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'create_announce') --}}
+    <main>
+    {{-- @else
+    <main id="main">
+    @endif --}}
+        {{ $slot }}
     </main>
 
 

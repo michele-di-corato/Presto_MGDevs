@@ -1,4 +1,4 @@
-<div class="container-fluid container-navbar sticky-top">
+<div class="container-navbar">
     <nav id="nav" class="navbar navbar-expand-lg fixed-top">
 
         <div class="container-fluid">
@@ -32,7 +32,7 @@
                                 Benvenuto, utente
                             @endauth
                         </a>
-                        <ul class="dropdown-menu drop-menu">
+                        <ul id="dropdown" class="dropdown-menu drop-menu">
                             @if (Auth::check() && Auth::user()->is_revisor)
                                 <li>
                                     <a class="dropdown-item position-relative"
@@ -68,15 +68,21 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 d-flex" method="GET" action="{{ route('search_announce') }}">
-                    <input class="form-control me-sm-2" type="search" placeholder="Cerca" aria-label="Search"
-                        name='searched'>
-                    <button class="btn btn-navbar ms-2 my-2 my-sm-0" type="submit">Cerca</button>
-                </form>
+
+                <ul class="navbar-nav pe-3">
+                    <li class="nav-item">
+                        <form class="search-form" method="GET" action="{{ route('search_announce') }}">
+                            <input class="search-input" type="search" placeholder="Cerca" aria-label="Search"
+                                name='searched'>
+                            <button class="btn" type="submit">
+                                <i class="btn-search fa fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+
             </div>
-
         </div>
-
     </nav>
 
 </div>

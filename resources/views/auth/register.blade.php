@@ -1,10 +1,12 @@
 <x-layout namePage="Registrati">
 
-    <div class="container-fluid pt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-4">
-                <div class="card-user p-5">
-                    <h1 class="display-6 text-center pb-5">Registrati</h1>
+    <div class="container-fluid bg-profile">
+        <div class="row justify-content-center align-items-center vh-100 pt-5">
+            <div class="col-12 col-md-6 py-5">
+
+                <h1 id="annunci" class="text-center col-text display-6 pb-2">Registrati</h1>
+
+                <div class="card card-pers p-3">
 
                     <form method="POST" action="{{ route('register') }}">
                         @csrf

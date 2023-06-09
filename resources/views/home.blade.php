@@ -1,7 +1,7 @@
 <x-layout namePage="Home">
 
     <header class="container-fluid header-home">
-        <div class="row align-items-center vh-100 pt-5">
+        <div class="row align-items-center vh-100">
             <div class="col-12 col-md-6">
                 <h1 class="title-home text-center">Benvenuto su Presto.it!</h1>
             </div>

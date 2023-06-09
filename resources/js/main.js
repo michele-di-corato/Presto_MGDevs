@@ -3,17 +3,15 @@ let navbar = document.querySelector("#nav");
 let navTitle = document.querySelector(".navTitle");
 let navLink = document.querySelectorAll(".nav-link")
 
-
-if (window.innerWidth > 767) {
+if (window.innerWidth > 992) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
             navTitle.style.borderLeft = "2px solid var(--text)";
             navTitle.style.borderRight = "2px solid var(--text)";
             navTitle.style.borderRadius = "10px";
-            navTitle.style.padding = "2dvh";
             navbar.style.marginTop = "3dvh";
-            navbar.style.marginRight = "8dvh";
-            navbar.style.marginLeft = "8dvh";
+            navbar.style.marginRight = "18dvh";
+            navbar.style.marginLeft = "18dvh";
             navbar.style.borderRadius = "1rem";
             navbar.style.backgroundColor = "var(--elemtransp)";
             navbar.style.border = "3px solid var(--elemlighttransp)";
@@ -21,7 +19,6 @@ if (window.innerWidth > 767) {
             navTitle.style.borderLeft = "";
             navTitle.style.borderRight = "";
             navTitle.style.borderRadius = "";
-            navTitle.style.padding = "";
             navbar.style.marginTop = "0px";
             navbar.style.marginRight = "0px";
             navbar.style.marginLeft = "0px";
@@ -31,7 +28,6 @@ if (window.innerWidth > 767) {
         }
     });
 }
-
 
 // Animazione Button Form Create Announce
 let icon = document.querySelector(".bi-arrow");
@@ -114,13 +110,17 @@ if (carousel) {
 
 // Observer Last Card
 
-  
-let navCategory = document.querySelector('.nav-category');
 
-if (window.innerWidth > 767) {
-    navCategory.style.marginLeft = "1390px";
-    navCategory.style.zIndex = "4";
-}
+// let navCategory = document.querySelector('.nav-category');
+
+// PROBLEMA DI VISIONE!!!!!
+
+// if (navCategory) {
+//     if (window.innerWidth > 767) {
+//         navCategory.style.marginLeft = "1390px";
+//         navCategory.style.zIndex = "4";
+//     }
+// }
 
 
 // Nav Category
