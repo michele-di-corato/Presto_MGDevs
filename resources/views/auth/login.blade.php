@@ -13,7 +13,7 @@
                                 id="inputEmail" name="email" placeholder="Email">
                             <label for="inputEmail" class="form-label">Email</label>
                             @error('email')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
@@ -23,7 +23,7 @@
                                 id="InputPassword" name="password" placeholder="Password">
                             <label for="InputPassword" class="form-label">Password</label>
                             @error('password')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror

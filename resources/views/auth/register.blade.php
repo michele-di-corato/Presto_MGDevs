@@ -13,7 +13,7 @@
                                 name="name" placeholder="Name">
                             <label for="inputName">Name</label>
                             @error('name')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
@@ -23,7 +23,7 @@
                                 id="inputEmail" name="email" placeholder="Email">
                             <label for="inputEmail" class="form-label">Email</label>
                             @error('email')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
@@ -33,7 +33,7 @@
                                 id="inputPassword" name="password" placeholder="Password">
                             <label for="inputPassword" class="form-label">Password</label>
                             @error('password')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
@@ -45,7 +45,7 @@
                                 placeholder="Password Confirmation">
                             <label for="password_confirmation" class="form-label">Conferma Password</label>
                             @error('password_confirmation')
-                                <div class="alert alert-danger">
+                                <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
