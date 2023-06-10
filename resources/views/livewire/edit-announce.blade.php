@@ -1,5 +1,7 @@
 <form class="form-create p-5" wire:submit.prevent="editAnnounce">
-    <h2 class="title-form text-center">Modifica Annuncio</h1>
+
+    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">Modifica Annuncio</h1>
+    <div class="card card-pers p-3">
         <div class="mb-3">
             <label for="productName" class="form-label">Prodotto</label>
             <input type="text" class="form-control @error('name') is-invalid @enderror" id="productName"
@@ -30,19 +32,21 @@
                 </div>
             @enderror
         </div>
-        <div class="row justify-content-around">
-            @foreach ($categories as $category)
-                <div class="form-check checkbox-create col-12 col-md-6">
-                    <input class="form-check-input mx-3" type="radio" value="{{ $category->id }}"
-                        wire:model="category_id" id="{{ $category->id }}">
-                    <label class="form-check-label" for="{{ $category->id }}">
-                        {{ $category->name }}
-                    </label>
-                </div>
-            @endforeach
+        <div class="mb-3">
+            <div class="form-group col-12">
+                <label for="category">Categoria:</label>
+                <select class="form-control @error('category_id') is-invalid @enderror" id="category" wire:model="category_id">
+                    <option value="">Seleziona...</option>
+                    @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+            </div>
         </div>
         <div class="d-flex justify-content-center align-items-center mt-3">
             <button type="submit" id="btn-edit" class="btn btn-edit fs-5">Modifica</button>
             <span class="span-icon"><i class="ms-5 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
+    </div>
+
 </form>
