@@ -1,6 +1,6 @@
 <x-layout namePage="{{ Auth::user()->name }}">
 
-    <div class="container-fluid bg-create">
+    <div class="container-fluid bg-profile">
         <div class="row justify-content-center align-items-center py-5">
             <div class="col-12 col-md-10 py-5">
 

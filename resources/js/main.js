@@ -14,7 +14,7 @@ if (window.innerWidth > 992) {
             navbar.style.marginLeft = "18dvh";
             navbar.style.borderRadius = "1rem";
             navbar.style.backgroundColor = "var(--elemtransp)";
-            navbar.style.border = "3px solid var(--elemlighttransp)";
+            navbar.style.border = "0px solid var(--elemlighttransp)";
         } else {
             navTitle.style.borderLeft = "";
             navTitle.style.borderRight = "";
