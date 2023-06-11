@@ -1,12 +1,15 @@
 <x-layout namePage="{{ $category->name }}">
 
-    <x-navCategory />
-
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">
             <div class="col-12 col-md-10 py-5">
 
-                <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">{{ $category->name }}</h1>
+                <div id="annunci" class="mb-2">
+
+                    <h1 class="text-center col-text display-6 p-2 pb-3">{{ $category->name }}</h1>
+                    <x-navCategory />
+                    
+                </div>
 
                 <div class="card card-pers p-3">
                     <div class="row justify-content-center">
