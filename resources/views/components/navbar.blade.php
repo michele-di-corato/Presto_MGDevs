@@ -2,7 +2,7 @@
     <nav id="nav" class="navbar navbar-expand-lg fixed-top">
 
         <div class="container-fluid">
-            <a class="ms-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">
+            <a class="ms-2 px-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">
                 <img class="logo" src="/media/presto.png" alt="Logo Presto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
