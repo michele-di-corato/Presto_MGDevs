@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="a-nav1 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                        <a class="a-nav1 mb-2 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     @auth
                         <li class="nav-item">
@@ -70,7 +70,7 @@
                 </ul>
 
                 <ul class="navbar-nav pe-3">
-                    <li class="nav-item">
+                    <li class="nav-item mt-3">
                         <form class="search-form" method="GET" action="{{ route('search_announce') }}">
                             <input class="search-input" type="search" placeholder="Cerca" aria-label="Search"
                                 name='searched'>
