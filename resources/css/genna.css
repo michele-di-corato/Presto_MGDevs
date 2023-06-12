@@ -17,9 +17,11 @@ p {
     height: 8vh;
     width: auto;
     background-color: var(--elemlighttransp);
-    border: 3px solid var(--bgdarktransp);
+    border: 0px solid var(--bgdarktransp);
     border-radius: 10px;
     color: var(--text);
+    display: flex;
+    align-items: center;
 }
 
 /* Nav Category */
@@ -113,7 +115,7 @@ p {
 }
 
 .card2 {
-    background-color: var(--elemtransp);
+    background-color: var(--elemlighttransp);
 }
 
 /* Effetto di sfocatura all'immagine */
@@ -220,7 +222,7 @@ main{
 
 /* Table */
 .table-pers{
-    background-color: var(--elemtransp);
+    background-color: var(--elemlighttransp);
     border-radius: 10px;
 }
 

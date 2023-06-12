@@ -10,20 +10,18 @@
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control @error('email') is-invalid @enderror"
+                        <div class="mb-3">
+                            <input type="email" class="py-3 form-control @error('email') is-invalid @enderror"
                                 id="inputEmail" value="{{ old('email') }}" name="email" placeholder="Email">
-                            <label for="inputEmail" class="form-label">Email</label>
                             @error('email')
                                 <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>
                                 </div>
                             @enderror
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control @error('password') is-invalid @enderror"
+                        <div class="mb-3">
+                            <input type="password" class="py-3 form-control @error('password') is-invalid @enderror"
                                 id="InputPassword" name="password" placeholder="Password">
-                            <label for="InputPassword" class="form-label">Password</label>
                             @error('password')
                                 <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>

@@ -17,7 +17,7 @@
                         </li>
                     @endforeach
                     <li class="nav-item col-12">
-                        <a class="nav-link-category a-nav1" href="{{ route('show_announces') }}">Tutte le categorie</a>
+                        <a class="nav-link-category" href="{{ route('show_announces') }}">Tutte le categorie</a>
                     </li>
                 </ul>
             </div>

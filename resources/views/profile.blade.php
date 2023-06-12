@@ -14,7 +14,6 @@
                     </div>
                 </div>
 
-
                 {{-- Annunci --}}
                 <h1 id="annunci" class="text-center col-text display-6 pb-2">Annunci</h1>
 

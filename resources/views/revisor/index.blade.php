@@ -2,7 +2,11 @@
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">
-            <div class="col-12 col-md-10 py-5">
+
+            {{-- Annuncio Da Approvare --}}
+            <div class="col-12 col-md-10 pt-5 pb-3">
+
+                {{-- Alert --}}
                 <div class="container-fluid">
                     <div class="row justify-content-center text-center">
                         @if (session('confirm'))
@@ -14,19 +18,27 @@
                         @endif
                     </div>
                 </div>
+
                 @if ($verified_announces)
                     <div class="mb-3">
                         <form method="POST" action="{{ route('undo_announce') }}">
                             @csrf
                             @method('PATCH')
-                            <p>Hai cambiato idea sull'ultimo annuncio? <button type="submit"
-                                    class="ms-md-2 btn btn-ann">Annulla</button></p>
+                            <p>
+                                Hai cambiato idea sull'ultimo annuncio?
+                                <button type="submit" class="ms-md-2 btn btn-ann">
+                                    Annulla
+                                </button>
+                            </p>
                         </form>
                     </div>
                 @endif
+
+                {{-- Anuncio --}}
                 <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                     {{ $announce_to_check ? 'Annuncio da revisionare' : 'Non c\'è nessun annuncio da revisionare' }}
                 </h2>
+
                 @if ($announce_to_check)
                     <div class="col-12">
                         <div class="card card-pers pt-3">
@@ -91,85 +103,61 @@
                         </div>
                     </div>
                 @endif
+
             </div>
 
             <div class="col-12 col-md-10 row">
 
                 {{-- Annunci in Coda --}}
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 px-0 pe-0 pe-md-2">
                     <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                         Annunci in coda
                     </h2>
-                    <h3 class="text-center"></h3>
-                    <div class="table-responsive">
-                        {{-- Categorie --}}
-                        <div id="annunci2" class="d-flex justify-content-center p-3">
-                            <div class="col-2">
-                                <p><strong>Nome</strong></p>
-                            </div>
-                            <div class="col-2">
-                                <p><strong>Categoria</strong></p>
-                            </div>
-                            <div class="col-1">
-                                <p><strong>Prezzo</strong></p>
-                            </div>
-                            <div class="col-2">
-                                <p><strong>Creazione</strong></p>
-                            </div>
-                            <div class="col-1">
-                                <p class="text-center"><strong>Stato</strong></p>
-                            </div>
-                            <div class="col-4">
-                                <p class="text-center"><strong>Azioni</strong></p>
-                            </div>
+
+                    {{-- Categorie --}}
+                    <div id="annunci2" class="d-flex justify-content-center p-3">
+                        <div class="col-3">
+                            <p><strong>Nome</strong></p>
                         </div>
-                        @forelse ($announces_queue as $announce)
-                            <div class="table-pers my-2 p-3">
+                        <div class="col-4">
+                            <p><strong>Categoria</strong></p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <p><strong>Prezzo</strong></p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p><strong>Creazione</strong></p>
+                        </div>
+                    </div>
+                    @forelse ($announces_queue as $announce)
+                        <div class="table-pers my-2 p-3">
 
-                                <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
 
-                                    <div class="col-2">
-                                        <p>{{ $announce->name }}</p>
-                                    </div>
-                                    <div class="col-2">
-                                        <p>{{ $announce->category->name }}</p>
-                                    </div>
-                                    <div class="col-1">
-                                        <p>{{ $announce->price }}€</p>
-                                    </div>
-                                    <div class="col-2">
-                                        <p>{{ $announce->created_at }}</p>
-                                    </div>
-                                    <div class="col-1">
-
-                                        @if ($announce->is_accepted == true)
-                                            <div class="b-true">
-                                                Approvato
-                                            </div>
-                                        @elseif ($announce->is_accepted === null)
-                                            <div class="b-null">
-                                                In Attesa
-                                            </div>
-                                        @elseif ($announce->is_accepted == false)
-                                            <div class="b-false">
-                                                Rifiutato
-                                            </div>
-                                        @endif
-                                    </div>
+                                <div class="col-3">
+                                    <p>{{ $announce->name }}</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>{{ $announce->category->name }}</p>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <p>{{ $announce->price }}€</p>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <p>{{ $announce->created_at }}</p>
                                 </div>
                             </div>
-                        @empty
-                            <h4 class="text-center">Non ci sono annunci in coda</h4>
-                        @endforelse
-                        </tbody>
-                        </table>
-                    </div>
+                        </div>
+                    @empty
+                        <h4 class="text-center">Non ci sono annunci in coda</h4>
+                    @endforelse
                 </div>
 
+
                 {{-- Annunci Revisionati --}}
-                <div class="col-12 col-md-6">
-                    <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
-                        <a href="{{ route('log_revisions') }}">Storico annunci revisionati</a>
+                <div class="col-12 col-md-6 px-0 ps-md-2 ps-0">
+                    <h2 id="annunci" class="text-center display-6 p-2 pb-3">
+                        <a class="text-decoration-none col-text" href="{{ route('log_revisions') }}">Storico annunci revisionati</a>
                     </h2>
                     {{-- Categorie --}}
                     <div id="annunci2" class="d-flex justify-content-center p-3">
@@ -179,16 +167,16 @@
                         <div class="col-2">
                             <p><strong>Categoria</strong></p>
                         </div>
-                        <div class="col-1">
+                        <div class="col-2 text-center">
                             <p><strong>Prezzo</strong></p>
                         </div>
                         <div class="col-2">
                             <p><strong>Creazione</strong></p>
                         </div>
-                        <div class="col-1">
+                        <div class="col-2">
                             <p class="text-center"><strong>Stato</strong></p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-2">
                             <p class="text-center"><strong>Azioni</strong></p>
                         </div>
                     </div>
@@ -204,13 +192,13 @@
                                 <div class="col-2">
                                     <p>{{ $announce->category->name }}</p>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-2 text-center">
                                     <p>{{ $announce->price }}€</p>
                                 </div>
                                 <div class="col-2">
                                     <p>{{ $announce->created_at }}</p>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-2 text-center">
 
                                     @if ($announce->is_accepted == true)
                                         <div class="b-true">
@@ -226,7 +214,7 @@
                                         </div>
                                     @endif
                                 </div>
-                                <div class="col-4 mb-3">
+                                <div class="col-2 text-center">
                                     <form method="POST" action="{{ route('undo_announce') }}">
                                         @csrf
                                         @method('PATCH')

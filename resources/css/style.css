@@ -11,7 +11,7 @@
     --elem: rgb(255, 216, 191);
     --elemtransp: rgba(255, 216, 191, 0.7);
     --elemlight: rgb(255, 228, 212);
-    --elemlighttransp: rgba(255, 228, 212, 0.7);
+    --elemlighttransp: rgba(255, 228, 212, 0.5);
     --elemdark: rgb(163, 118, 90);
     --elemdarktransp: rgba(163, 118, 90, 0.8);
     
@@ -21,4 +21,14 @@
 
 .col-text{
     color: var(--text);
+}
+
+.form-control:hover{
+    background-color: var(--elemlighttransp);
+    border: 0px solid white;
+}
+
+.form-control:not(:hover){
+    background-color: var(--elemlighttransp);
+    border: 0px solid white;
 }
