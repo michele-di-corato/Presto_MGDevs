@@ -9,22 +9,22 @@
         
         <!-- Right -->
         <div>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-google"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 col-text text-decoration-none">
+            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
                 <i class="fab fa-github"></i>
             </a>
         </div>
@@ -58,18 +58,18 @@
                 <h6 class="text-uppercase fw-bold mb-4">
                     Prodotti
                 </h6>
-                <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
-                </p>
-                <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
-                </p>
-                <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
-                </p>
-                <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
-                </p>
+                    <p>
+                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                    </p>
+                    <p>
+                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                    </p>
+                    <p>
+                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                    </p>
+                    <p>
+                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                    </p>
             </div>
             
             <!-- Grid column -->
@@ -79,16 +79,16 @@
                     Link Utili
                 </h6>
                 <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
                 <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
                 <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
                 <p>
-                    <a href="{{ route('home') }}" class="text-reset">Lorem</a>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
             </div>
             
@@ -112,7 +112,7 @@
                     Lavora con noi
                 </h6>
                 <p>Registrati e candidati qui</p>
-                <a href="{{route('become_revisor')}}" class="btn btn-revisor ">Diventa revisore</a>
+                <a href="{{route('become_revisor')}}" class="btn mt-3 btn-revisor ">Diventa revisore</a>
             </div>
 
         </div>

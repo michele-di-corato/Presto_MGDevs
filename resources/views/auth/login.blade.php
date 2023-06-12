@@ -31,7 +31,7 @@
                             @enderror
                         </div>
                         <div class="mb-3 d-flex justify-content-between align-items-center">
-                            <button type="submit" class="btn btn-primary">Entra</button>
+                            <button type="submit" class="btn btn-ann">Entra</button>
                             <p>Sei un nuovo utente? <a href="{{ route('register') }}" class="btn">Registrati</a></p>
                         </div>
                     </form>
