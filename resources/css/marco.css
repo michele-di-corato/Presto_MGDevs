@@ -341,3 +341,16 @@
     background-color: var(--bglight);
     color: var(--font-body);
   }
+
+  /* anchors category */
+
+.nav-link-category{
+    transition: 400ms;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-link-category:hover{
+    letter-spacing: 2px;
+    color: var(--bglight);
+}
