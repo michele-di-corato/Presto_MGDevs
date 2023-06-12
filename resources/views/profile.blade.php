@@ -4,6 +4,7 @@
         <div class="row justify-content-center align-items-center py-5">
             <div class="col-12 col-md-10 py-5">
 
+                {{-- Dati Profilo --}}
                 <div class="card p-3 mb-2 col-text">
                     <div class="text-center">
                         <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
@@ -14,30 +15,44 @@
                 </div>
 
 
+                {{-- Annunci --}}
                 <h1 id="annunci" class="text-center col-text display-6 pb-2">Annunci</h1>
 
                 <div class="card card-pers p-3 col-text">
-                    <div class="row justify-content-center">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col">Categoria</th>
-                                    <th scope="col">Prezzo</th>
-                                    <th scope="col">Creazione</th>
-                                    <th scope="col">Stato</th>
-                                    <th scope="col" colspan="3" class="text-center">Azioni</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($announces as $announce)
-                                    <div class="d-none">{{ $index++ }}</div>
-                                    <x-tableCard :announce="$announce" :index="$index" />
-                                @endforeach
-                            </tbody>
-                        </table>
+
+                    {{-- Categorie --}}
+                    <div id="annunci2" class="d-flex justify-content-center p-3">
+                        <div class="col-2">
+                            <p><strong>Nome</strong></p>
+                        </div>
+                        <div class="col-2">
+                            <p><strong>Categoria</strong></p>
+                        </div>
+                        <div class="col-1">
+                            <p><strong>Prezzo</strong></p>
+                        </div>
+                        <div class="col-2">
+                            <p><strong>Creazione</strong></p>
+                        </div>
+                        <div class="col-1">
+                            <p class="text-center"><strong>Stato</strong></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-center"><strong>Azioni</strong></p>
+                        </div>
                     </div>
+
+                    {{-- Tabelle --}}
+                    <div class="row justify-content-center align-items-center">
+
+                        @foreach ($announces as $announce)
+                            <div class="col-12">
+                                <x-tableCard :announce="$announce" />
+                            </div>
+                        @endforeach
+
+                    </div>
+
                 </div>
 
             </div>

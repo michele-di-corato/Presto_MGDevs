@@ -217,3 +217,33 @@ main{
 .flex-wrap {
     flex-wrap: wrap;
 }
+
+/* Table */
+.table-pers{
+    background-color: var(--elemtransp);
+    border-radius: 10px;
+}
+
+.b-true{
+    background-color: rgba(0, 128, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px;
+}
+.b-null{
+    background-color: rgba(255, 255, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px;
+}
+
+.b-false{
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px;
+}
+
+::placeholder{
+    color: var(--text);
+}

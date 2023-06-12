@@ -93,95 +93,108 @@
                     </div>
                 @endif
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">Annunci in coda</h3>
-                <div class="table-responsive">
-                    <table class="table align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Categoria</th>
-                                <th scope="col">Prezzo</th>
-                                <th scope="col">Creazione</th>
-                                <th scope="col">Stato</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @forelse ($announces_queue as $announce)
+
+            <div class="col-12 col-md-10 row">
+
+                {{-- Annunci in Coda --}}
+                <div class="col-12 col-md-6">
+                    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">
+                        Annunci in coda
+                    </h1>
+                    <h3 class="text-center"></h3>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
                                 <tr>
-                                    <th scope="row">{{ $announce->id }}</th>
-                                    <td scope="col">{{ $announce->name }}</td>
-                                    <td scope="col">{{ $announce->category->name }}</td>
-                                    <td scope="col">{{ $announce->price }}€</td>
-                                    <td scope="col">{{ $announce->created_at }}</td>
-                                    <td scope="col">
-                                        @if ($announce->is_accepted == true)
-                                            Approvato
-                                        @elseif ($announce->is_accepted === null)
-                                            In attesa
-                                        @elseif ($announce->is_accepted == false)
-                                            Rifiutato
-                                        @endif
-                                    </td>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Categoria</th>
+                                    <th scope="col">Prezzo</th>
+                                    <th scope="col">Creazione</th>
+                                    <th scope="col">Stato</th>
                                 </tr>
-                            @empty
-                                <h4 class="text-center">Non ci sono annunci in coda</h4>
-                            @endforelse
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                @forelse ($announces_queue as $announce)
+                                    <tr>
+                                        <th scope="row">{{ $announce->id }}</th>
+                                        <td scope="col">{{ $announce->name }}</td>
+                                        <td scope="col">{{ $announce->category->name }}</td>
+                                        <td scope="col">{{ $announce->price }}€</td>
+                                        <td scope="col">{{ $announce->created_at }}</td>
+                                        <td scope="col">
+                                            @if ($announce->is_accepted == true)
+                                                Approvato
+                                            @elseif ($announce->is_accepted === null)
+                                                In attesa
+                                            @elseif ($announce->is_accepted == false)
+                                                Rifiutato
+                                            @endif
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <h4 class="text-center">Non ci sono annunci in coda</h4>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                {{-- Annunci Revisionati --}}
+                <div class="col-12 col-md-6">
+                    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">
+                        Storico annunci revisionati
+                    </h1>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Categoria</th>
+                                    <th scope="col">Prezzo</th>
+                                    <th scope="col">Creazione</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse ($revisioned_announces as $announce)
+                                    <tr>
+                                        <th scope="row">{{ $announce->id }}</th>
+                                        <td scope="col">{{ $announce->name }}</td>
+                                        <td scope="col">{{ $announce->category->name }}</td>
+                                        <td scope="col">{{ $announce->price }}€</td>
+                                        <td scope="col">{{ $announce->created_at }}</td>
+                                        <td scope="col">
+                                            @if ($announce->is_accepted == true)
+                                                Approvato
+                                            @elseif ($announce->is_accepted === null)
+                                                In attesa
+                                            @elseif ($announce->is_accepted == false)
+                                                Rifiutato
+                                            @endif
+                                        </td>
+                                        <td scope="col">
+                                            <form method="POST"
+                                                action="{{ route('undo_revision', compact('announce')) }}">
+                                                @csrf
+                                                @method('PATCH')
+                                                <button type="submit" class="ms-2 btn btn-ann">Annulla</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <h4 class="text-center">Non ci sono annunci revisionati nello storico</h4>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <h3 class="text-center">Storico annunci revisionati</h3>
-                <div class="table-responsive">
-                    <table class="table align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Categoria</th>
-                                <th scope="col">Prezzo</th>
-                                <th scope="col">Creazione</th>
-                                <th scope="col">Stato</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @forelse ($revisioned_announces as $announce)
-                                <tr>
-                                    <th scope="row">{{ $announce->id }}</th>
-                                    <td scope="col">{{ $announce->name }}</td>
-                                    <td scope="col">{{ $announce->category->name }}</td>
-                                    <td scope="col">{{ $announce->price }}€</td>
-                                    <td scope="col">{{ $announce->created_at }}</td>
-                                    <td scope="col">
-                                        @if ($announce->is_accepted == true)
-                                            Approvato
-                                        @elseif ($announce->is_accepted === null)
-                                            In attesa
-                                        @elseif ($announce->is_accepted == false)
-                                            Rifiutato
-                                        @endif
-                                    </td>
-                                    <td scope="col">
-                                        <form method="POST"
-                                            action="{{ route('undo_revision', compact('announce')) }}">
-                                            @csrf
-                                            @method('PATCH')
-                                            <button type="submit" class="ms-2 btn btn-ann">Annulla</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            @empty
-                                <h4 class="text-center">Non ci sono annunci revisionati nello storico</h4>
-                            @endforelse
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
+
     </div>
+
 </x-layout>
