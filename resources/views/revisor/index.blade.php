@@ -135,7 +135,8 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="text-center">Storico annunci revisionati</h3>
+                <h3 class="text-center">Storico annunci revisionati</h3><a href="{{ route('log_revisions') }}"
+                    class="btn">Visualizza storico</a>
                 <div class="table-responsive">
                     <table class="table align-middle">
                         <thead>

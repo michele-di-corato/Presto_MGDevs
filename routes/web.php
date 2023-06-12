@@ -32,5 +32,6 @@ Route::patch('/revisor/announce/undo', [RevisorController::class, 'undoAction'])
 Route::patch('/revisor/announce/undo/{announce}', [RevisorController::class, 'undoRevision'])->name('undo_revision');
 Route::get('/revisor/request', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
 Route::get('/revisor/make/{user}', [RevisorController::class, 'makeRevisor'])->name('make_revisor');
+Route::get('/revisor/log', [RevisorController::class, 'logRevisions'])->name('log_revisions');
 // Rotte della ricerca
 Route::get('/research/announce', [PublicController::class, 'searchAnnounce'])->name('search_announce');

@@ -21,8 +21,8 @@ class RevisorController extends Controller
     {
         $verified_announces = Announce::whereNotNull('is_accepted')->get();
         $announce_to_check = Announce::where('is_accepted', null)->first();
-        $announces_queue = Announce::where('is_accepted', null)->skip(1)->limit(10)->get();
-        $revisioned_announces = Announce::whereNotNull('is_accepted')->orderBy('created_at', 'desc')->limit(10)->get();
+        $announces_queue = Announce::where('is_accepted', null)->skip(1)->limit(6)->get();
+        $revisioned_announces = Announce::whereNotNull('is_accepted')->orderBy('created_at', 'desc')->limit(6)->get();
         return view('revisor.index', compact('announce_to_check', 'verified_announces', 'announces_queue', 'revisioned_announces'));
     }
 
@@ -61,5 +61,11 @@ class RevisorController extends Controller
     {
         Artisan::call('app:makeUserRevisor', ['email' => $user->email]);
         return redirect('/')->with('confirm', 'L\'utente è diventato Revisore');
+    }
+
+    public function logRevisions()
+    {
+        $revisioned_announces = Announce::whereNotNull('is_accepted')->orderBy('created_at', 'desc')->paginate(12);
+        return view('revisor.log', compact('revisioned_announces'));
     }
 }
