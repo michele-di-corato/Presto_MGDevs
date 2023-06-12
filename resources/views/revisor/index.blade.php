@@ -21,7 +21,7 @@
                             @csrf
                             @method('PATCH')
                             <p>Hai cambiato idea sull'ultimo annuncio? <button type="submit"
-                                    class="ms-2 btn btn-ann">Annulla</button></p>
+                                    class="ms-md-2 btn btn-ann">Annulla</button></p>
                         </form>
                     </div>
                 @endif
