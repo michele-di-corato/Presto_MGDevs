@@ -194,6 +194,11 @@
 }
 
 /* Carousel */
+
+.carousel-control-next, .carousel-control-prev{
+    margin-top: 8dvh
+}
+
 .carousel {
     height: auto;
     width: 50%;
@@ -295,7 +300,8 @@
   }
 
   .footer-icon:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
+    color: var(--bglight);
   }
 
 /* btn global */

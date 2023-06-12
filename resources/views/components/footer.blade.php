@@ -9,23 +9,23 @@
         
         <!-- Right -->
         <div>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-facebook-f"></i>
+            <a href="{{ route('home') }}" class="me-4  text-decoration-none">
+                <i class="footer-icon fab fa-facebook-f"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-twitter"></i>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-twitter"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-google"></i>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-google"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-instagram"></i>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-instagram"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-linkedin"></i>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-linkedin"></i>
             </a>
-            <a href="{{ route('home') }}" class="me-4 footer-icon text-decoration-none">
-                <i class="fab fa-github"></i>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-github"></i>
             </a>
         </div>
     </div>
