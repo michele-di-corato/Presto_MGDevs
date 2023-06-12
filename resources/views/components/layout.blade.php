@@ -37,7 +37,7 @@
     @vite(['resources/js/app.js'])
 
     <div id="buttonGlobal" class="opacity-0">
-        <a href="#" class="btn-global">
+        <a href="#" class="btn-global rounded-circle">
             <i class="fa fa-arrow-up justify-content-center d-flex align-items-center h-100 fs-5"></i>
         </a>
     </div>
