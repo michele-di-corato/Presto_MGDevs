@@ -17,7 +17,8 @@ class CreateNewUser implements CreatesNewUsers
         'email.email' => 'L\'email deve essere valida',
         'password.required' => 'Devi inserire una password',
         'password.min' => 'La password deve essere lunga almeno 8 caratteri',
-        'password.confirmed' => 'Devi confermare la password'
+        'password.confirmed' => 'Devi confermare la password',
+        'email.unique' => 'L\'email è già in uso'
     ];
     /**
      * Validate and create a newly registered user.
