@@ -94,7 +94,7 @@
     font-size: 6rem;
     font-family: 'rajdhani', sans-serif;
     content: ' { ';
-    color: var(--bglight);
+    color: var(--bgdark);
 }
 
 @keyframes fade-in-left {
@@ -120,7 +120,7 @@
     font-size: 6rem;
     font-family: 'rajdhani', sans-serif;
     content: ' } ';
-    color: var(--bglight);
+    color: var(--bgdark);
 }
 
 @keyframes fade-in-right {
