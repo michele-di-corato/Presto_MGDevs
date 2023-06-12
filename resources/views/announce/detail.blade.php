@@ -34,7 +34,7 @@
                                             class="d-block img-fluid " alt="DefaultImage">
                                     </div>
                                 </div>
-                                <div class="container container-control mt-5">
+                                <div class="container container-control">
                                     <button class="carousel-control-prev" type="button"
                                         data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
