@@ -1,7 +1,7 @@
 // Animazione Navbar
 let navbar = document.querySelector("#nav");
 let navTitle = document.querySelector(".navTitle");
-let navLink = document.querySelectorAll(".nav-link")
+let navLink = document.querySelectorAll(".nav-link");
 
 if (window.innerWidth > 992) {
     window.addEventListener("scroll", () => {
@@ -51,12 +51,11 @@ if (icon && btnEdit) {
     // Card Prodotti
     btnEdit.addEventListener("mouseenter", function () {
         icon.style.transform = "rotate(180deg)";
+        icon.style.color = "white";
     });
 
     btnEdit.addEventListener("mouseleave", function () {
         icon.style.transform = "";
-        btnCreate.style.backgroundColor = "";
-        btnEdit.style.backgroundColor = "";
     });
 }
 
@@ -107,6 +106,26 @@ if (carousel) {
         }
     });
 }
+
+// Button Global 
+
+let buttonGlobal = document.querySelector('#buttonGlobal');
+
+window.addEventListener('scroll', () => {
+    let scrolled = window.scrollY;
+
+    if (scrolled > 350) {
+        buttonGlobal.classList.remove( 'opacity-0');
+        buttonGlobal.classList.remove('d-none');
+        buttonGlobal.classList.add('d-block');
+    } else {
+        buttonGlobal.classList.add( 'opacity-0');
+        buttonGlobal.classList.add('d-none');
+        buttonGlobal.classList.remove('d-block');
+    }
+})
+
+//creare la funzione di scroll
 
 // Observer Last Card
 

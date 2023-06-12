@@ -53,7 +53,7 @@
                             @enderror
                         </div>
                         <div class="mb-3 d-flex justify-content-between align-items-center">
-                            <button type="submit" class="btn btn-primary">Registrati</button>
+                            <button type="submit" class="btn btn-ann">Registrati</button>
                             <p>Sei un utente già registrato? <a href="{{ route('login') }}" class="btn">Effettua il
                                     login</a></p>
                         </div>
