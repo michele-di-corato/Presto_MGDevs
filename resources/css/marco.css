@@ -91,7 +91,7 @@
 
 
 .title-home::before{
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: 'rajdhani', sans-serif;
     content: ' { ';
     color: var(--bglight);
@@ -110,13 +110,14 @@
 }
 
 .para-home {
+    font-size: 2rem;
     color: var(--text);
     font-family: var(--font-body);
     animation: fade-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .para-home::after{
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: 'rajdhani', sans-serif;
     content: ' } ';
     color: var(--bglight);
