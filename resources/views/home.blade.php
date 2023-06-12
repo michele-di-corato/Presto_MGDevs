@@ -2,7 +2,7 @@
 
     <header class="container-fluid header-home">
         <div class="row align-items-center vh-100">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 row">
                 <h1 class="title-home text-center">Benvenuto su Presto.it!</h1>
             </div>
             <div class="col-12 col-md-6">
