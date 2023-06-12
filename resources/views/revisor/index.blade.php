@@ -15,12 +15,19 @@
                         @endif
                     </div>
                 </div>
-
-
+                @if ($verified_announces)
+                    <div class="mb-3">
+                        <form method="POST" action="{{ route('undo_announce') }}">
+                            @csrf
+                            @method('PATCH')
+                            <p>Hai cambiato idea sull'ultimo annuncio? <button type="submit"
+                                    class="ms-2 btn btn-ann">Annulla</button></p>
+                        </form>
+                    </div>
+                @endif
                 <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                     {{ $announce_to_check ? 'Annuncio da revisionare' : 'Non c\'è nessun annuncio da revisionare' }}
                 </h1>
-
                 @if ($announce_to_check)
                     <div class="col-12">
                         <div class="card card-pers">
@@ -34,7 +41,6 @@
                                     <h5>Creato da: {{ $announce_to_check->user->name }}</h5>
                                     <h5>Creato il: {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
                                 </div>
-
                                 <div class="col-12 col-md-6 d-flex justify-content-center">
                                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                         <div class="carousel-inner">
@@ -66,14 +72,12 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row mb-4">
                                 <div class="col-12 col-md-6 d-flex justify-content-center">
                                     <form method="POST"
                                         action="{{ route('accept_announce', ['announce' => $announce_to_check]) }}">
                                         @csrf
                                         @method('PATCH')
-
                                         <button type="submit" class="btn btn-ann">Accetta</button>
                                     </form>
                                 </div>
@@ -85,14 +89,11 @@
                                         <button type="submit" class="btn btn-ann">Rifiuta</button>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 @endif
             </div>
-
         </div>
     </div>
-
 </x-layout>

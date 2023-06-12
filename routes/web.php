@@ -28,6 +28,7 @@ Route::get('/user_profile', [PublicController::class, 'profile'])->name('show_pr
 Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
 Route::patch('/revisor/announce/accept/{announce}', [RevisorController::class, 'accept'])->name('accept_announce');
 Route::patch('/revisor/announce/reject/{announce}', [RevisorController::class, 'reject'])->name('reject_announce');
+Route::patch('/revisor/announce/undo', [RevisorController::class, 'undoAction'])->name('undo_announce');
 Route::get('/revisor/request', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
 Route::get('/revisor/make/{user}', [RevisorController::class, 'makeRevisor'])->name('make_revisor');
 // Rotte della ricerca
