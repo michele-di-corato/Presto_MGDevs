@@ -21,7 +21,9 @@ class RevisorController extends Controller
     {
         $verified_announces = Announce::whereNotNull('is_accepted')->get();
         $announce_to_check = Announce::where('is_accepted', null)->first();
-        return view('revisor.index', compact('announce_to_check', 'verified_announces'));
+        $announces_queue = Announce::where('is_accepted', null)->skip(1)->limit(10)->get();
+        $revisioned_announces = Announce::whereNotNull('is_accepted')->orderBy('created_at', 'desc')->limit(10)->get();
+        return view('revisor.index', compact('announce_to_check', 'verified_announces', 'announces_queue', 'revisioned_announces'));
     }
 
     public function accept(Announce $announce)
@@ -34,6 +36,12 @@ class RevisorController extends Controller
     {
         $announce->setAccepted(false);
         return redirect()->back()->with('confirm', 'Hai rifiutato l\'annuncio');
+    }
+
+    public function undoRevision(Announce $announce)
+    {
+        $announce->setAccepted(null);
+        return redirect()->back()->with('confirm', 'Hai annullato la revisione');
     }
 
     public function undoAction(Announce $announce)
