@@ -89,6 +89,14 @@
     animation: fade-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+
+.title-home::before{
+    font-size: 6rem;
+    font-family: 'rajdhani', sans-serif;
+    content: ' { ';
+    color: var(--bglight);
+}
+
 @keyframes fade-in-left {
     0% {
         transform: translateX(-50px);
@@ -102,9 +110,17 @@
 }
 
 .para-home {
+    font-size: 2rem;
     color: var(--text);
     font-family: var(--font-body);
     animation: fade-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.para-home::after{
+    font-size: 6rem;
+    font-family: 'rajdhani', sans-serif;
+    content: ' } ';
+    color: var(--bglight);
 }
 
 @keyframes fade-in-right {
@@ -325,3 +341,16 @@
     background-color: var(--bglight);
     color: var(--font-body);
   }
+
+  /* anchors category */
+
+.nav-link-category{
+    transition: 400ms;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-link-category:hover{
+    letter-spacing: 2px;
+    color: var(--bglight);
+}

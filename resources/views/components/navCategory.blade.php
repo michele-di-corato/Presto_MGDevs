@@ -12,7 +12,7 @@
                 <ul class="navbar-nav row">
                     @foreach ($categories as $category)
                         <li class="nav-item col-12">
-                            <a class="nav-link-category a-nav1"
+                            <a class="nav-link-category"
                                 href="{{ route('show_per_category', compact('category')) }}">{{ $category->name }}</a>
                         </li>
                     @endforeach
