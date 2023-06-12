@@ -25,13 +25,14 @@ class PublicController extends Controller
         $announce = Announce::findOrFail($id);
         return view('announce.detail', compact('announce'));
     }
-
     public function profile()
     {
+        $index = 0;
+        $announces = Announce::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get();
         $approved_announces = Announce::where('user_id', Auth::id())->where('is_accepted', true)->limit(3)->get();
         $pending_announces = Announce::where('user_id', Auth::id())->where('is_accepted', null)->limit(3)->get();
         $rejected_announces = Announce::where('user_id', Auth::id())->where('is_accepted', false)->limit(3)->get();
-        return view('profile', compact('approved_announces', 'pending_announces', 'rejected_announces'));
+        return view('profile', compact('approved_announces', 'pending_announces', 'rejected_announces', 'announces', 'index'));
     }
     public function searchAnnounce(Request $request)
     {

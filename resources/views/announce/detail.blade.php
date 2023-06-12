@@ -52,10 +52,10 @@
 
                     <div class="text-center">
                         <a class="btn btn-back" href="{{ route('show_announces') }}">
-                            Torna Indietro
+                            Torna agli annunci
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

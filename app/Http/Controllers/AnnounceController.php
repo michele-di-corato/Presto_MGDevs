@@ -31,13 +31,6 @@ class AnnounceController extends Controller
         return view('announce.create');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Announce $announce)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.

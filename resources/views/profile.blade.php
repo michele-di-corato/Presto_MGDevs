@@ -18,38 +18,25 @@
 
                 <div class="card card-pers p-3 col-text">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-4 p-3 text-center">
-                            <h2>Approvati</h2>
-                            @forelse ($approved_announces as $announce)
-                                <div class="mb-3">
-                                    <x-card :announce="$announce" />
-                                </div>
-                            @empty
-                                <p class="text-center">Non sono presenti annunci in questa sezione</p>
-                            @endforelse
-                        </div>
-
-                        <div class="col-12 col-md-4 p-3 text-center">
-                            <h2>In Attesa</h2>
-                            @forelse ($pending_announces as $announce)
-                                <div class="mb-3">
-                                    <x-card :announce="$announce" />
-                                </div>
-                            @empty
-                                <p class="text-center">Non sono presenti annunci in questa sezione</p>
-                            @endforelse
-                        </div>
-
-                        <div class="col-12 col-md-4 p-3 text-center">
-                            <h2>Rifiutati</h2>
-                            @forelse ($rejected_announces as $announce)
-                                <div class="mb-3">
-                                    <x-card :announce="$announce" />
-                                </div>
-                            @empty
-                                <p class="text-center">Non sono presenti annunci in questa sezione</p>
-                            @endforelse
-                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Categoria</th>
+                                    <th scope="col">Prezzo</th>
+                                    <th scope="col">Creazione</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col" colspan="3" class="text-center">Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($announces as $announce)
+                                    <div class="d-none">{{ $index++ }}</div>
+                                    <x-tableCard :announce="$announce" :index="$index" />
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
