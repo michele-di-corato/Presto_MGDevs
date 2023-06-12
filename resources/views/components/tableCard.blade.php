@@ -7,10 +7,10 @@
     <td scope="col">
         @if ($announce->is_accepted == true)
             Approvato
+        @elseif ($announce->is_accepted === null)
+            In attesa
         @elseif ($announce->is_accepted == false)
             Rifiutato
-        @elseif ($announce->is_accepted == null)
-            In attesa
         @endif
     </td>
     <td scope="col" class="text-center"><a href="{{ route('announce_detail', $announce->id) }}"
