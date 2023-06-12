@@ -206,6 +206,7 @@
     transition: .8s;
 }
 
+
 .carousel:hover {
     transform: scale(1.1);
 }
@@ -300,7 +301,7 @@
   }
 
   .footer-icon:hover{
-    transform: scale(1.4);
+    transform: scale(1.3);
     color: var(--bglight);
   }
 
@@ -317,6 +318,7 @@
     color: white;
     background-color: var(--elemdark);
     transition: .5s;
+    border: 1px solid var(--bgtransp);
   }
 
   .btn-global:hover {
