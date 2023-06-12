@@ -78,7 +78,7 @@
                                         action="{{ route('accept_announce', ['announce' => $announce_to_check]) }}">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="btn btn-ann">Accetta</button>
+                                        <button type="submit" class="btn btn-ann mb-sm-3">Accetta</button>
                                     </form>
                                 </div>
                                 <div class="col-12 col-md-6 d-flex justify-content-center">
