@@ -22,12 +22,12 @@
 
     {{-- @if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'create_announce') --}}
     <main>
-    {{-- @else
+        {{-- @else
     <main id="main">
     @endif --}}
         {{ $slot }}
-    </main>
 
+    </main>
 
     <x-footer />
 
@@ -42,5 +42,11 @@
         </a>
     </div>
 </body>
+
+
+<body>
+
+
+    
 
 </html>

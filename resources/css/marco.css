@@ -82,6 +82,17 @@
     box-shadow: none;
 }
 
+.user-dropdown:hover{    
+    background-color: var(--bgdarktransp);
+}
+
+.user-dropdown {
+    border: 0px solid var(--elemtransp);
+    background-color: var(--elemdarktransp);
+    transition: 0.4s;
+}
+
+
 /* Anchor Dropdown */
 
 /* .a-profile, .a-logout, .a-register, .a-login{
@@ -351,5 +362,35 @@
 
 .nav-link-category:hover{
     letter-spacing: 1px;
-    color: var(--bglight);
+    color: var(--bglight) !important;
 }
+
+/* Spinner */
+
+.spinner {
+    height: 50px;
+    width: 50px;
+    color: var(--elemdark);
+  }
+  
+  /* ANIMATION WHITE */
+
+.animationFadeWhite {
+    animation: fadeWhite 1s linear;
+    animation-delay: .6s;
+  }
+  
+  @keyframes fadeWhite {
+    100% {
+      transition: opacity 0.5s ease-out, visibility 0s linear 0;
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    0% {
+      transition: opacity 1s ease-out, visibility 0s linear .5s;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 20;
+    }
+  }

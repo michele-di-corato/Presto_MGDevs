@@ -23,12 +23,10 @@
                     
                 </div>
 
-
-
                 <div class="card card-pers p-3">
                     <div class="row justify-content-center">
                         @forelse ($announces as $announce)
-                            <div class="col-12 col-md-3">
+                            <div class="col-8 col-md-3">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
