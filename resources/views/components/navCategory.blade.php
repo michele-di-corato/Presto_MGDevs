@@ -9,18 +9,30 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav row">
-                    @foreach ($categories as $category)
-                        <li class="nav-item col-12">
-                            <a class="nav-link-category"
-                                href="{{ route('show_per_category', compact('category')) }}">{{ $category->name }}</a>
-                        </li>
-                    @endforeach
-                    <li class="nav-item col-12">
-                        <a class="nav-link-category" href="{{ route('show_announces') }}">Tutte le categorie</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="navbar-nav">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="nav-item col-12">
+                                <div class="container d-flex flex-wrap h-100">
+                                    <div class="row row-cols-6 justify-content-center">
+                                        @foreach ($categories as $category)
+                                        <div class="col card p-1 m-2 d-flex align-items-center justify-content-center">
+                                            <a class="nav-link-category" href="{{ route('show_per_category', compact('category')) }}">
+                                                {{ $category->name }}
+                                            </a>
+                                        </div>
+                                        @endforeach
+                                        <div class="col card p-1 m-2 mx-5 d-flex align-items-center justify-content-center">
+                                            <a class="nav-link-category mx-5" href="{{ route('show_announces') }}">Tutte le categorie</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
         </div>
     </div>
 </div>
