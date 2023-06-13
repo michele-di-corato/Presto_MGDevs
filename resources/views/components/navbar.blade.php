@@ -27,7 +27,6 @@
              id="bars" class="navbar-toggler" type="button"  data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"
-                onclick="myFunction()"
                 >
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,7 +51,7 @@
                                 Benvenuto, utente
                             @endauth
                         </a>
-                        <ul id="dropdown" class="dropdown-menu drop-menu">
+                        <ul id="dropdown" class="user-dropdown dropdown-menu drop-menu">
                             @if (Auth::check() && Auth::user()->is_revisor)
                                 <li>
                                     <a class="dropdown-item position-relative"
