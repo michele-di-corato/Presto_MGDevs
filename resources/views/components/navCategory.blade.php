@@ -16,7 +16,7 @@
                                 <div class="container d-flex flex-wrap h-100">
                                     <div class="row row-cols-6 justify-content-center">
                                         @foreach ($categories as $category)
-                                        <div class="col card p-1 m-2 d-flex align-items-center justify-content-center">
+                                        <div class="col-5 card p-1 m-2 d-flex align-items-center justify-content-center">
                                             <a class="nav-link-category" href="{{ route('show_per_category', compact('category')) }}">
                                                 {{ $category->name }}
                                             </a>
