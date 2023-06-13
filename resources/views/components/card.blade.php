@@ -7,12 +7,19 @@
             <h5 class="card-subtitle ms-auto">Prezzo: {{ $announce->price }}€</h5>
             <p class="card-text">{{ $announce->description }}</p>
         </div>
-        <div class="d-flex justify-content-between pt-3 px-0">
-            <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann">Dettagli</a>
+        <div class="row justify-content-center text-center pt-3">
+            <div class="col-12 col-lg-4 p-2">
+                <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann w-100">Dettagli</a>
+            </div>
             @if ($announce->user_id == Auth::id() && Auth::check())
-                <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann px-1">Modifica</a>
-                @livewire('delete-announce', compact('announce'))
+                <div class="col-12 col-lg-4 p-2">
+                    <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann w-100">Modifica</a>
+                </div>
+                <div class="col-12 col-lg-4 p-2">
+                    @livewire('delete-announce', compact('announce'))
+                </div>
             @endif
+
         </div>
     </div>
 </div>
