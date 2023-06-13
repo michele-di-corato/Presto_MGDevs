@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Rotta home
+// Rotte generiche
 Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::post('/language/{lang}', [PublicController::class, 'setLanguage'])->name('set_language_locale');
 // Rotte degli annunci
 Route::get('/announce/create', [AnnounceController::class, 'create'])->name('create_announce');
 Route::get('/announce/index', [AnnounceController::class, 'index'])->name('show_announces');

@@ -5,6 +5,24 @@
             <a class="ms-2 px-2 navTitle navbar-brand fs-2" href="{{ route('home') }}">
                 <img class="logo" src="/media/presto.png" alt="Logo Presto">
             </a>
+            <div class="dropdown nav-item me-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Lingua</a>
+                <ul class="dropdown-menu drop-menu">
+                    <li class="dropdown-item">
+                        <x-_locale lang="it" text="Italiano" />
+                    </li>
+                    <li class="dropdown-item">
+                        <x-_locale lang="en" text="English" />
+                    </li>
+                    <li class="dropdown-item">
+                        <x-_locale lang="fr" text="Francais" />
+                    </li>
+                    <li class="dropdown-item">
+                        <x-_locale lang="de" text="Deutsch" />
+                    </li>
+                </ul>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
