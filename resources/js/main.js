@@ -125,22 +125,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//creare la funzione di scroll
-
-// Observer Last Card
-
-
-// let navCategory = document.querySelector('.nav-category');
-
-// PROBLEMA DI VISIONE!!!!!
-
-// if (navCategory) {
-//     if (window.innerWidth > 767) {
-//         navCategory.style.marginLeft = "1390px";
-//         navCategory.style.zIndex = "4";
-//     }
-// }
-
 
 // Nav Category
 // Seleziona il bottone
@@ -187,3 +171,23 @@ navTog.addEventListener('click', () => {
         isClicked = true;
     }
 })
+
+
+//Observer last card 
+
+let lastCard = document.querySelectorAll('.last-card');
+let Pointer = document.querySelector('.point');
+
+let observerCard = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            lastCard.forEach((card, i) => {
+                card.classList.remove('opacity-0');
+                card.classList.add('animationUp');
+                card.style.animationDelay = `${i * 0.5}s`
+            })
+        }
+    })
+})
+
+observerCard.observe(Pointer);
