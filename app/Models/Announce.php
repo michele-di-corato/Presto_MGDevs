@@ -43,4 +43,8 @@ class Announce extends Model
 
         return true;
     }
+
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
 }

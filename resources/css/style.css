@@ -32,3 +32,8 @@
     background-color: var(--elemlighttransp);
     border: 0px solid white;
 }
+
+.img-preview{
+    height: 300px;
+    width: 300px;
+}
