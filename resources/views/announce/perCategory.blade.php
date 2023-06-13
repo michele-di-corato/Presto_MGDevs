@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="card card-pers p-3">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center align-items-center">
                         @forelse ($announces as $announce)
                             <div class="col-12 col-md-3">
                                 <x-card :announce="$announce" />
@@ -24,7 +24,7 @@
                                     aria-label="Close"></button>
                             </div>
                         @endforelse
-                        <div class="mt-4 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             {{ $announces->links() }}
                         </div>
                     </div>
