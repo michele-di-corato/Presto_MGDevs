@@ -1,7 +1,7 @@
 <footer id="footer" class="text-center text-lg-start bg-white col-text">
     
     <!-- Section: Social media -->
-    <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between p-4">
+    <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 pb-3">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block col-text">
             <span>Collegati con noi sui social network:</span>
@@ -32,7 +32,7 @@
     
     <!-- Section: Links  -->
     
-    <div class="container-fluid text-center text-md-start p-5">
+    <div class="container-fluid text-center text-md-start px-5 pt-5">
         <!-- Grid row -->
         <div class="row justify-content-center">
             <!-- Grid column -->
@@ -120,7 +120,7 @@
     
     
     <!-- Copyright -->
-    <div id="footer-bottom" class="text-center p-4">
+    <div id="footer-bottom" class="text-center p-3">
         © 2023 Copyright:
         <a class="text-reset fw-bold" href="{{ route('home') }}">Presto.it</a>
     </div>
