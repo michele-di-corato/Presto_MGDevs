@@ -17,8 +17,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="row justify-content-center pt-3">
                     @foreach ($categories as $category)
-                        <div class="col-5 col-lg-3 mb-4 w-50">
-                            <a class="card p-2 text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
+                        <div class="col-5  col-lg-3 mb-4 w-50">
+                            <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                                 style="height: 8vh;" href="{{ route('show_per_category', compact('category')) }}">
                                 {{ $category->name }}
                             </a>

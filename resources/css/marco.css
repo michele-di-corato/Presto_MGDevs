@@ -351,5 +351,5 @@
 
 .nav-link-category:hover{
     letter-spacing: 1px;
-    color: var(--bglight);
+    color: var(--bglight) !important;
 }
