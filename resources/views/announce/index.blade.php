@@ -23,8 +23,6 @@
                     
                 </div>
 
-
-
                 <div class="card card-pers p-3">
                     <div class="row justify-content-center">
                         @forelse ($announces as $announce)

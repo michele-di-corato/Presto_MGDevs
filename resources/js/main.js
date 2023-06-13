@@ -191,3 +191,13 @@ let observerCard = new IntersectionObserver((entries) => {
 })
 
 observerCard.observe(Pointer);
+
+
+
+let Start = document.querySelector('#Start');
+let End = document.querySelector('#End');
+
+setTimeout(() => {
+Start.classList.add('d-none');
+End.classList.remove('d-none');
+}, 1000)
