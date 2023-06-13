@@ -39,7 +39,7 @@
                         </div>
                         <div class="mb-3">
                             <input type="password" class="py-3 form-control @error('password_confirmation') is-invalid @enderror"
-                                id="password_confirmation" name="password_confirmation" placeholder="Password Confirmation">
+                                id="password_confirmation" name="password_confirmation" placeholder="Conferma Password">
                             @error('password_confirmation')
                                 <div class="text-danger pt-1">
                                     <p>{{ $message }}</p>

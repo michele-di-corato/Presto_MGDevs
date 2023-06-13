@@ -149,7 +149,7 @@ p {
 }
 
 #footer{
-    background: linear-gradient(var(--bgdark), var(--elem), var(--elemdark));
+    background: linear-gradient(var(--bgdark), var(--elemdark));
 }
 
 main{
