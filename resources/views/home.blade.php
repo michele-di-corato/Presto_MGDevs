@@ -17,11 +17,11 @@
 
         <div class="row align-items-center vh-100">
             <div class="col-12 col-md-6 row">
-                <h1 class="title-home text-center">Benvenuto su Presto.it!</h1>
+                <h1 class="title-home text-center">{{ __('ui.welcome') }}</h1>
             </div>
             <div class="col-12 col-md-6">
                 <i class="d-flex justify-content-center mb-3 icon-home bi bi-bag-check"></i>
-                <h3 class="para-home text-center">Qui Potrai Caricare, E Trovare <br> Prodotti Di Tutti I Tipi</h3>
+                <h3 class="para-home text-center">{{ __('ui.welcome2') }}</h3>
             </div>
         </div>
     </header>
