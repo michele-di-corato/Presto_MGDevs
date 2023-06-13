@@ -68,6 +68,20 @@
     transition: 0.2s;
 }
 
+#bars{
+    font-size: 2rem;
+    transition: 200ms;
+    border: 0px;
+}
+
+#bars:focus,
+#bars-toggler:active,
+#bars-toggler-icon:focus 
+{
+    outline: none;
+    box-shadow: none;
+}
+
 /* Anchor Dropdown */
 
 /* .a-profile, .a-logout, .a-register, .a-login{

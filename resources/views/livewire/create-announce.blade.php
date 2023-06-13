@@ -33,7 +33,7 @@
         <div class="mb-3">
             <div class="form-group col-12">
                 <select class="py-3 form-control @error('category_id') is-invalid @enderror" id="category" wire:model="category_id">
-                    <option value="">Seleziona una categoria</option>
+                    <option class="text-col" value="">Seleziona una categoria</option>
                     @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
