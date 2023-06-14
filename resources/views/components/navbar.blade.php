@@ -47,7 +47,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             @auth
-                            {{ __('ui.welcome-user') }} {{ Auth::user()->name }}
+                            {{ __('ui.welcome-auth') }} {{ Auth::user()->name }}
                             @else
                             {{ __('ui.welcome-user') }}
                             @endauth
