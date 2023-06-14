@@ -9,35 +9,35 @@
                     <div class="text-center">
                         <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
                             class="img-thumbnail img-fluid" style="width:100px">
-                        <h4><strong>Nome utente:</strong> <i>{{ Auth::user()->name }}</i></h4>
-                        <h5><strong>Email:</strong> <i>{{ Auth::user()->email }}</i></h5>
+                        <h4><strong>{{ __('ui.profile-username') }}</strong> <i>{{ Auth::user()->name }}</i></h4>
+                        <h5><strong>{{ __('ui.profile-email') }}</strong> <i>{{ Auth::user()->email }}</i></h5>
                     </div>
                 </div>
 
                 {{-- Annunci --}}
-                <h1 id="annunci" class="text-center col-text display-6 pb-2">Annunci</h1>
+                <h1 id="annunci" class="text-center col-text display-6 pb-2">{{ __('ui.profile-announces') }}</h1>
 
                 <div class="card card-pers p-3 col-text">
 
                     {{-- Categorie --}}
                     <div id="annunci2" class="d-flex justify-content-center p-3">
                         <div class="col-2">
-                            <p><strong>Nome</strong></p>
+                            <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                         </div>
                         <div class="col-2">
-                            <p><strong>Categoria</strong></p>
+                            <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                         </div>
                         <div class="col-1">
-                            <p><strong>Prezzo</strong></p>
+                            <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                         </div>
                         <div class="col-2">
-                            <p><strong>Creazione</strong></p>
+                            <p><strong>{{ __('ui.created-at') }}</strong></p>
                         </div>
                         <div class="col-1">
-                            <p class="text-center"><strong>Stato</strong></p>
+                            <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                         </div>
                         <div class="col-4">
-                            <p class="text-center"><strong>Azioni</strong></p>
+                            <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@
                             <div class="col-12">
                                 <div class="table-pers2 mt-2 p-3">
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <h4>Non hai annunci!</h4>
+                                        <h4>{{ __('ui.profile-no-announces') }}</h4>
                                     </div>
                                 </div>
                             </div>

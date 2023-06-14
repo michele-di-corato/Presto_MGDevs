@@ -53,10 +53,14 @@ return [
     'btn-undo' => 'Undo',
     'none-to-revise' => 'There\'s no announce to revise',
     'to-revise' => 'To be revised announces',
+    'created-at'=> 'Created at:',// da aggiungere
+    'created-by'=> 'Created by',// da aggiungere
     'btn-approve' => 'Approve',
     'btn-reject' => 'Refuse',
     'revision-queue' => 'Announces queue',
+    'no-revision-queue' => 'There\'s no announce in queue', // da aggiungere
     'history-revisions' => 'Revised announces history',
+    'no-history-revisions' => 'There \'s no announce history', //da aggiungere
     'revision-table-name' => 'Name',
     'revision-table-category' => 'Category',
     'revision-table-price' => 'Price',
@@ -70,12 +74,13 @@ return [
     'profile-username' => 'Username:',
     'profile-email' => 'E-mail:',
     'profile-announces' => 'Announces',
+    'profile-no-announces'=>'There\'s no announce',
     // Sezione registrati
     'register-title' => 'Register',
-    'registar-name-placehold' => 'Name',
-    'registar-email-placehold' => 'Email',
-    'registar-password-placehold' => 'Password',
-    'registar-confirmation-placehold' => 'Confirm Password',
+    'register-name-placehold' => 'Name',
+    'register-email-placehold' => 'Email',
+    'register-password-placehold' => 'Password',
+    'register-confirmation-placehold' => 'Confirm Password',
     'register-btn' => 'Register',
     'register-to-login' => 'Already Registered?',
     'link-to-login' => 'Login here',
@@ -89,7 +94,7 @@ return [
     // Sezione dettagli
     'details-createdBy' => 'Created by:',
     'details-createdDate' => 'Created at:',
-    'btn-details' => 'Back to Announces',
+    'btn-back-details' => 'Back to Announces',
     // Sezione modifica annuncio
     'edit-announce-title' => 'Edit Announce',
     'edit-name-placehold' => 'Product',

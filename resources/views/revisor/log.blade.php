@@ -4,29 +4,29 @@
         <div class="row justify-content-center align-items-center py-5">
 
             <div class="col-12 col-md-10 pt-5 pb-3">
-                <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">Storico annunci revisionati</h2>
+                <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">{{ __('ui.history-revisions') }}</h2>
                 <div class="card card-pers p-3">
 
 
                     {{-- Categorie --}}
                     <div id="annunci2" class="d-flex justify-content-center p-3">
                         <div class="col-2">
-                            <p><strong>Nome</strong></p>
+                            <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                         </div>
                         <div class="col-3">
-                            <p><strong>Categoria</strong></p>
+                            <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                         </div>
                         <div class="col-1">
-                            <p><strong>Prezzo</strong></p>
+                            <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                         </div>
                         <div class="col-2">
-                            <p><strong>Creazione</strong></p>
+                            <p><strong>{{ __('ui.revision-table-creation') }}</strong></p>
                         </div>
                         <div class="col-1">
-                            <p class="text-center"><strong>Stato</strong></p>
+                            <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                         </div>
                         <div class="col-3">
-                            <p class="text-center"><strong>Azioni</strong></p>
+                            <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                         </div>
                     </div>
                     {{-- Annunci --}}
@@ -49,31 +49,31 @@
 
                                     @if ($announce->is_accepted == true)
                                         <div class="b-true">
-                                            Approvato
+                                            {{ __('ui.table-status-approved') }}
                                         </div>
                                     @elseif ($announce->is_accepted === null)
                                         <div class="b-null">
-                                            In Attesa
+                                            {{ __('ui.table-status-pending') }}
                                         </div>
                                     @elseif ($announce->is_accepted == false)
                                         <div class="b-false">
-                                            Rifiutato
+                                            {{ __('ui.table-status-rejected') }}
                                         </div>
                                     @endif
                                 </div>
                                 <div class="col-3 d-flex justify-content-center">
                                     <a href="{{ route('announce_detail', $announce->id) }}"
-                                        class="btn btn-ann">Dettagli</a>
+                                        class="btn btn-ann"> {{ __('ui.btn-details') }}</a>
                                     <form method="POST" action="{{ route('undo_announce') }}">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="ms-md-2 btn btn-ann">Annulla</button>
+                                        <button type="submit" class="ms-md-2 btn btn-ann"> {{ __('ui.btn-undo') }}</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     @empty
-                        <h4>Non ci sono annunci nello storico</h4>
+                        <h4> {{ __('ui.no-history-revisions') }}</h4>
                     @endforelse
                     <div class="d-flex justify-content-center">
                         {{ $revisioned_announces->links() }}

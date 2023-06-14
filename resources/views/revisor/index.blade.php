@@ -36,7 +36,7 @@
 
                 {{-- Anuncio --}}
                 <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
-                    Annuncio da revisionare
+                    {{ __('ui.to-revise') }}
                 </h2>
 
                 <div class="card card-pers p-3">
@@ -49,8 +49,8 @@
                                         <h3>{{ $announce_to_check->category->name }}</h3>
                                         <h3>{{ $announce_to_check->price }} €</h3>
                                         <p>{{ $announce_to_check->description }}</p>
-                                        <h5>Creato da: {{ $announce_to_check->user->name }}</h5>
-                                        <h5>Creato il: {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
+                                        <h5>{{ __('ui.created-by') }} {{ $announce_to_check->user->name }}</h5>
+                                        <h5>{{ __('ui.created-at') }} {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
                                     </div>
                                     @if (!$announce_to_check->images()->get()->isEmpty())
                                         <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
@@ -122,7 +122,7 @@
                                             action="{{ route('accept_announce', ['announce' => $announce_to_check]) }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="btn btn-ann mb-sm-3">Approva</button>
+                                            <button type="submit" class="btn btn-ann mb-sm-3">{{ __('ui.btn-approve') }}</button>
                                         </form>
                                     </div>
                                     <div class="col-6 d-flex justify-content-center">
@@ -130,7 +130,7 @@
                                             action="{{ route('reject_announce', ['announce' => $announce_to_check]) }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="btn btn-ann">Rifiuta</button>
+                                            <button type="submit" class="btn btn-ann">{{ __('ui.btn-reject') }}</button>
                                         </form>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
                     @else
                         <div class="table-pers p-3">
                             <div class="d-flex justify-content-center align-items-center">
-                                <h4 class="text-center">Non c'è nessun annuncio da revisionare!</h4>
+                                <h4 class="text-center">{{ __('ui.none-to-revise') }}</h4>
                             </div>
                         </div>
                     @endif
@@ -154,23 +154,23 @@
                 <div class="col-12 col-md-6 px-0 pe-0 pe-md-2 mb-3">
 
                     <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
-                        Annunci in coda
+                        {{ __('ui.revision-queue') }}
                     </h2>
 
                     <div class="card card-pers p-3">
                         {{-- Categorie --}}
                         <div id="annunci2" class="d-flex justify-content-center p-3">
                             <div class="col-3">
-                                <p><strong>Nome</strong></p>
+                                <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                             </div>
                             <div class="col-4">
-                                <p><strong>Categoria</strong></p>
+                                <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                             </div>
                             <div class="col-2 text-center">
-                                <p><strong>Prezzo</strong></p>
+                                <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                             </div>
                             <div class="col-3 text-center">
-                                <p><strong>Creazione</strong></p>
+                                <p><strong>{{ __('ui.revision-table-status') }}</strong></p>
                             </div>
                         </div>
                         @forelse ($announces_queue as $announce)
@@ -195,7 +195,7 @@
                         @empty
                             <div class="table-pers2 mt-2 p-3">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <h4 class="text-center">Non ci sono annunci in coda</h4>
+                                    <h4 class="text-center">{{ __('ui.no-revision-queue') }}</h4>
                                 </div>
                             </div>
                         @endforelse
@@ -208,7 +208,7 @@
 
                     <h2 id="annunci" class="text-center display-6 p-2 pb-3">
                         <a class="text-decoration-none col-text" href="{{ route('log_revisions') }}">
-                            Storico annunci revisionati
+                            {{ __('ui.history-revisions') }}
                         </a>
                     </h2>
 
@@ -217,22 +217,22 @@
                         {{-- Categorie --}}
                         <div id="annunci2" class="d-flex justify-content-center p-3">
                             <div class="col-2">
-                                <p><strong>Nome</strong></p>
+                                <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                             </div>
                             <div class="col-2">
-                                <p><strong>Categoria</strong></p>
+                                <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                             </div>
                             <div class="col-2 text-center">
-                                <p><strong>Prezzo</strong></p>
+                                <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                             </div>
                             <div class="col-2">
-                                <p><strong>Creazione</strong></p>
+                                <p><strong>{{ __('ui.revision-table-creation') }}</strong></p>
                             </div>
                             <div class="col-2">
-                                <p class="text-center"><strong>Stato</strong></p>
+                                <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                             </div>
                             <div class="col-2">
-                                <p class="text-center"><strong>Azioni</strong></p>
+                                <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                             </div>
                         </div>
                         {{-- Annunci --}}
@@ -257,15 +257,15 @@
 
                                         @if ($announce->is_accepted == true)
                                             <div class="b-true">
-                                                Approvato
+                                                {{ __('ui.table-status-approved') }}
                                             </div>
                                         @elseif ($announce->is_accepted === null)
                                             <div class="b-null">
-                                                In Attesa
+                                                {{ __('ui.table-status-pending') }}
                                             </div>
                                         @elseif ($announce->is_accepted == false)
                                             <div class="b-false">
-                                                Rifiutato
+                                                {{ __('ui.table-status-rejected') }}
                                             </div>
                                         @endif
                                     </div>
@@ -273,7 +273,7 @@
                                         <form method="POST" action="{{ route('undo_announce') }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="ms-md-2 btn btn-ann">Annulla</button>
+                                            <button type="submit" class="ms-md-2 btn btn-ann">{{ __('ui.btn-undo') }}</button>
                                         </form>
                                     </div>
                                 </div>
@@ -281,7 +281,7 @@
                         @empty
                             <div class="table-pers2 mt-2 p-3">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <h4>Non ci sono annunci nello storico</h4>
+                                    <h4>{{ __('ui.no-history-revisions') }}</h4>
                                 </div>
                             </div>
                         @endforelse

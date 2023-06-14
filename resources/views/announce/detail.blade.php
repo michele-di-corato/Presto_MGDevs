@@ -12,8 +12,8 @@
                             <h3>{{ $announce->category->name }}</h3>
                             <h3>{{ $announce->price }} €</h3>
                             <p>{{ $announce->description }}</p>
-                            <h5>Creato da: {{ $announce->user->name }}</h5>
-                            <h5>Creato il: {{ $announce->created_at->format('d/m/Y') }}</h5>
+                            <h5>{{ __('ui.details-createdBy') }} {{ $announce->user->name }}</h5>
+                            <h5>{{ __('ui.details-createdDate') }} {{ $announce->created_at->format('d/m/Y') }}</h5>
                         </div>
 
 
@@ -79,7 +79,7 @@
 
                     <div class="text-center">
                         <a class="btn btn-back" href="{{ route('show_announces') }}">
-                            Torna agli annunci
+                            {{ __('ui.btn-back-details') }}
                         </a>
                     </div>
 
