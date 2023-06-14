@@ -29,7 +29,6 @@
                     <p>{{ $message }}</p>
                 </div>
             @enderror
-
         </div>
         <div class="mb-3">
             <div class="form-group col-12">
@@ -48,11 +47,10 @@
             @enderror
         </div>
         <div class="form-floating mb-3">
-            <label for="temporary_images" class="custom-file-upload">
-                {{ __('ui.add-image-btn') }}
-            </label>
-            <input type="file" multiple class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror"
-                id="temporary_images" wire:model="temporary_images">
+                <label for="temporary_images" class="custom-file-upload text-center">
+                    {{ __('ui.add-image-btn') }}
+                </label>
+                <input type="file" multiple class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror" id="temporary_images" wire:model="temporary_images">
             @error('temporary_images.*')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
@@ -81,7 +79,7 @@
             </div>
         @endif
 
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center pt-4">
             <button type="submit" id="btn-create" class="btn btn-create fs-5">{{ __('ui.add-announce-btn') }}</button>
             <span class="span-icon"><i class="mx-3 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
