@@ -77,7 +77,7 @@ class CreateAnnounce extends Component
         if(count($this->images))
         {
             foreach($this->images as $image){
-                $this->announce->images()->file(['path'=>$image->store('public/media')]);
+                $this->announce->images()->create(['path'=>$image->store('public/media')]);
             }
         }
 
