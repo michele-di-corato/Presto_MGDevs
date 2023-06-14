@@ -48,9 +48,9 @@
             @enderror
         </div>
         <div class="mb-3">
-            <input type="file" multiple class="py-3 form-control @error('images') is-invalid @enderror"
-                id="images" wire:model="images">
-            @error('images')
+            <input type="file" multiple class="py-3 form-control @error('temporary_images.*') is-invalid @enderror"
+                id="temporary_images" wire:model="temporary_images">
+            @error('temporary_images.*')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
                 </div>
@@ -58,17 +58,17 @@
         </div>
 
         @if (!empty($images))
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-12">
-                    <p>Anteprima Immagini: </p>
+                    <p>Anteprima Immagini:</p>
                     <div class="row">
                         @foreach ($images as $key => $image)
-                            <div class="col">
-                                <div class="img-preview mx-auto rounded"
+                            <div class="col d-flex flex-column">
+                                <div class="img-preview mx-auto rounded mb-3"
                                     style="background-image: url({{ $image->temporaryUrl() }});">
-                                    <button type="button" class="btn mx-auto"
-                                        wire:click="removeImage({{ $key }})">Cancella</button>
                                 </div>
+                                <button type="button" class="btn bth-outline-danger mx-auto"
+                                    wire:click="removeImage({{ $key }})">Cancella</button>
                             </div>
                         @endforeach
                     </div>
