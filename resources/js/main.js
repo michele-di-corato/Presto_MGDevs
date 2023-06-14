@@ -118,12 +118,31 @@ window.addEventListener('scroll', () => {
         buttonGlobal.classList.remove('opacity-0');
         buttonGlobal.classList.remove('d-none');
         buttonGlobal.classList.add('d-block');
+        buttonGlobal.classList.add('animationFadeWhite');
     } else {
         buttonGlobal.classList.add('opacity-0');
         buttonGlobal.classList.add('d-none');
         buttonGlobal.classList.remove('d-block');
+        buttonGlobal.classList.remove('animationFadeWhite');
     }
 })
+
+window.addEventListener('scroll', () => {
+    let scrolled = window.scrollY;
+
+    if (scrolled < 350) {
+        buttonGlobal.classList.add('opacity-0');
+        buttonGlobal.classList.add('d-none');
+        buttonGlobal.classList.remove('d-block');
+        buttonGlobal.classList.remove('animationFadeWhite');
+    } else {
+        buttonGlobal.classList.remove('opacity-0');
+        buttonGlobal.classList.remove('d-none');
+        buttonGlobal.classList.add('d-block');
+        buttonGlobal.classList.add('animationFadeWhite');
+    }
+})
+
 
 
 // Nav Category
@@ -160,14 +179,11 @@ navTog.addEventListener('click', () => {
         navTog.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         navTog.style.transform = 'rotate(180deg)';
         navTog.style.fontSize = '2rem'
-        navTog.style.borderRight = '2px solid var(--bglight)'
-        navTog.style.borderLeft = '2px solid var(--bglight)'
         isClicked = false;
     } else {
         navTog.innerHTML = '<i class="fa-solid fa-bars"></i>';
         navTog.style.transform = '';
         navTog.style.fontSize = '2rem'
-        navTog.style.border = ''
         isClicked = true;
     }
 })
@@ -198,6 +214,6 @@ let Start = document.querySelector('#Start');
 let End = document.querySelector('#End');
 
 setTimeout(() => {
-Start.classList.add('d-none');
-End.classList.remove('d-none');
+    Start.classList.add('d-none');
+    End.classList.remove('d-none');
 }, 1000)

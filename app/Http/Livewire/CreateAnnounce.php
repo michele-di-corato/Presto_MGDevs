@@ -2,11 +2,14 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Image;
 use Livewire\Component;
 use App\Models\Announce;
 use App\Models\Category;
-use Illuminate\Support\Facades\Auth;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 class CreateAnnounce extends Component
 {
@@ -16,20 +19,17 @@ class CreateAnnounce extends Component
     public $price;
     public $description;
     public $category_id;
-    public $temp_images;
+    public $temporary_images = [];
     public $images = [];
-    public $category;
     public $announce;
-
 
     protected $rules = [
         'name' => 'required|min:5',
         'description' => 'required|min:10',
         'price' => 'required',
         'category_id' => 'required',
-        'temp_images.*'=> 'image|max:2048',
-        'images.*'=> 'image|max:2048'
-
+        'temporary_images.*' => 'required|image|max:1024',
+        'images.*' => 'required|image|max:1024'
     ];
 
     protected $messages = [
@@ -39,24 +39,16 @@ class CreateAnnounce extends Component
         'description.min' => 'La descrizione deve essere di almeno 10 caratteri',
         'price.required' => 'Il prezzo è obbligatorio',
         'category_id.required' => 'E\' obbligatorio specificare una categoria',
-        'images.*.image'=> 'Il file dev\' essere un immagine',
-        'images.*.max'=>'Le dimensioni dell\' immagine non devono superare i 2MB',
-        'temp_images.*.image'=> 'Il file dev\' essere un immagine',
-        'temp_images.*.max'=>'Le dimensioni dell\' immagine non devono superare i 2MB',
+        'images.*.image' => 'Il file dev\' essere un\'immagine',
+        'images.*.max' => 'Le dimensioni dell\'immagine non devono superare 1MB',
+        'temporary_images.*.image' => 'Il file dev\'essere un immagine',
+        'temporary_images.*.max' => 'Le dimensioni dell\' immagine non devono superare 1MB',
     ];
 
-    public function updatedTemporaryImages(){
-        if($this->validate([
-            'temp_images.*'=> 'image',
-        ])){
-            foreach($this->temp_images as $image){
-                $this->images[] = $image;
-            }
-        }
-    }
 
-    public function removeImage($key){
-        if(in_array($key, array_keys($this->images))){
+    public function removeImage($key)
+    {
+        if (in_array($key, array_keys($this->images))) {
             unset($this->images[$key]);
         }
     }
@@ -64,31 +56,42 @@ class CreateAnnounce extends Component
     public function createAnnounce()
     {
         $this->validate();
-        $announce = Announce::create([
-        'name' => $this->name,
-        'price' => $this->price,
-        'description' => $this->description,
-        'user_id' => Auth::id(),
-        'category_id' => $this->category_id
-    ]);
-
-
-        
-        if(count($this->images))
-        {
-            foreach($this->images as $image){
-                $this->announce->images()->create(['path'=>$image->store('public/media')]);
+        $this->announce = Announce::create([
+            'name' => $this->name,
+            'price' => $this->price,
+            'description' => $this->description,
+            'user_id' => Auth::id(),
+            'category_id' => $this->category_id
+        ]);
+        if ($this->images) {
+            foreach ($this->images as $image) {
+                // $this->announce->images()->create(['path' => $image->store('public/media')]);
+                $newFileName = "announces/{$this->announce->id}";
+                $newImage =  $this->announce->images()->create(['path' => $image->store($newFileName, 'public')]);
+                dispatch(new ResizeImage($newImage->path, 300, 300));
+                
             }
+
+
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
         return redirect(route('show_announces'))->with('confirm', 'Annuncio creato correttamente.');
     }
 
-    public function updated($propertyName){
+    public function updated($propertyName)
+    {
         $this->validateOnly($propertyName);
+        if ($this->validate([
+            'temporary_images.*' => 'image|max:1024',
+        ])) {
+            foreach ($this->temporary_images as $image) {
+                $this->images[] = $image;
+            }
+        }
     }
 
-    
+
     public function render()
     {
         return view('livewire.create-announce', ['categories' => Category::all()]);

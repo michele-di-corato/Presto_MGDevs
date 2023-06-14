@@ -1,6 +1,6 @@
 <div class="card mb-3">
     
-    <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top p-3" alt="Immagine annuncio">
+    <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300) : Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
         <div>
             <h4 class="card-title">{{ $announce->name }}</h4>
@@ -8,19 +8,24 @@
             <h5 class="card-subtitle ms-auto">Prezzo: {{ $announce->price }}€</h5>
             <p class="card-text">{{ $announce->description }}</p>
         </div>
-        <div class="row justify-content-center text-center pt-3">
-            <div class="col-12 col-lg-7 p-2">
-                <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann w-100">Dettagli</a>
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-12 justify-content-evenly">
+                    <div class="py-2">
+                        <a href="{{ route('announce_detail', $announce->id) }}"
+                            class="btn pe-md-1 btn-index btn-ann w-100">Dettagli</a>
+                    </div>
+                    @if ($announce->user_id == Auth::id() && Auth::check())
+                        <div class="py-2">
+                            <a href="{{ route('edit_announce', compact('announce')) }}"
+                                class="btn pe-md-1 btn-index btn-ann w-100">Modifica</a>
+                        </div>
+                        <div class="py-2">
+                            @livewire('delete-announce', compact('announce'))
+                        </div>
+                    @endif
+                </div>
             </div>
-            @if ($announce->user_id == Auth::id() && Auth::check())
-                <div class="col-12 col-lg-4 p-2">
-                    <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann w-100">Modifica</a>
-                </div>
-                <div class="col-12 col-lg-4 p-2">
-                    @livewire('delete-announce', compact('announce'))
-                </div>
-            @endif
-
         </div>
     </div>
 </div>

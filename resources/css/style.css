@@ -14,26 +14,28 @@
     --elemlighttransp: rgba(255, 228, 212, 0.5);
     --elemdark: rgb(163, 118, 90);
     --elemdarktransp: rgba(163, 118, 90, 0.8);
-    
+
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
 }
 
-.col-text{
+.col-text {
     color: var(--text);
 }
 
-.form-control:hover{
+.form-control:hover {
     background-color: var(--elemlighttransp);
     border: 0px solid white;
 }
 
-.form-control:not(:hover){
+.form-control:not(:hover) {
     background-color: var(--elemlighttransp);
     border: 0px solid white;
 }
 
-.img-preview{
+.img-preview {
     height: 300px;
     width: 300px;
+    background-size: cover;
+    background-position: center;
 }

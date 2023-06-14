@@ -1,12 +1,12 @@
 <footer id="footer" class="text-center text-lg-start bg-white col-text">
-    
+
     <!-- Section: Social media -->
     <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 pb-3">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block col-text">
             <span>Collegati con noi sui social network:</span>
         </div>
-        
+
         <!-- Right -->
         <div>
             <a href="{{ route('home') }}" class="me-4  text-decoration-none">
@@ -29,9 +29,9 @@
             </a>
         </div>
     </div>
-    
+
     <!-- Section: Links  -->
-    
+
     <div class="container-fluid text-center text-md-start px-5 pt-5">
         <!-- Grid row -->
         <div class="row justify-content-center">
@@ -39,7 +39,7 @@
             <div class="col-12 col-md-4 mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                    <a class="text-decoration-none col-text" href="{{route('home')}}">
+                    <a class="text-decoration-none col-text" href="{{ route('home') }}">
                         <img style="width:15px" src="/media/presto.png" alt="Logo Presto.it">
                         Presto.it
                     </a>
@@ -51,27 +51,27 @@
                 </p>
 
             </div>
-            
+
             <!-- Grid column -->
             <div class="col-6 col-md-2 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
                     Prodotti
                 </h6>
-                    <p>
-                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
-                    </p>
-                    <p>
-                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
-                    </p>
-                    <p>
-                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
-                    </p>
-                    <p>
-                        <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
-                    </p>
+                <p>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                </p>
+                <p>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                </p>
+                <p>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                </p>
+                <p>
+                    <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
+                </p>
             </div>
-            
+
             <!-- Grid column -->
             <div class="col-6 col-md-2 mb-4">
                 <!-- Links -->
@@ -91,9 +91,10 @@
                     <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
             </div>
-            
+
+
             <!-- Grid column -->
-            <div class="col-12 col-md-2 mb-4">
+            <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p><i class="fas fa-home me-3 text-dark"></i> New York, US</p>
@@ -112,13 +113,13 @@
                     Lavora con noi
                 </h6>
                 <p>Registrati e candidati qui</p>
-                <a href="{{route('become_revisor')}}" class="btn mt-3 btn-revisor ">Diventa revisore</a>
+                <a href="{{ route('form_revisor') }}" class="btn mt-3 ms-md-3 button_revisor">Diventa revisore</a>
             </div>
 
         </div>
     </div>
-    
-    
+
+
     <!-- Copyright -->
     <div id="footer-bottom" class="text-center p-3">
         © 2023 Copyright:

@@ -15,6 +15,7 @@
         </div>
 
 
+
         <div class="row align-items-center vh-100">
             <div class="col-12 col-md-6 row">
                 <h1 class="title-home text-center">{{ __('ui.welcome') }}</h1>

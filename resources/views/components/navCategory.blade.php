@@ -25,7 +25,7 @@
                         </div>
                     @endforeach
                     <div class="col-12 mb-1">
-                        <a class="card p-2 text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
+                        <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                             style="height: 8vh;" href="{{ route('show_announces') }}">
                             Tutte le categorie
                         </a>

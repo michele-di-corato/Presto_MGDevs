@@ -8,7 +8,7 @@
                         <div class="animationUp last-card col-6 col-md-3 my-2">
                             <div class="card">
                                 <img class="card-img-top img-fluid img-last"
-                                    src="{{ Storage::url('public/media/DefaultImage.jpg') }}" alt="Immagine">
+                                    src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300) : Storage::url('public/media/DefaultImage.jpg') }}" alt="Immagine">
                                 <div class="card-overlay">
                                     <div class="row text-center align-items-center h-100">
                                         <div class="col-12">
