@@ -4,11 +4,11 @@
             <h1 id="annunci2" class="text-center col-text display-6 pb-2">Ultimi Articoli</h1>
             <div class="card card-pers card2 p-3">
                 <div class="row point justify-content-center">
-                    @foreach ($announces as $announce)
+                    @forelse ($announces as $announce)
                         <div class="animationUp last-card col-6 col-md-3 my-2">
                             <div class="card">
                                 <img class="card-img-top img-fluid img-last"
-                                    src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300) : Storage::url('public/media/DefaultImage.jpg') }}" alt="Immagine">
+                                    src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300) : Storage::url('public/media/DefaultImage.jpg') }}" alt="Foto Prodotto">
                                 <div class="card-overlay">
                                     <div class="row text-center align-items-center h-100">
                                         <div class="col-12">
@@ -20,7 +20,11 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    @empty
+                    <div class="alert alert-success fade show d-flex h-100 my-0" role="alert">
+                        <p>Non ci sono articoli!</p>
+                    </div>
+                    @endforelse
                 </div>
             </div>
         </div>
