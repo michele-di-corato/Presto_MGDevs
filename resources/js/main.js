@@ -111,37 +111,20 @@ if (carousel) {
 
 let buttonGlobal = document.querySelector('#buttonGlobal');
 
+if (buttonGlobal) {
 window.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
-
     if (scrolled > 350) {
-        buttonGlobal.classList.remove('opacity-0');
-        buttonGlobal.classList.remove('d-none');
-        buttonGlobal.classList.add('d-block');
         buttonGlobal.classList.add('animationFadeWhite');
-    } else {
-        buttonGlobal.classList.add('opacity-0');
-        buttonGlobal.classList.add('d-none');
-        buttonGlobal.classList.remove('d-block');
+        buttonGlobal.classList.remove('animationFadeAway');
+        buttonGlobal.style.opacity = '1';
+    }else {
+        buttonGlobal.classList.add('animationFadeAway');
         buttonGlobal.classList.remove('animationFadeWhite');
+        buttonGlobal.style.opacity = '0';
     }
-})
-
-window.addEventListener('scroll', () => {
-    let scrolled = window.scrollY;
-
-    if (scrolled < 350) {
-        buttonGlobal.classList.add('opacity-0');
-        buttonGlobal.classList.add('d-none');
-        buttonGlobal.classList.remove('d-block');
-        buttonGlobal.classList.remove('animationFadeWhite');
-    } else {
-        buttonGlobal.classList.remove('opacity-0');
-        buttonGlobal.classList.remove('d-none');
-        buttonGlobal.classList.add('d-block');
-        buttonGlobal.classList.add('animationFadeWhite');
-    }
-})
+ })
+}
 
 
 
