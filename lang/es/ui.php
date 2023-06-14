@@ -34,6 +34,8 @@ return [
     'add-category-placehold' => 'Selecciona una categoría',
     'add-image-btn' => 'Elija el archivo',
     'add-image-placehold' => 'Ninguna selección de archivos',
+    'img-preview'=> 'Vista previa de imágenes:', // agregar
+    'img-delete'=>'Eliminar',// agregar
     'add-announce-btn' => 'Envía',
     // Sezione mostra annunci
     'show-title' => 'Anuncios',
@@ -49,10 +51,14 @@ return [
     'btn-undo' => 'Annulla',
     'none-to-revise' => 'No hay anuncios para revisar',
     'to-revise' => 'Anuncio a revisar',
+    'created-at'=> 'Creado el:',// agregar
+    'created-by'=> 'Creado por:',// agregar
     'btn-approve' => 'Aprobar',
     'btn-reject' => 'Rechaza',
     'revision-queue' => 'Anuncios en la cola',
+    'no-revision-queue' => 'No hay anuncios en cola', // agregar
     'history-revisions' => 'Histórico anuncios revisados',
+    'no-history-revisions' => 'No hay historial de anuncios', // agregar
     'revision-table-name' => 'Nombre',
     'revision-table-category' => 'Categoría',
     'revision-table-price' => 'Precio',

@@ -1,9 +1,9 @@
 <form class="form-create p-5" wire:submit.prevent="editAnnounce">
 
-    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">Modifica Annuncio</h1>
+    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3"> {{ __('ui.edit-announce-title') }}</h1>
     <div class="card card-pers p-3">
         <div class="mb-3">
-            <label for="productName" class="form-label">Prodotto</label>
+            <label for="productName" class="form-label"> {{ __('ui.edit-name-placehold') }}</label>
             <input type="text" class="form-control @error('name') is-invalid @enderror" id="productName"
                 wire:model="name">
             @error('name')
@@ -13,7 +13,7 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="productPrice" class="form-label">Prezzo</label>
+            <label for="productPrice" class="form-label"> {{ __('ui.edit-price-placehold') }}</label>
             <input type="number"step="0.01" class="form-control @error('price') is-invalid @enderror"
                 id="productPrice" wire:model="price">
             @error('price')
@@ -23,7 +23,7 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="productDescription" class="form-label">Descrizione</label>
+            <label for="productDescription" class="form-label"> {{ __('ui.edit-description-placehold') }}</label>
             <textarea class="form-control @error('description') is-invalid @enderror" id="productDescription"
                 wire:model="description"></textarea>
             @error('description')
@@ -34,7 +34,7 @@
         </div>
         <div class="mb-3">
             <div class="form-group col-12">
-                <label for="category">Categoria:</label>
+                <label for="category"> {{ __('ui.edit-category-placehold') }}</label>
                 <select class="form-control @error('category_id') is-invalid @enderror" id="category"
                     wire:model="category_id">
                     <option value="">Seleziona...</option>
@@ -46,7 +46,7 @@
         </div>
         <div class="form-floating mb-3">
             <label for="temporary_images" class="custom-file-upload">
-                Seleziona file
+                {{ __('ui.add-image-btn') }}
             </label>
             <input type="file" multiple
                 class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror"
@@ -59,7 +59,7 @@
         </div>
         <div class="row my-5">
             <div class="col-12">
-                <p>Anteprima Immagini:</p>
+                <p> {{ __('ui.img-preview') }}</p>
                 <div class="row">
                     @foreach ($old_images as $image)
                         <div class="col d-flex flex-column my-3">
@@ -68,7 +68,7 @@
                             </div>
                             <button type="button" class="btn bth-outline-danger mx-auto"
                                 wire:click="deleteImage({{ $image->id }})">
-                                Cancella
+                                {{ __('ui.img-delete') }}
                             </button>
                         </div>
                     @endforeach
@@ -90,7 +90,7 @@
         </div>
         @endif
         <div class="d-flex justify-content-center align-items-center mt-3">
-            <button type="submit" id="btn-edit" class="btn btn-edit fs-5">Modifica</button>
+            <button type="submit" id="btn-edit" class="btn btn-edit fs-5"> {{ __('ui.btn-modify') }}</button>
             <span class="span-icon"><i class="ms-5 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
     </div>

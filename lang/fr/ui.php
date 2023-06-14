@@ -34,6 +34,8 @@ return [
     'add-category-placehold' => 'Sélectionnez une catégorie',
     'add-image-btn' => 'Choisir un fichier',
     'add-image-placehold' => 'Aucun fichier sélectionné',
+    'img-preview'=> 'Aperçu des images :', // à ajouter
+    'img-delete'=>'Supprimer', // à ajouter
     'add-announce-btn' => 'Envoyer',
     // Section show announces
     'show-title' => 'Annonces',
@@ -44,15 +46,20 @@ return [
     'btn-details' => 'Détails',
     'btn-modify' => 'Modifier',
     'btn-delete' => 'Supprimer',
+    'no-result-alert'=>'Votre recherche n\'a donné aucun résultat. Essayez de modifier les critères de recherche.',// à ajouter
     // Section revise announces
     'undo-phrase' => 'Avez-vous changé d\'avis sur la dernière annonce ?',
     'btn-undo' => 'Annuler',
     'none-to-revise' => 'Aucune annonce à réviser',
     'to-revise' => 'Annonce à réviser',
+    'created-at'=> 'Créé le :', // à ajouter
+    'created-by'=> 'Créé par :', // à ajouter
     'btn-approve' => 'Approuver',
     'btn-reject' => 'Rejeter',
     'revision-queue' => 'Annonces en attente de révision',
+    'no-revision-queue' => 'Il n\'y a aucune annonce en attente', // à ajouter
     'history-revisions' => 'Historique des annonces révisées',
+    'no-history-revisions' => 'Il n\'y a aucun historique d\'annonce', // à ajouter
     'revision-table-name' => 'Nom',
     'revision-table-category' => 'Catégorie',
     'revision-table-price' => 'Prix',

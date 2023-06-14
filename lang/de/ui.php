@@ -34,6 +34,8 @@ return [
     'add-category-placehold' => 'Kategorie auswählen',
     'add-image-btn' => 'Datei auswählen',
     'add-image-placehold' => 'Keine Datei ausgewählt',
+    'img-preview'=> 'Bilder-Vorschau:', // hinzufügen
+    'img-delete'=>'Löschen',// hinzufügen
     'add-announce-btn' => 'Senden',
     // Abschnitt Anzeigen anzeigen
     'show-title' => 'Anzeigen',
@@ -44,15 +46,21 @@ return [
     'btn-details' => 'Details',
     'btn-modify' => 'Bearbeiten',
     'btn-delete' => 'Löschen',
+    'no-result-alert'=>'Deine Suche ergab keine Ergebnisse. Versuche, die Suchkriterien zu ändern.',// hinzufügen
+
     // Abschnitt Anzeigen überprüfen
     'undo-phrase' => 'Haben Sie es sich anders überlegt bei der letzten Anzeige?',
     'btn-undo' => 'Rückgängig machen',
     'none-to-revise' => 'Keine Anzeigen zur Überprüfung',
     'to-revise' => 'Anzeige zur Überprüfung',
+    'created-at'=> 'Erstellt am:',// hinzufügen
+    'created-by'=> 'Erstellt von:',// hinzufügen
     'btn-approve' => 'Genehmigen',
     'btn-reject' => 'Ablehnen',
     'revision-queue' => 'Anzeigen in der Warteschlange',
+    'no-revision-queue' => 'Es gibt keine Anzeigen in der Warteschlange', // hinzufügen
     'history-revisions' => 'Überprüfungshistorie',
+    'no-history-revisions' => 'Es gibt keine Anzeigengeschichte', // hinzufügen
     'revision-table-name' => 'Name',
     'revision-table-category' => 'Kategorie',
     'revision-table-price' => 'Preis',
