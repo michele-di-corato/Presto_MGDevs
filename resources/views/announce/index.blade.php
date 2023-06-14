@@ -20,18 +20,18 @@
 
                     <h1 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h1>
                     <x-navCategory />
-                    
+
                 </div>
 
                 <div class="card card-pers p-3">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
                             <div class="col-8 col-md-5 col-lg-4">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-                            <div class="alert alert-success fade show d-flex mt-3" role="alert">
-                                <p>La ricerca non ha prodotto alcun risultato. Prova a cambiare campo di ricerca.</p>
+                            <div class="alert alert-success fade show d-flex h-100 my-0" role="alert">
+                                <p>{{ __('ui.no-result-alert') }}</p>
                                 <button type="button" class="btn-close align-self-center ms-3" data-bs-dismiss="alert"
                                     aria-label="Close"></button>
                             </div>
@@ -41,7 +41,7 @@
 
             </div>
 
-            <div class="mt-4 d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
                 {{ $announces->links() }}
             </div>
         </div>

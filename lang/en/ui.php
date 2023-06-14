@@ -34,6 +34,8 @@ return [
     'add-category-placehold' => 'Choose category',
     'add-image-btn' => 'Upload file',
     'add-image-placehold' => 'No file selected',
+    'img-preview'=> 'Images Preview:', //da aggiungere
+    'img-delete'=>'Delete',//da aggiungere
     'add-announce-btn' => 'Submit',
     // Sezione mostra annunci
     'show-title' => 'Announces',
@@ -44,6 +46,7 @@ return [
     'btn-details' => 'Details',
     'btn-modify' => 'Edit',
     'btn-delete' => 'Delete',
+    'no-result-alert'=>'Your search returned no results. Try changing search fields.',//da aggiungere
     // Sezione revisione annunci
     'undo-phrase' => 'Did you change idea about last announce?',
     'btn-undo' => 'Undo',

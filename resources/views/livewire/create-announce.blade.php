@@ -63,7 +63,7 @@
         @if (!empty($images))
             <div class="row my-5">
                 <div class="col-12">
-                    <p>Anteprima Immagini:</p>
+                    <p>{{ __('ui.img-preview') }}</p>
                     <div class="row">
                         @foreach ($images as $key => $image)
                             <div class="col d-flex flex-column my-3">
@@ -72,7 +72,7 @@
                                 </div>
                                 <button type="button" class="btn bth-outline-danger mx-auto"
                                     wire:click="removeImage({{ $key }})">
-                                    Cancella
+                                    {{ __('ui.img-delete') }}
                                 </button>
                             </div>
                         @endforeach

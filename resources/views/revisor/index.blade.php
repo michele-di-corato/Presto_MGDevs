@@ -25,9 +25,9 @@
                             @csrf
                             @method('PATCH')
                             <p>
-                                Hai cambiato idea sull'ultimo annuncio?
+                                {{ __('ui.undo-phrase') }}
                                 <button type="submit" class="ms-md-2 btn btn-ann">
-                                    Annulla
+                                    {{ __('ui.btn-undo') }}
                                 </button>
                             </p>
                         </form>

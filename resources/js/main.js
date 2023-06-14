@@ -6,8 +6,6 @@ let navLink = document.querySelectorAll(".nav-link");
 if (window.innerWidth > 992) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
-            navTitle.style.borderLeft = "2px solid var(--text)";
-            navTitle.style.borderRight = "2px solid var(--text)";
             navTitle.style.borderRadius = "10px";
             navbar.style.marginTop = "3dvh";
             navbar.style.marginRight = "18dvh";
@@ -16,15 +14,11 @@ if (window.innerWidth > 992) {
             navbar.style.backgroundColor = "var(--elemtransp)";
             navbar.style.border = "0px solid var(--elemlighttransp)";
         } else {
-            navTitle.style.borderLeft = "";
-            navTitle.style.borderRight = "";
-            navTitle.style.borderRadius = "";
             navbar.style.marginTop = "0px";
             navbar.style.marginRight = "0px";
             navbar.style.marginLeft = "0px";
             navbar.style.borderRadius = "0rem";
             navbar.style.backgroundColor = "";
-            navbar.style.border = ""
         }
     });
 }
@@ -111,37 +105,20 @@ if (carousel) {
 
 let buttonGlobal = document.querySelector('#buttonGlobal');
 
+if (buttonGlobal) {
 window.addEventListener('scroll', () => {
     let scrolled = window.scrollY;
-
     if (scrolled > 350) {
-        buttonGlobal.classList.remove('opacity-0');
-        buttonGlobal.classList.remove('d-none');
-        buttonGlobal.classList.add('d-block');
         buttonGlobal.classList.add('animationFadeWhite');
-    } else {
-        buttonGlobal.classList.add('opacity-0');
-        buttonGlobal.classList.add('d-none');
-        buttonGlobal.classList.remove('d-block');
+        buttonGlobal.classList.remove('animationFadeAway');
+        buttonGlobal.style.opacity = '1';
+    }else {
+        buttonGlobal.classList.add('animationFadeAway');
         buttonGlobal.classList.remove('animationFadeWhite');
+        buttonGlobal.style.opacity = '0';
     }
-})
-
-window.addEventListener('scroll', () => {
-    let scrolled = window.scrollY;
-
-    if (scrolled < 350) {
-        buttonGlobal.classList.add('opacity-0');
-        buttonGlobal.classList.add('d-none');
-        buttonGlobal.classList.remove('d-block');
-        buttonGlobal.classList.remove('animationFadeWhite');
-    } else {
-        buttonGlobal.classList.remove('opacity-0');
-        buttonGlobal.classList.remove('d-none');
-        buttonGlobal.classList.add('d-block');
-        buttonGlobal.classList.add('animationFadeWhite');
-    }
-})
+ })
+}
 
 
 

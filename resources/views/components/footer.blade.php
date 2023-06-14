@@ -96,14 +96,19 @@
             <!-- Grid column -->
             <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
+<<<<<<< HEAD
                 <h6 class="text-uppercase fw-bold mb-4">{{ __('ui.contact') }}</h6>
                 <p><i class="fas fa-home me-3 text-dark"></i> {{ __('ui.work-site') }}</p>
+=======
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 col-text"></i> New York, US</p>
+>>>>>>> 20e98905828b13c99efb10fba9a49a52bf844927
                 <p>
-                    <i class="fas fa-envelope me-3 text-dark"></i>
+                    <i class="fas fa-envelope me-3 col-text"></i>
                     info@example.com
                 </p>
-                <p><i class="fas fa-phone me-3 text-dark"></i>+ 01 234 567 88</p>
-                <p><i class="fas fa-print me-3 text-dark"></i>+ 01 234 567 89</p>
+                <p><i class="fas fa-phone me-3 col-text"></i>+ 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 col-text"></i>+ 01 234 567 89</p>
             </div>
 
             <!-- Grid column -->
