@@ -65,11 +65,9 @@ class CreateAnnounce extends Component
         ]);
         if ($this->images) {
             foreach ($this->images as $image) {
-                // $this->announce->images()->create(['path' => $image->store('public/media')]);
                 $newFileName = "announces/{$this->announce->id}";
                 $newImage =  $this->announce->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
-                
             }
 
 
