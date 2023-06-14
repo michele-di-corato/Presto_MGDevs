@@ -1,6 +1,6 @@
 <div class="card mb-3">
     
-    <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top p-3" alt="Immagine annuncio">
+    <img src="{{!$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300) : Storage::url('public/media/DefaultImage.jpg') }}" class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
         <div>
             <h4 class="card-title">{{ $announce->name }}</h4>
