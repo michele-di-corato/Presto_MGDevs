@@ -16,10 +16,7 @@
                         <x-_locale lang="en" text="English" />
                     </li>
                     <li class="dropdown-item a-la">
-                        <x-_locale lang="fr" text="Francais" />
-                    </li>
-                    <li class="dropdown-item a-la">
-                        <x-_locale lang="de" text="Deutsch" />
+                        <x-_locale lang="es" text="Español" />
                     </li>
                 </ul>
             </div>
