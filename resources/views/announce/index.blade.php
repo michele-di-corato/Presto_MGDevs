@@ -18,7 +18,7 @@
 
                 <div id="annunci" class="mb-2">
 
-                    <h1 class="text-center col-text display-6 p-2">Annunci</h1>
+                    <h1 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h1>
                     <x-navCategory />
                     
                 </div>

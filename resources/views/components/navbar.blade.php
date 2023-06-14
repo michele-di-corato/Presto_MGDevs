@@ -31,11 +31,11 @@
                     </li>
                     @auth
                         <li class="nav-item">
-                            <a class="a-nav2 nav-link" href="{{ route('create_announce') }}">Inserisci annuncio</a>
+                            <a class="a-nav2 nav-link" href="{{ route('create_announce') }}">{{ __('ui.add-announce') }}</a>
                         </li>
                     @endauth
                     <li class="nav-item">
-                        <a class="a-nav3 nav-link" href="{{ route('show_announces') }}">Mostra annunci</a>
+                        <a class="a-nav3 nav-link" href="{{ route('show_announces') }}">{{ __('ui.show-announces') }}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -50,34 +50,34 @@
                             @if (Auth::check() && Auth::user()->is_revisor)
                                 <li>
                                     <a class="dropdown-item position-relative"
-                                        href="{{ route('revisor_index') }}">Revisiona
-                                        annunci<span
+                                        href="{{ route('revisor_index') }}">{{ __('ui.drop-revise') }}
+                                        <span
                                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announce::ToBeRevisionedCount() }}
                                         </span> </a>
                                 </li>
                                 <li><a class="dropdown-item a-profile"
                                         onmouseover="document.a.style.backgroundColor ='blue'"
-                                        href="{{ route('show_profile') }}">Profilo</a></li>
+                                        href="{{ route('show_profile') }}">{{ __('ui.drop-profile') }}</a></li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <button type="submit" class="dropdown-item a-logout">Logout</button>
+                                        <button type="submit" class="dropdown-item a-logout">{{ __('ui.drop-logout') }}</button>
                                     </form>
                                 </li>
                             @elseif (Auth::check())
                                 <li><a class="dropdown-item a-profile"
                                         onmouseover="document.a.style.backgroundColor ='blue'"
-                                        href="{{ route('show_profile') }}">Profilo</a></li>
+                                        href="{{ route('show_profile') }}">{{ __('ui.drop-profile') }}</a></li>
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <button type="submit" class="dropdown-item a-logout">Logout</button>
+                                        <button type="submit" class="dropdown-item a-logout">{{ __('ui.drop-logout') }}</button>
                                     </form>
                                 </li>
                             @else
-                                <li><a class="dropdown-item a-register" href="{{ route('register') }}">Registrati</a>
+                                <li><a class="dropdown-item a-register" href="{{ route('register') }}">{{ __('ui.drop-register') }}</a>
                                 </li>
-                                <li><a class="dropdown-item a-login" href="{{ route('login') }}">Login</a></li>
+                                <li><a class="dropdown-item a-login" href="{{ route('login') }}">{{ __('ui.drop-login') }}</a></li>
                             @endif
                         </ul>
                     </li>
@@ -86,7 +86,7 @@
                 <ul class="navbar-nav pe-3">
                     <li class="nav-item mt-3">
                         <form class="search-form" method="GET" action="{{ route('search_announce') }}">
-                            <input class="search-input" type="search" placeholder="Cerca" aria-label="Search"
+                            <input class="search-input" type="search" placeholder="{{ __('ui.placehold-search') }}" aria-label="Search"
                                 name='searched'>
                             <button class="btn" type="submit">
                                 <i class="btn-search fa fa-search"></i>

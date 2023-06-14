@@ -4,7 +4,7 @@
     <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 pb-3">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block col-text">
-            <span>Collegati con noi sui social network:</span>
+            <span>{{ __('ui.social-links') }}</span>
         </div>
 
         <!-- Right -->
@@ -56,7 +56,7 @@
             <div class="col-6 col-md-2 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                    Prodotti
+                    {{ __('ui.products') }}
                 </h6>
                 <p>
                     <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
@@ -76,7 +76,7 @@
             <div class="col-6 col-md-2 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                    Link Utili
+                    {{ __('ui.links') }}
                 </h6>
                 <p>
                     <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
@@ -96,8 +96,8 @@
             <!-- Grid column -->
             <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3 text-dark"></i> New York, US</p>
+                <h6 class="text-uppercase fw-bold mb-4">{{ __('ui.contact') }}</h6>
+                <p><i class="fas fa-home me-3 text-dark"></i> {{ __('ui.work-site') }}</p>
                 <p>
                     <i class="fas fa-envelope me-3 text-dark"></i>
                     info@example.com
@@ -110,10 +110,10 @@
             <div class="col-12 col-md-2 mb-4">
                 <!-- Lavora con noi -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                    Lavora con noi
+                    {{ __('ui.work-contact-sub') }}
                 </h6>
-                <p>Registrati e candidati qui</p>
-                <a href="{{ route('form_revisor') }}" class="btn mt-3 ms-md-3 button_revisor">Diventa revisore</a>
+                <p>{{ __('ui.work-contact-sub') }}</p>
+                <a href="{{ route('form_revisor') }}" class="btn mt-3 ms-md-3 button_revisor">{{ __('ui.work-btn') }}</a>
             </div>
 
         </div>
@@ -122,7 +122,7 @@
 
     <!-- Copyright -->
     <div id="footer-bottom" class="text-center p-3">
-        © 2023 Copyright:
+        © 2023 {{ __('ui.copyright') }}
         <a class="text-reset fw-bold" href="{{ route('home') }}">Presto.it</a>
     </div>
 </footer>
