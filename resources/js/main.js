@@ -160,14 +160,11 @@ navTog.addEventListener('click', () => {
         navTog.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         navTog.style.transform = 'rotate(180deg)';
         navTog.style.fontSize = '2rem'
-        navTog.style.borderRight = '2px solid var(--bglight)'
-        navTog.style.borderLeft = '2px solid var(--bglight)'
         isClicked = false;
     } else {
         navTog.innerHTML = '<i class="fa-solid fa-bars"></i>';
         navTog.style.transform = '';
         navTog.style.fontSize = '2rem'
-        navTog.style.border = ''
         isClicked = true;
     }
 })
