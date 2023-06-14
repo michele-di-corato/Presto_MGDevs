@@ -18,6 +18,12 @@
                     <li class="dropdown-item a-la">
                         <x-_locale lang="es" text="Español" />
                     </li>
+                    <li class="dropdown-item a-la">
+                        <x-_locale lang="fr" text="Français" />
+                    </li>
+                    <li class="dropdown-item a-la">
+                        <x-_locale lang="de" text="Deutsch" />
+                    </li>
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="bars"
