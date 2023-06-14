@@ -7,7 +7,7 @@
             </a>
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Lingua</a>
+                    aria-expanded="false">{{ __('ui.language') }}</a>
                 <ul class="dropdown-menu drop-li drop-menu">
                     <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
@@ -16,10 +16,7 @@
                         <x-_locale lang="en" text="English" />
                     </li>
                     <li class="dropdown-item a-la">
-                        <x-_locale lang="fr" text="Francais" />
-                    </li>
-                    <li class="dropdown-item a-la">
-                        <x-_locale lang="de" text="Deutsch" />
+                        <x-_locale lang="es" text="Español" />
                     </li>
                 </ul>
             </div>
@@ -44,9 +41,9 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             @auth
-                                Ciao, {{ Auth::user()->name }}
+                                {{ __('ui.welcome-auth') }} {{ Auth::user()->name }}
                             @else
-                                Benvenuto, utente
+                                {{ __('ui.welcome-user') }}
                             @endauth
                         </a>
                         <ul id="dropdown" class="user-dropdown dropdown-menu drop-menu">
