@@ -22,7 +22,7 @@
                         </div>
                     @empty
                     <div class="alert alert-success fade show d-flex h-100 my-0" role="alert">
-                        <p>Non ci sono articoli!</p>
+                        <p>{{ __('ui.no-article-home') }}</p>
                     </div>
                     @endforelse
                 </div>
