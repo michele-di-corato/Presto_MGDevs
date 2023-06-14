@@ -47,8 +47,11 @@
                 </div>
             @enderror
         </div>
-        <div class="mb-3">
-            <input type="file" multiple class="py-3 form-control @error('temporary_images.*') is-invalid @enderror"
+        <div class="form-floating mb-3">
+            <label for="temporary_images" class="custom-file-upload">
+                Seleziona file
+            </label>
+            <input type="file" multiple class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror"
                 id="temporary_images" wire:model="temporary_images">
             @error('temporary_images.*')
                 <div class="text-danger mt-1">
@@ -68,7 +71,9 @@
                                     style="background-image: url({{ $image->temporaryUrl() }});">
                                 </div>
                                 <button type="button" class="btn bth-outline-danger mx-auto"
-                                    wire:click="removeImage({{ $key }})">Cancella</button>
+                                    wire:click="removeImage({{ $key }})">
+                                    Cancella
+                                </button>
                             </div>
                         @endforeach
                     </div>

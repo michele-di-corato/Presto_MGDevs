@@ -37,11 +37,11 @@ p {
     transition: 0.4s;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: var(--bg);
 }
 
-.dropdown-item:active{
+.dropdown-item:active {
     background-color: var(--bglight);
 }
 
@@ -57,9 +57,10 @@ p {
 
 /* Card Prodotti */
 @media (min-width: 992px) {
-    .card-img-top{
+    .card-img-top {
         filter: blur(2px);
     }
+
     .card-overlay {
         position: absolute;
         top: 0;
@@ -71,10 +72,12 @@ p {
         opacity: 0;
         transition: opacity 0.3s ease;
     }
-    .card:hover .card-overlay{
+
+    .card:hover .card-overlay {
         opacity: 1;
     }
 }
+
 @media (max-width: 992px) {
     .card-overlay {
         position: absolute;
@@ -84,7 +87,8 @@ p {
         height: 100%;
         border-radius: 10px;
     }
-    #nav{
+
+    #nav {
         background-color: var(--elemdarktransp);
     }
 }
@@ -128,17 +132,17 @@ p {
 }
 
 /* Annunci */
-#annunci{
+#annunci {
     background-color: var(--bgdarktransp);
     border-radius: 10px 10px 0px 0px;
 }
 
-#annunci2{
+#annunci2 {
     background-color: var(--elemtransp);
     border-radius: 10px 10px 0px 0px;
 }
 
-#annuncio{
+#annuncio {
     background-color: var(--bgdarktransp);
     border-radius: 10px;
 }
@@ -148,21 +152,21 @@ p {
     border-bottom: 1px solid var(--text);
 }
 
-#footer{
+#footer {
     background: linear-gradient(var(--bgdark), var(--elemdark));
 }
 
-main{
+main {
     background-color: var(--bgdark);
 }
 
 
 /* Cerca Button */
-.search-form{
+.search-form {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
     width: 50px;
     height: 50px;
@@ -171,11 +175,12 @@ main{
 
 }
 
-.search-input{
+.search-input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;;
+    width: 100%;
+    ;
     height: 45px;
     line-height: 30px;
     outline: 0;
@@ -187,7 +192,7 @@ main{
     padding: 0 20px;
 }
 
-.btn-search{
+.btn-search {
     box-sizing: border-box;
     padding: 10px;
     width: 45px;
@@ -202,17 +207,17 @@ main{
     transition: all 1s;
 }
 
-.search-form:hover{
+.search-form:hover {
     width: 300px;
     cursor: pointer;
     border: 3px solid var(--elemlighttransp);
 }
 
-.search-form:hover input{
+.search-form:hover input {
     display: block;
 }
 
-.search-form:hover .fa{
+.search-form:hover .fa {
     background: var(--elemtransp);
 }
 
@@ -221,31 +226,43 @@ main{
 }
 
 /* Table */
-.table-pers{
+.table-pers {
     background-color: var(--elemlighttransp);
     border-radius: 10px;
 }
 
-.b-true{
+.b-true {
     background-color: rgba(0, 128, 0, 0.3);
     border-radius: 10px;
     text-align: center;
     padding: 7px;
 }
-.b-null{
+
+.b-null {
     background-color: rgba(255, 255, 0, 0.3);
     border-radius: 10px;
     text-align: center;
     padding: 7px;
 }
 
-.b-false{
+.b-false {
     background-color: rgba(255, 0, 0, 0.3);
     border-radius: 10px;
     text-align: center;
     padding: 7px;
 }
 
-::placeholder{
+::placeholder {
     color: var(--text);
+}
+
+.custom-file-upload {
+    background-color: var(--bgdark);
+    color: var(--text);
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 2rem;
+}
+
+#temporary_images{
+    padding: 38px;
 }
