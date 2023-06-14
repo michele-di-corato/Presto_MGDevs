@@ -19,10 +19,12 @@ class RevisorMail extends Mailable
      */
 
     public $user;
+    public $presentation;
 
-    public function __construct(User $user)
+    public function __construct(User $user, $presentation)
     {
         $this->user = $user;
+        $this->presentation = $presentation;
     }
 
     /**
@@ -32,7 +34,7 @@ class RevisorMail extends Mailable
     {
         return new Envelope(
             subject: 'Candidatura da Revisore',
-            from:$this->user->email
+            from: $this->user->email
         );
     }
 

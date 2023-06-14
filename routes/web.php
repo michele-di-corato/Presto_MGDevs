@@ -31,6 +31,7 @@ Route::patch('/revisor/announce/accept/{announce}', [RevisorController::class, '
 Route::patch('/revisor/announce/reject/{announce}', [RevisorController::class, 'reject'])->name('reject_announce');
 Route::patch('/revisor/announce/undo', [RevisorController::class, 'undoAction'])->name('undo_announce');
 Route::patch('/revisor/announce/undo/{announce}', [RevisorController::class, 'undoRevision'])->name('undo_revision');
+Route::get('/revisor/form', [RevisorController::class, 'formRevisor'])->name('form_revisor');
 Route::get('/revisor/request', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
 Route::get('/revisor/make/{user}', [RevisorController::class, 'makeRevisor'])->name('make_revisor');
 Route::get('/revisor/log', [RevisorController::class, 'logRevisions'])->name('log_revisions');
