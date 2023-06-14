@@ -14,7 +14,7 @@ class RevisorController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('isRevisor')->except('becomeRevisor', 'makeRevisor');
+        $this->middleware('isRevisor')->except('becomeRevisor', 'makeRevisor', 'formRevisor');
     }
 
     public function index()
@@ -51,10 +51,16 @@ class RevisorController extends Controller
         return redirect()->back()->with('confirm', 'Hai annullato l\'ultima azione');
     }
 
-    public function becomeRevisor()
+    public function formRevisor()
     {
-        Mail::to('admin@presto.it')->send(new RevisorMail(Auth::user()));
-        return redirect()->back()->with('confirm', 'La candidatura è stata inviata con successo');
+        return view('revisor.mail-form');
+    }
+
+    public function becomeRevisor(Request $request)
+    {
+        $presentation = $request->presentation;
+        Mail::to('admin@presto.it')->send(new RevisorMail(Auth::user(), $presentation));
+        return redirect('/')->with('confirm', 'La candidatura è stata inviata con successo');
     }
 
     public function makeRevisor(User $user)
