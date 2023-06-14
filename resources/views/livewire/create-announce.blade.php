@@ -63,7 +63,7 @@
                     <p>Anteprima Immagini:</p>
                     <div class="row">
                         @foreach ($images as $key => $image)
-                            <div class="col d-flex flex-column">
+                            <div class="col d-flex flex-column my-3">
                                 <div class="img-preview mx-auto rounded mb-3"
                                     style="background-image: url({{ $image->temporaryUrl() }});">
                                 </div>
