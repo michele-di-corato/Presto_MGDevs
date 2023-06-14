@@ -51,6 +51,13 @@ class EditAnnounce extends Component
         }
     }
 
+    public function deleteImage($id)
+    {
+        $image_to_delete = Image::find($id);
+        $image_to_delete->delete();
+        return redirect(route('edit_announce', ['announce' => $this->announce]));
+    }
+
     public function editAnnounce()
     {
         $this->validate();

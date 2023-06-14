@@ -1,11 +1,11 @@
 <form wire:submit.prevent="createAnnounce">
 
-    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">Crea Annuncio</h1>
+    <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">{{ __('ui.add-announce-title') }}</h1>
 
     <div class="card card-pers p-3">
         <div class="mb-3">
             <input type="text" class="py-3 form-control @error('name') is-invalid @enderror" id="productName"
-                placeholder="Prodotto" wire:model="name">
+                placeholder="{{ __('ui.add-product-placehold') }}" wire:model="name">
             @error('name')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
@@ -14,7 +14,7 @@
         </div>
         <div class="mb-3">
             <input type="number" step="0.01" class="py-3 form-control @error('price') is-invalid @enderror"
-                id="productPrice" placeholder="Prezzo" wire:model="price">
+                id="productPrice" placeholder="{{ __('ui.add-price-placehold') }}" wire:model="price">
             @error('price')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
@@ -23,7 +23,7 @@
         </div>
         <div class="mb-3">
             <textarea class="py-3 form-control @error('description') is-invalid @enderror" id="productDescription"
-                style="height: 100px" placeholder="Descrizione" wire:model="description"></textarea>
+                style="height: 100px" placeholder="{{ __('ui.add-description-placehold') }}" wire:model="description"></textarea>
             @error('description')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>
@@ -35,7 +35,7 @@
             <div class="form-group col-12">
                 <select class="py-3 form-control @error('category_id') is-invalid @enderror" id="category"
                     wire:model="category_id">
-                    <option class="text-col" value="">Seleziona una categoria</option>
+                    <option class="text-col" value="">{{ __('ui.add-category-placehold') }}</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
@@ -49,7 +49,7 @@
         </div>
         <div class="form-floating mb-3">
             <label for="temporary_images" class="custom-file-upload">
-                Seleziona file
+                {{ __('ui.add-image-btn') }}
             </label>
             <input type="file" multiple class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror"
                 id="temporary_images" wire:model="temporary_images">
@@ -63,7 +63,7 @@
         @if (!empty($images))
             <div class="row my-5">
                 <div class="col-12">
-                    <p>Anteprima Immagini:</p>
+                    <p>{{ __('ui.img-preview') }}</p>
                     <div class="row">
                         @foreach ($images as $key => $image)
                             <div class="col d-flex flex-column my-3">
@@ -72,7 +72,7 @@
                                 </div>
                                 <button type="button" class="btn bth-outline-danger mx-auto"
                                     wire:click="removeImage({{ $key }})">
-                                    Cancella
+                                    {{ __('ui.img-delete') }}
                                 </button>
                             </div>
                         @endforeach
@@ -82,7 +82,7 @@
         @endif
 
         <div class="d-flex justify-content-center align-items-center">
-            <button type="submit" id="btn-create" class="btn btn-create fs-5">Invia</button>
+            <button type="submit" id="btn-create" class="btn btn-create fs-5">{{ __('ui.add-announce-btn') }}</button>
             <span class="span-icon"><i class="mx-3 bi-arrow bi bi-arrow-left-square"></i></span>
         </div>
 

@@ -57,22 +57,22 @@
                 </div>
             @enderror
         </div>
-        @if (!empty($images))
-            <div class="row my-5">
-                <div class="col-12">
-                    <p>Anteprima Immagini:</p>
-                    <div class="row">
-                        @foreach ($old_images as $key => $image)
-                            <div class="col d-flex flex-column my-3">
-                                <div class="img-preview mx-auto rounded mb-3"
-                                    style="background-image: url({{ $image->getUrl(300, 300) }});">
-                                </div>
-                                <button type="button" class="btn bth-outline-danger mx-auto"
-                                    wire:click="removeImage({{ $key }})">
-                                    Cancella
-                                </button>
+        <div class="row my-5">
+            <div class="col-12">
+                <p>Anteprima Immagini:</p>
+                <div class="row">
+                    @foreach ($old_images as $image)
+                        <div class="col d-flex flex-column my-3">
+                            <div class="img-preview mx-auto rounded mb-3"
+                                style="background-image: url({{ $image->getUrl(300, 300) }});">
                             </div>
-                        @endforeach
+                            <button type="button" class="btn bth-outline-danger mx-auto"
+                                wire:click="deleteImage({{ $image->id }})">
+                                Cancella
+                            </button>
+                        </div>
+                    @endforeach
+                    @if (!empty($images))
                         @foreach ($images as $key => $image)
                             <div class="col d-flex flex-column my-3">
                                 <div class="img-preview mx-auto rounded mb-3"
@@ -85,9 +85,9 @@
                             </div>
                         @endforeach
 
-                    </div>
                 </div>
             </div>
+        </div>
         @endif
         <div class="d-flex justify-content-center align-items-center mt-3">
             <button type="submit" id="btn-edit" class="btn btn-edit fs-5">Modifica</button>
