@@ -12,7 +12,7 @@
                     <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
                     </li>
-                    <li class="dropdown-item a-la">
+                    <li class="dropdown-itema-la">
                         <x-_locale lang="en" text="English" />
                     </li>
                     <li class="dropdown-item a-la">
