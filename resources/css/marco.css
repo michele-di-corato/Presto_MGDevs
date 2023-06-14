@@ -91,17 +91,17 @@
     transition: 0.4s;
 }
 
-.drop-li {
-    color: var(--bglight);
+.a-la {
     padding: 10px 20px;
     font-size: 15px;
-    box-shadow: inset 0 0 0 0 var(--bglight);
+    box-shadow: inset 0 0 0 0 var(--text);
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
 }
 
 .a-la:hover {
+    color: var(--bglight);
     box-shadow: inset 400px 0 0 0 var(--text);
 }
 
