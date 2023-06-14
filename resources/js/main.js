@@ -6,9 +6,11 @@ let navLink = document.querySelectorAll(".nav-link");
 if (window.innerWidth > 992) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
+            navTitle.style.borderRadius = "10px";
             navbar.style.marginTop = "3dvh";
             navbar.style.marginRight = "18dvh";
             navbar.style.marginLeft = "18dvh";
+            navbar.style.borderRadius = "1rem";
             navbar.style.backgroundColor = "var(--elemtransp)";
             navbar.style.border = "0px solid var(--elemlighttransp)";
         } else {
