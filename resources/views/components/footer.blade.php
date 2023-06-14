@@ -97,7 +97,7 @@
             <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">{{ __('ui.contact') }}</h6>
-                <p><i class="fas fa-home me-3 text-dark"></i> {{ __('ui.work-site') }}</p>
+                <p><i class="fas fa-home me-3 col-text"></i> {{ __('ui.work-site') }}</p>
                 <p>
                     <i class="fas fa-envelope me-3 col-text"></i>
                     info@example.com
