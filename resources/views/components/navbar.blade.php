@@ -7,7 +7,7 @@
             </a>
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">{{ __('ui.language') }}</a>
+                    aria-expanded="false">Lingua</a>
                 <ul class="dropdown-menu drop-li drop-menu">
                     <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
@@ -41,9 +41,9 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             @auth
-                                {{ __('ui.welcome-auth') }} {{ Auth::user()->name }}
+                                Ciao, {{ Auth::user()->name }}
                             @else
-                                {{ __('ui.welcome-user') }}
+                                Benvenuto, utente
                             @endauth
                         </a>
                         <ul id="dropdown" class="user-dropdown dropdown-menu drop-menu">

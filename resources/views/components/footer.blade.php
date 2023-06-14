@@ -97,13 +97,13 @@
             <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3 text-dark"></i> New York, US</p>
+                <p><i class="fas fa-home me-3 col-text"></i> New York, US</p>
                 <p>
-                    <i class="fas fa-envelope me-3 text-dark"></i>
+                    <i class="fas fa-envelope me-3 col-text"></i>
                     info@example.com
                 </p>
-                <p><i class="fas fa-phone me-3 text-dark"></i>+ 01 234 567 88</p>
-                <p><i class="fas fa-print me-3 text-dark"></i>+ 01 234 567 89</p>
+                <p><i class="fas fa-phone me-3 col-text"></i>+ 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 col-text"></i>+ 01 234 567 89</p>
             </div>
 
             <!-- Grid column -->
