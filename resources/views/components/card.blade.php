@@ -8,19 +8,24 @@
             <h5 class="card-subtitle ms-auto">Prezzo: {{ $announce->price }}€</h5>
             <p class="card-text">{{ $announce->description }}</p>
         </div>
-        <div class="row justify-content-center text-center pt-3">
-            <div class="col-12 col-lg-8 p-2">
-                <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann w-100">Dettagli</a>
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-12 justify-content-evenly">
+                    <div class="py-2">
+                        <a href="{{ route('announce_detail', $announce->id) }}"
+                            class="btn pe-md-1 btn-index btn-ann w-100">Dettagli</a>
+                    </div>
+                    @if ($announce->user_id == Auth::id() && Auth::check())
+                        <div class="py-2">
+                            <a href="{{ route('edit_announce', compact('announce')) }}"
+                                class="btn pe-md-1 btn-index btn-ann w-100">Modifica</a>
+                        </div>
+                        <div class="py-2">
+                            @livewire('delete-announce', compact('announce'))
+                        </div>
+                    @endif
+                </div>
             </div>
-            @if ($announce->user_id == Auth::id() && Auth::check())
-                <div class="col-12 col-lg-8 p-2">
-                    <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann w-100">Modifica</a>
-                </div>
-                <div class="col-12 col-lg-8 p-2">
-                    @livewire('delete-announce', compact('announce'))
-                </div>
-            @endif
-
         </div>
     </div>
 </div>

@@ -8,26 +8,24 @@
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Lingua</a>
-                <ul class="dropdown-menu drop-menu">
-                    <li class="dropdown-item">
+                <ul class="dropdown-menu drop-li drop-menu">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="en" text="English" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="fr" text="Francais" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="de" text="Deutsch" />
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-             id="bars" class="navbar-toggler" type="button"  data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="bars"
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
