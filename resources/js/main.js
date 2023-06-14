@@ -6,8 +6,6 @@ let navLink = document.querySelectorAll(".nav-link");
 if (window.innerWidth > 992) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 100) {
-            navTitle.style.borderLeft = "2px solid var(--text)";
-            navTitle.style.borderRight = "2px solid var(--text)";
             navTitle.style.borderRadius = "10px";
             navbar.style.marginTop = "3dvh";
             navbar.style.marginRight = "18dvh";
@@ -16,15 +14,11 @@ if (window.innerWidth > 992) {
             navbar.style.backgroundColor = "var(--elemtransp)";
             navbar.style.border = "0px solid var(--elemlighttransp)";
         } else {
-            navTitle.style.borderLeft = "";
-            navTitle.style.borderRight = "";
-            navTitle.style.borderRadius = "";
             navbar.style.marginTop = "0px";
             navbar.style.marginRight = "0px";
             navbar.style.marginLeft = "0px";
             navbar.style.borderRadius = "0rem";
             navbar.style.backgroundColor = "";
-            navbar.style.border = ""
         }
     });
 }
