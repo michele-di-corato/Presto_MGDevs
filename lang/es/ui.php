@@ -1,7 +1,7 @@
 <?php
 return [
     // Sezione navbar
-    'language' => 'Lengua',
+    'language' => 'Idioma',
     'add-announce' => 'Publica anuncio',
     'show-announces' => 'Mostra anuncios',
     'welcome-user' => 'Bienvenido, usuario',
@@ -14,7 +14,7 @@ return [
     'placehold-search' => 'Busca',
     // Sezione home
     'welcome' => 'Bienvenido a Presto.it!',
-    'welcome2' => 'Aquí Puedes Subir, Y Encontrar Productos De Todo Tipo',
+    'welcome2' => 'Aquí Podràs cargar, Y Encontrar Productos De Todo Tipo',
     'latest-ann' => 'Últimos anuncios',
     // Sezione footer
     'social-links' => 'Conéctate con nosotros en las redes sociales:',

@@ -5,7 +5,7 @@
             <div class="col-12 col-md-10 py-5">
 
                 {{-- Dati Profilo --}}
-                <div class="card p-3 mb-2 col-text">
+                <div class="card p-3 mb-3 col-text">
                     <div class="text-center">
                         <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
                             class="img-thumbnail img-fluid" style="width:100px">
@@ -44,11 +44,19 @@
                     {{-- Tabelle --}}
                     <div class="row justify-content-center align-items-center">
 
-                        @foreach ($announces as $announce)
+                        @forelse ($announces as $announce)
                             <div class="col-12">
                                 <x-tableCard :announce="$announce" />
                             </div>
-                        @endforeach
+                        @empty
+                            <div class="col-12">
+                                <div class="table-pers2 mt-2 p-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h4>Non hai annunci!</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforelse
 
                     </div>
 

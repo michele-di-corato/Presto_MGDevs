@@ -18,7 +18,7 @@
 
                 <div id="annunci" class="mb-2">
 
-                    <h1 class="text-center col-text display-6 p-2">Annunci</h1>
+                    <h1 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h1>
                     <x-navCategory />
 
                 </div>
@@ -30,10 +30,8 @@
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-                            <div class="alert alert-success fade show d-flex h-100 my-0" role="alert">
-                                <p>La ricerca non ha prodotto alcun risultato. Prova a cambiare campo di ricerca.</p>
-                                <button type="button" class="btn-close align-self-center ms-3" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
+                            <div class="alert alert-success fade show d-flex my-0 h-100" role="alert">
+                                <p>{{ __('ui.no-result-alert') }}</p>
                             </div>
                         @endforelse
                     </div>
