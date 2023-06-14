@@ -16,6 +16,7 @@ return [
     'welcome' => 'Welcome on Presto.it!',
     'welcome2' => 'Here you can upload, And find all kinds of Products',
     'latest-ann' => 'Latest Announces',
+    'no-article-home'=>'No articles found!',
     // Sezione footer
     'social-links' => 'Link with us on social medias:',
     'products' => 'Products',
@@ -24,7 +25,7 @@ return [
     'work-contact-title' => 'Join us',
     'work-contact-sub' => 'Register and candidate yourself here',
     'work-btn' => 'Become  Revisor',
-    'work-site' => 'San Francisco, US',
+    'work-site' => 'London, UK',
     'copyright' => 'Copyright:',
     // Sezione inserisci annunci
     'add-announce-title' => 'Create Announce',
