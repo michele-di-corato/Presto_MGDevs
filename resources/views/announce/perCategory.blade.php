@@ -19,9 +19,7 @@
                             </div>
                         @empty
                             <div class="alert alert-success fade show d-flex mt-3" role="alert">
-                                <p>Nessun annuncio trovato.</p>
-                                <button type="button" class="btn-close align-self-center ms-3" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
+                                <p>Nessun annuncio trovato!</p>
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">
@@ -30,7 +28,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

@@ -231,6 +231,11 @@ main {
     border-radius: 10px;
 }
 
+.table-pers2 {
+    background-color: var(--elemlighttransp);
+    border-radius: 0px 0px 10px 10px;
+}
+
 .b-true {
     background-color: rgba(0, 128, 0, 0.3);
     border-radius: 10px;
