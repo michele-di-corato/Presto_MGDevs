@@ -185,8 +185,6 @@ let observerCard = new IntersectionObserver((entries) => {
 
 observerCard.observe(Pointer);
 
-
-
 let Start = document.querySelector('#Start');
 let End = document.querySelector('#End');
 
