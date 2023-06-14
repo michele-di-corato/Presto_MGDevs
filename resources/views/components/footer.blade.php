@@ -91,9 +91,10 @@
                     <a href="{{ route('home') }}" class="footer-link text-reset">Lorem</a>
                 </p>
             </div>
-            
+
+
             <!-- Grid column -->
-            <div class="col-12 col-md-2 mb-4">
+            <div class="col-12 col-md-2 mb-4 ">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p><i class="fas fa-home me-3 text-dark"></i> New York, US</p>
@@ -112,7 +113,7 @@
                     Lavora con noi
                 </h6>
                 <p>Registrati e candidati qui</p>
-                <a href="{{route('become_revisor')}}" class="btn mt-3 btn-revisor ">Diventa revisore</a>
+                <a href="{{route('become_revisor')}}" class="btn mt-3 ms-md-3  button_revisor ">Diventa revisore</a>
             </div>
 
         </div>

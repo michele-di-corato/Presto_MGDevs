@@ -8,17 +8,17 @@
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Lingua</a>
-                <ul class="dropdown-menu drop-menu">
-                    <li class="dropdown-item">
+                <ul class="dropdown-menu drop-li drop-menu">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="en" text="English" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="fr" text="Francais" />
                     </li>
-                    <li class="dropdown-item">
+                    <li class="dropdown-item a-la">
                         <x-_locale lang="de" text="Deutsch" />
                     </li>
                 </ul>
