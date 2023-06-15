@@ -7,11 +7,11 @@
                 <div class="card p-3 navbar-brand">
 
                     <p class="d-flex align-items-center">
-                        Categorie<i id="icona-row" class="bi bi-arrow-down-short fs-5"></i>
+                        {{ __('ui.nav-category') }}<i id="icona-row" class="bi bi-arrow-down-short fs-5"></i>
                     </p>
 
-                    
-                </div>                
+
+                </div>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,7 +27,7 @@
                     <div class="col-12 mb-1">
                         <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                             style="height: 8vh;" href="{{ route('show_announces') }}">
-                            Tutte le categorie
+                            {{ __('ui.nav-all-categories') }}
                         </a>
                     </div>
                 </div>

@@ -12,6 +12,9 @@ return [
     'drop-profile' => 'Profil',
     'drop-revise' => 'Réviser les annonces',
     'placehold-search' => 'Rechercher',
+    // Sezione navbar categorie
+    'nav-category' => 'Catégorie',
+    'nav-all-categories' => 'Toutes les catégories',
     // Sezione home
     'welcome' => 'Bienvenue sur Presto.it !',
     'welcome2' => 'Ici, vous pouvez publier et trouver toutes sortes de produits',

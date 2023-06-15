@@ -13,6 +13,9 @@ return [
     'drop-profile' => 'Profil',
     'drop-revise' => 'Anzeigen überprüfen',
     'placehold-search' => 'Suche',
+    // Sezione navbar categorie
+    'nav-category' => 'Kategorie',
+    'nav-all-categories' => 'Alle Kategorien',
     // Sezione home
     'welcome' => 'Willkommen auf Presto.it!',
     'welcome2' => 'Hier können Sie alle Arten von Produkten hochladen und finden',

@@ -12,11 +12,14 @@ return [
     'drop-profile' => 'Profile',
     'drop-revise' => 'Revise announces',
     'placehold-search' => 'Search',
+    // Sezione navbar categorie
+    'nav-category' => 'Categories',
+    'nav-all-categories' => 'All categories',
     // Sezione home
     'welcome' => 'Welcome on Presto.it!',
     'welcome2' => 'Here you can upload, And find all kinds of Products',
     'latest-ann' => 'Latest Announces',
-    'no-article-home'=>'No articles found!',
+    'no-article-home' => 'No articles found!',
     // Sezione footer
     'social-links' => 'Link with us on social medias:',
     'products' => 'Products',
@@ -35,8 +38,8 @@ return [
     'add-category-placehold' => 'Choose category',
     'add-image-btn' => 'Upload file',
     'add-image-placehold' => 'No file selected',
-    'img-preview'=> 'Images Preview:', //da aggiungere
-    'img-delete'=>'Delete',//da aggiungere
+    'img-preview' => 'Images Preview:', //da aggiungere
+    'img-delete' => 'Delete', //da aggiungere
     'add-announce-btn' => 'Submit',
     // Sezione mostra annunci
     'show-title' => 'Announces',
@@ -47,14 +50,14 @@ return [
     'btn-details' => 'Details',
     'btn-modify' => 'Edit',
     'btn-delete' => 'Delete',
-    'no-result-alert'=>'Your search returned no results. Try changing search fields.',//da aggiungere
+    'no-result-alert' => 'Your search returned no results. Try changing search fields.', //da aggiungere
     // Sezione revisione annunci
     'undo-phrase' => 'Did you change idea about last announce?',
     'btn-undo' => 'Undo',
     'none-to-revise' => 'There\'s no announce to revise',
     'to-revise' => 'To be revised announces',
-    'created-at'=> 'Created at:',// da aggiungere
-    'created-by'=> 'Created by',// da aggiungere
+    'created-at' => 'Created at:', // da aggiungere
+    'created-by' => 'Created by', // da aggiungere
     'btn-approve' => 'Approve',
     'btn-reject' => 'Refuse',
     'revision-queue' => 'Announces queue',
@@ -74,7 +77,7 @@ return [
     'profile-username' => 'Username:',
     'profile-email' => 'E-mail:',
     'profile-announces' => 'Announces',
-    'profile-no-announces'=>'There\'s no announce',
+    'profile-no-announces' => 'There\'s no announce',
     // Sezione registrati
     'register-title' => 'Register',
     'register-name-placehold' => 'Name',

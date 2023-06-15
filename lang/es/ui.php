@@ -12,10 +12,14 @@ return [
     'drop-profile' => 'Perfil',
     'drop-revise' => 'Revisa anuncios',
     'placehold-search' => 'Busca',
+    // Sezione navbar categorie
+    'nav-category' => 'Categoría',
+    'nav-all-categories' => 'Todas las categorías',
     // Sezione home
     'welcome' => 'Bienvenido a Presto.it!',
     'welcome2' => 'Aquí Podràs cargar, Y Encontrar Productos De Todo Tipo',
     'latest-ann' => 'Últimos anuncios',
+    'no-article-home' => '¡No se encontraron anuncios!',
     // Sezione footer
     'social-links' => 'Conéctate con nosotros en las redes sociales:',
     'products' => 'Productos',
