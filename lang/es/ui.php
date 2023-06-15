@@ -34,8 +34,8 @@ return [
     'add-category-placehold' => 'Selecciona una categoría',
     'add-image-btn' => 'Elija el archivo',
     'add-image-placehold' => 'Ninguna selección de archivos',
-    'img-preview'=> 'Vista previa de imágenes:', // agregar
-    'img-delete'=>'Eliminar',// agregar
+    'img-preview' => 'Vista previa de imágenes:',
+    'img-delete' => 'Eliminar',
     'add-announce-btn' => 'Envía',
     // Sezione mostra annunci
     'show-title' => 'Anuncios',
@@ -44,21 +44,21 @@ return [
     'category-card' => 'Categoría:',
     'price-card' => 'Precio:',
     'btn-details' => 'Detalles',
-    'btn-modify' => 'Modifica',
-    'btn-delete' => 'Elimina',
+    'btn-modify' => 'Editar',
+    'btn-delete' => 'Eliminar',
     // Sezione revisione annunci
     'undo-phrase' => '¿Cambió de opinión sobre el último anuncio?',
     'btn-undo' => 'Annulla',
     'none-to-revise' => 'No hay anuncios para revisar',
     'to-revise' => 'Anuncio a revisar',
-    'created-at'=> 'Creado el:',// agregar
-    'created-by'=> 'Creado por:',// agregar
+    'created-at' => 'Creado el:',
+    'created-by' => 'Creado por:',
     'btn-approve' => 'Aprobar',
     'btn-reject' => 'Rechaza',
     'revision-queue' => 'Anuncios en la cola',
-    'no-revision-queue' => 'No hay anuncios en cola', // agregar
+    'no-revision-queue' => 'No hay anuncios en cola',
     'history-revisions' => 'Histórico anuncios revisados',
-    'no-history-revisions' => 'No hay historial de anuncios', // agregar
+    'no-history-revisions' => 'No hay historial de anuncios',
     'revision-table-name' => 'Nombre',
     'revision-table-category' => 'Categoría',
     'revision-table-price' => 'Precio',
@@ -72,6 +72,7 @@ return [
     'profile-username' => 'Nombre de usuario:',
     'profile-email' => 'E-mail:',
     'profile-announces' => 'Anuncios',
+    'profile-no-announces' => 'No hay anuncios',
     // Sezione registrati
     'register-title' => 'Regístrate',
     'registar-name-placehold' => 'Nombre',
@@ -91,7 +92,7 @@ return [
     // Sezione dettagli
     'details-createdBy' => 'Creado por:',
     'details-createdDate' => 'Creado el:',
-    'btn-details' => 'Vuelve a los anuncios',
+    'btn-back-details' => 'Vuelve a los anuncios',
     // Sezione modifica annuncio
     'edit-announce-title' => 'Modifica Anuncios',
     'edit-name-placehold' => 'Producto',

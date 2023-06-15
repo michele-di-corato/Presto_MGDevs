@@ -1,9 +1,10 @@
+
 <?php
 return [
-    // Abschnitt Navbar
+    // Sezione navbar
     'language' => 'Sprache',
     'add-announce' => 'Anzeige hinzufügen',
-    'show-announces' => 'Anzeigen',
+    'show-announces' => 'Anzeigen anzeigen',
     'welcome-user' => 'Willkommen, Benutzer',
     'welcome-auth' => 'Hallo, ',
     'drop-register' => 'Registrieren',
@@ -11,33 +12,34 @@ return [
     'drop-logout' => 'Abmelden',
     'drop-profile' => 'Profil',
     'drop-revise' => 'Anzeigen überprüfen',
-    'placehold-search' => 'Suchen',
-    // Abschnitt Startseite
-    'welcome' => 'Willkommen bei Presto.it!',
-    'welcome2' => 'Hier können Sie Produkte aller Art hochladen und finden',
+    'placehold-search' => 'Suche',
+    // Sezione home
+    'welcome' => 'Willkommen auf Presto.it!',
+    'welcome2' => 'Hier können Sie alle Arten von Produkten hochladen und finden',
     'latest-ann' => 'Neueste Anzeigen',
-    // Abschnitt Footer
-    'social-links' => 'Folgen Sie uns in den sozialen Medien:',
+    'no-article-home' => 'Keine Artikel gefunden!',
+    // Sezione footer
+    'social-links' => 'Verbinden Sie sich mit uns in sozialen Medien:',
     'products' => 'Produkte',
-    'links' => 'Nützliche Links',
+    'links' => 'Links',
     'contact' => 'Kontaktieren Sie uns',
-    'work-contact-title' => 'Arbeiten Sie mit uns',
-    'work-contact-sub' => 'Hier registrieren und bewerben',
-    'work-btn' => 'Werden Sie Gutachter',
+    'work-contact-title' => 'Schließen Sie sich uns an',
+    'work-contact-sub' => 'Registrieren Sie sich hier und bewerben Sie sich',
+    'work-btn' => 'Werden Sie Überprüfer',
     'work-site' => 'Berlin, DE',
     'copyright' => 'Urheberrecht:',
-    // Abschnitt Anzeige hinzufügen
+    // Sezione inserisci annunci
     'add-announce-title' => 'Anzeige erstellen',
     'add-product-placehold' => 'Produkt',
     'add-price-placehold' => 'Preis',
     'add-description-placehold' => 'Beschreibung',
     'add-category-placehold' => 'Kategorie auswählen',
-    'add-image-btn' => 'Datei auswählen',
+    'add-image-btn' => 'Datei hochladen',
     'add-image-placehold' => 'Keine Datei ausgewählt',
-    'img-preview'=> 'Bilder-Vorschau:', // hinzufügen
-    'img-delete'=>'Löschen',// hinzufügen
+    'img-preview' => 'Bilder-Vorschau:',
+    'img-delete' => 'Löschen',
     'add-announce-btn' => 'Senden',
-    // Abschnitt Anzeigen anzeigen
+    // Sezione mostra annunci
     'show-title' => 'Anzeigen',
     'categories-btn' => 'Kategorien',
     'all-categories-btn' => 'Alle Kategorien',
@@ -46,21 +48,20 @@ return [
     'btn-details' => 'Details',
     'btn-modify' => 'Bearbeiten',
     'btn-delete' => 'Löschen',
-    'no-result-alert'=>'Deine Suche ergab keine Ergebnisse. Versuche, die Suchkriterien zu ändern.',// hinzufügen
-
-    // Abschnitt Anzeigen überprüfen
-    'undo-phrase' => 'Haben Sie es sich anders überlegt bei der letzten Anzeige?',
+    'no-result-alert' => 'Ihre Suche hat keine Ergebnisse geliefert. Versuchen Sie, die Suchkriterien zu ändern.',
+    // Sezione revisione annunci
+    'undo-phrase' => 'Haben Sie Ihre Meinung zur letzten Anzeige geändert?',
     'btn-undo' => 'Rückgängig machen',
-    'none-to-revise' => 'Keine Anzeigen zur Überprüfung',
-    'to-revise' => 'Anzeige zur Überprüfung',
-    'created-at'=> 'Erstellt am:',// hinzufügen
-    'created-by'=> 'Erstellt von:',// hinzufügen
+    'none-to-revise' => 'Es gibt keine Anzeige zur Überprüfung',
+    'to-revise' => 'Anzeigen zur Überprüfung',
+    'created-at' => 'Erstellt am:',
+    'created-by' => 'Erstellt von:',
     'btn-approve' => 'Genehmigen',
     'btn-reject' => 'Ablehnen',
-    'revision-queue' => 'Anzeigen in der Warteschlange',
-    'no-revision-queue' => 'Es gibt keine Anzeigen in der Warteschlange', // hinzufügen
-    'history-revisions' => 'Überprüfungshistorie',
-    'no-history-revisions' => 'Es gibt keine Anzeigengeschichte', // hinzufügen
+    'revision-queue' => 'Anzeigenwarteschlange',
+    'no-revision-queue' => 'Es gibt keine Anzeige in der Warteschlange',
+    'history-revisions' => 'Überarbeitungsverlauf',
+    'no-history-revisions' => 'Es gibt keinen Überarbeitungsverlauf',
     'revision-table-name' => 'Name',
     'revision-table-category' => 'Kategorie',
     'revision-table-price' => 'Preis',
@@ -70,39 +71,40 @@ return [
     'table-status-approved' => 'Genehmigt',
     'table-status-pending' => 'Ausstehend',
     'table-status-rejected' => 'Abgelehnt',
-    // Abschnitt Profil
+    // Sezione profilo
     'profile-username' => 'Benutzername:',
     'profile-email' => 'E-Mail:',
     'profile-announces' => 'Anzeigen',
-    // Abschnitt Registrieren
+    'profile-no-announces' => 'Es gibt keine Anzeige',
+    // Sezione registrati
     'register-title' => 'Registrieren',
-    'registar-name-placehold' => 'Name',
-    'registar-email-placehold' => 'E-Mail',
-    'registar-password-placehold' => 'Passwort',
-    'registar-confirmation-placehold' => 'Passwort bestätigen',
+    'register-name-placehold' => 'Name',
+    'register-email-placehold' => 'E-Mail',
+    'register-password-placehold' => 'Passwort',
+    'register-confirmation-placehold' => 'Passwort bestätigen',
     'register-btn' => 'Registrieren',
-    'register-to-login' => 'Sie haben bereits ein Konto?',
-    'link-to-login' => 'Anmelden',
-    // Abschnitt Anmelden
+    'register-to-login' => 'Bereits registriert?',
+    'link-to-login' => 'Hier anmelden',
+    // Sezione login
     'login-title' => 'Anmelden',
     'login-email-placehold' => 'E-Mail',
     'login-password-placehold' => 'Passwort',
     'login-btn' => 'Anmelden',
-    'login-to-register' => 'Neuer Benutzer?',
+    'login-to-register' => 'Noch nicht registriert?',
     'link-to-register' => 'Hier registrieren',
-    // Abschnitt Details
+    // Sezione dettagli
     'details-createdBy' => 'Erstellt von:',
     'details-createdDate' => 'Erstellt am:',
-    'btn-details' => 'Zurück zu den Anzeigen',
-    // Abschnitt Anzeige bearbeiten
+    'btn-back-details' => 'Zurück zu den Anzeigen',
+    // Sezione modifica annuncio
     'edit-announce-title' => 'Anzeige bearbeiten',
     'edit-name-placehold' => 'Produkt',
     'edit-price-placehold' => 'Preis',
     'edit-description-placehold' => 'Beschreibung',
     'edit-category-placehold' => 'Kategorie auswählen',
     'edit-btn' => 'Bestätigen',
-    // Abschnitt Gutachter-Formular
-    'revisor-form-title' => 'Bewerbung senden',
-    'label-revisor-form' => 'Schreiben Sie ein Bewerbungsschreiben',
+    // Sezione form revisore
+    'revisor-form-title' => 'Senden Sie Ihre Bewerbung',
+    'label-revisor-form' => 'Schreiben Sie hier ein Anschreiben',
     'btn-send' => 'Senden',
 ];

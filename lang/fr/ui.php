@@ -1,6 +1,6 @@
 <?php
 return [
-    // Section navbar
+    // Sezione navbar
     'language' => 'Langue',
     'add-announce' => 'Ajouter une annonce',
     'show-announces' => 'Afficher les annonces',
@@ -12,32 +12,33 @@ return [
     'drop-profile' => 'Profil',
     'drop-revise' => 'Réviser les annonces',
     'placehold-search' => 'Rechercher',
-    // Section home
+    // Sezione home
     'welcome' => 'Bienvenue sur Presto.it !',
-    'welcome2' => 'Ici, vous pouvez charger et trouver des produits de tous types',
+    'welcome2' => 'Ici, vous pouvez publier et trouver toutes sortes de produits',
     'latest-ann' => 'Dernières annonces',
-    // Section footer
-    'social-links' => 'Suivez-nous sur les réseaux sociaux :',
+    'no-article-home' => 'Aucun article trouvé !',
+    // Sezione footer
+    'social-links' => 'Liens vers nos réseaux sociaux :',
     'products' => 'Produits',
-    'links' => 'Liens utiles',
+    'links' => 'Liens',
     'contact' => 'Contactez-nous',
-    'work-contact-title' => 'Travaillez avec nous',
+    'work-contact-title' => 'Rejoignez-nous',
     'work-contact-sub' => 'Inscrivez-vous et postulez ici',
     'work-btn' => 'Devenir réviseur',
     'work-site' => 'Paris, FR',
-    'copyright' => 'Tous droits réservés:',
-    // Section add announce
+    'copyright' => 'Droit d\'auteur:',
+    // Sezione inserisci annunci
     'add-announce-title' => 'Créer une annonce',
     'add-product-placehold' => 'Produit',
     'add-price-placehold' => 'Prix',
     'add-description-placehold' => 'Description',
-    'add-category-placehold' => 'Sélectionnez une catégorie',
-    'add-image-btn' => 'Choisir un fichier',
+    'add-category-placehold' => 'Choisir une catégorie',
+    'add-image-btn' => 'Télécharger le fichier',
     'add-image-placehold' => 'Aucun fichier sélectionné',
-    'img-preview'=> 'Aperçu des images :', // à ajouter
-    'img-delete'=>'Supprimer', // à ajouter
+    'img-preview' => 'Aperçu des images :',
+    'img-delete' => 'Supprimer',
     'add-announce-btn' => 'Envoyer',
-    // Section show announces
+    // Sezione mostra annunci
     'show-title' => 'Annonces',
     'categories-btn' => 'Catégories',
     'all-categories-btn' => 'Toutes les catégories',
@@ -46,20 +47,20 @@ return [
     'btn-details' => 'Détails',
     'btn-modify' => 'Modifier',
     'btn-delete' => 'Supprimer',
-    'no-result-alert'=>'Votre recherche n\'a donné aucun résultat. Essayez de modifier les critères de recherche.',// à ajouter
-    // Section revise announces
-    'undo-phrase' => 'Avez-vous changé d\'avis sur la dernière annonce ?',
+    'no-result-alert' => 'Votre recherche n\'a donné aucun résultat. Essayez de modifier les champs de recherche.',
+    // Sezione revisione annunci
+    'undo-phrase' => 'Avez-vous changé d\'avis au sujet de la dernière annonce ?',
     'btn-undo' => 'Annuler',
-    'none-to-revise' => 'Aucune annonce à réviser',
-    'to-revise' => 'Annonce à réviser',
-    'created-at'=> 'Créé le :', // à ajouter
-    'created-by'=> 'Créé par :', // à ajouter
+    'none-to-revise' => 'Il n\'y a aucune annonce à réviser',
+    'to-revise' => 'Annonces à réviser',
+    'created-at' => 'Créé le :',
+    'created-by' => 'Créé par :',
     'btn-approve' => 'Approuver',
-    'btn-reject' => 'Rejeter',
-    'revision-queue' => 'Annonces en attente de révision',
-    'no-revision-queue' => 'Il n\'y a aucune annonce en attente', // à ajouter
+    'btn-reject' => 'Refuser',
+    'revision-queue' => 'File d\'attente des annonces',
+    'no-revision-queue' => 'Il n\'y a aucune annonce en attente',
     'history-revisions' => 'Historique des annonces révisées',
-    'no-history-revisions' => 'Il n\'y a aucun historique d\'annonce', // à ajouter
+    'no-history-revisions' => 'Il n\'y a aucun historique d\'annonce',
     'revision-table-name' => 'Nom',
     'revision-table-category' => 'Catégorie',
     'revision-table-price' => 'Prix',
@@ -68,40 +69,41 @@ return [
     'revision-table-actions' => 'Actions',
     'table-status-approved' => 'Approuvé',
     'table-status-pending' => 'En attente',
-    'table-status-rejected' => 'Rejeté',
-    // Section profile
+    'table-status-rejected' => 'Refusé',
+    // Sezione profilo
     'profile-username' => 'Nom d\'utilisateur :',
     'profile-email' => 'E-mail :',
     'profile-announces' => 'Annonces',
-    // Section register
+    'profile-no-announces' => 'Il n\'y a aucune annonce',
+    // Sezione registrati
     'register-title' => 'S\'inscrire',
-    'registar-name-placehold' => 'Nom',
-    'registar-email-placehold' => 'E-mail',
-    'registar-password-placehold' => 'Mot de passe',
-    'registar-confirmation-placehold' => 'Confirmer le mot de passe',
+    'register-name-placehold' => 'Nom',
+    'register-email-placehold' => 'E-mail',
+    'register-password-placehold' => 'Mot de passe',
+    'register-confirmation-placehold' => 'Confirmer le mot de passe',
     'register-btn' => 'S\'inscrire',
-    'register-to-login' => 'Vous avez déjà un compte ?',
-    'link-to-login' => 'Se connecter',
-    // Section login
+    'register-to-login' => 'Déjà inscrit ?',
+    'link-to-login' => 'Connectez-vous ici',
+    // Sezione login
     'login-title' => 'Se connecter',
     'login-email-placehold' => 'E-mail',
     'login-password-placehold' => 'Mot de passe',
     'login-btn' => 'Se connecter',
-    'login-to-register' => 'Nouvel utilisateur ?',
-    'link-to-register' => 'S\'inscrire ici',
-    // Section details
+    'login-to-register' => 'Pas encore inscrit ?',
+    'link-to-register' => 'Inscrivez-vous ici',
+    // Sezione dettagli
     'details-createdBy' => 'Créé par :',
     'details-createdDate' => 'Créé le :',
-    'btn-details' => 'Retour aux annonces',
-    // Section edit announce
+    'btn-back-details' => 'Retour aux annonces',
+    // Sezione modifica annuncio
     'edit-announce-title' => 'Modifier l\'annonce',
     'edit-name-placehold' => 'Produit',
     'edit-price-placehold' => 'Prix',
     'edit-description-placehold' => 'Description',
-    'edit-category-placehold' => 'Sélectionnez une catégorie',
+    'edit-category-placehold' => 'Choisir une catégorie',
     'edit-btn' => 'Confirmer',
-    // Section reviewer form
+    // Sezione form revisore
     'revisor-form-title' => 'Envoyez votre candidature',
-    'label-revisor-form' => 'Écrivez une lettre de présentation',
+    'label-revisor-form' => 'Écrivez ici une lettre de présentation',
     'btn-send' => 'Envoyer',
 ];
