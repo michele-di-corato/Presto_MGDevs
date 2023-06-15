@@ -82,15 +82,17 @@
                                                             </div>
                                                             <div class="card-body">
                                                                 <h5>Revisione immagini</h5>
-                                                                <p>Adulti: <span class="{{ $image->adult }}"></span>
+                                                                <p>Contenuti espliciti: <span
+                                                                        class="{{ $image->adult }}"></span>
                                                                 </p>
-                                                                <p>Satira: <span class="{{ $image->spoof }}"></span>
+                                                                <p>Autenticità: <span
+                                                                        class="{{ $image->spoof }}"></span>
                                                                 </p>
-                                                                <p>Medicina: <span
+                                                                <p>Contenuto medico esplicito: <span
                                                                         class="{{ $image->medical }}"></span></p>
                                                                 <p>Violenza: <span
                                                                         class="{{ $image->violence }}"></span></p>
-                                                                <p>Ammiccante: <span
+                                                                <p>Contenuti inappropriati: <span
                                                                         class="{{ $image->racy }}"></span></p>
                                                             </div>
                                                         </div>
