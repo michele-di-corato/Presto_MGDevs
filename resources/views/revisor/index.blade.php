@@ -34,7 +34,7 @@
                     </div>
                 @endif
 
-                {{-- Anuncio --}}
+                {{-- Annuncio --}}
                 <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                     {{ __('ui.to-revise') }}
                 </h2>
@@ -44,16 +44,17 @@
                         <div class="col-12">
                             <div class="card card-pers pt-3">
                                 <div class="row justify-content-center align-items-center p-3">
-                                    <div class="col-12 col-md-6 text-center">
+                                    <div class="col-12 col-md-3 text-center">
                                         <h2>{{ $announce_to_check->name }}</h2>
                                         <h3>{{ $announce_to_check->category->name }}</h3>
                                         <h3>{{ $announce_to_check->price }} €</h3>
                                         <p>{{ $announce_to_check->description }}</p>
                                         <h5>{{ __('ui.created-by') }} {{ $announce_to_check->user->name }}</h5>
-                                        <h5>{{ __('ui.created-at') }} {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
+                                        <h5>{{ __('ui.created-at') }}
+                                            {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
                                     </div>
                                     @if (!$announce_to_check->images()->get()->isEmpty())
-                                        <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+                                        <div class="col-12 col-md-4 py-3 d-flex justify-content-center">
                                             <div id="carouselExampleControls" class="carousel slide"
                                                 data-bs-ride="carousel">
                                                 <div class="carousel-inner">
@@ -81,7 +82,7 @@
                                             </div>
                                         </div>
                                     @else
-                                        <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+                                        <div class="col-12 col-md-4 p-3 d-flex justify-content-center">
                                             <div id="carouselExampleControls" class="carousel slide"
                                                 data-bs-ride="carousel">
                                                 <div class="carousel-inner">
@@ -115,6 +116,28 @@
                                             </div>
                                         </div>
                                     @endif
+                                    <div class="col-6 col-md-2">
+                                        <div class="card-body">
+                                            <h5>Etichette</h5>
+                                            <div class="p-2">
+                                                @if ($image->labels)
+                                                    @foreach ($image->labels as $label)
+                                                        <p class="d-inline">{{ $label }}</p>
+                                                    @endforeach
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <div class="card-body">
+                                            <h5>Revisione immagini</h5>
+                                            <p>Adulti: <span class="{{ $image->adult }}"></span></p>
+                                            <p>Satira: <span class="{{ $image->spoof }}"></span></p>
+                                            <p>Medicina: <span class="{{ $image->medical }}"></span></p>
+                                            <p>Violenza: <span class="{{ $image->violence }}"></span></p>
+                                            <p>Ammiccante: <span class="{{ $image->racy }}"></span></p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row my-4">
                                     <div class="col-6 d-flex justify-content-center">
@@ -122,7 +145,8 @@
                                             action="{{ route('accept_announce', ['announce' => $announce_to_check]) }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="btn btn-ann mb-sm-3">{{ __('ui.btn-approve') }}</button>
+                                            <button type="submit"
+                                                class="btn btn-ann mb-sm-3">{{ __('ui.btn-approve') }}</button>
                                         </form>
                                     </div>
                                     <div class="col-6 d-flex justify-content-center">
@@ -130,7 +154,8 @@
                                             action="{{ route('reject_announce', ['announce' => $announce_to_check]) }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="btn btn-ann">{{ __('ui.btn-reject') }}</button>
+                                            <button type="submit"
+                                                class="btn btn-ann">{{ __('ui.btn-reject') }}</button>
                                         </form>
                                     </div>
                                 </div>
@@ -273,7 +298,8 @@
                                         <form method="POST" action="{{ route('undo_announce') }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="ms-md-2 btn btn-ann">{{ __('ui.btn-undo') }}</button>
+                                            <button type="submit"
+                                                class="ms-md-2 btn btn-ann">{{ __('ui.btn-undo') }}</button>
                                         </form>
                                     </div>
                                 </div>
