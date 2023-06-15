@@ -12,6 +12,7 @@ if (window.innerWidth > 992) {
             navbar.style.marginLeft = "18dvh";
             navbar.style.borderRadius = "1rem";
             navbar.style.backgroundColor = "var(--elem)";
+            navbar.style.border = "0px solid var(--elemlighttransp)";
         } else {
             navbar.style.marginTop = "0px";
             navbar.style.marginRight = "0px";

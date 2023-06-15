@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row justify-content-center align-items-center py-5">
+    <div class="row bg-last justify-content-center align-items-center py-5">
         <div class="col-12 col-md-10 py-5">
             <h1 id="annunci2" class="text-center col-text display-6 pb-2">{{ __('ui.latest-ann') }}</h1>
             <div class="card card-pers card2 p-3">
