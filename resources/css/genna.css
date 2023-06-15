@@ -204,7 +204,7 @@ main {
     color: var(--text);
     text-align: center;
     font-size: 1.5em;
-    transition: all 1s;
+    transition: ease-in .1s;
 }
 
 .search-form:hover {
