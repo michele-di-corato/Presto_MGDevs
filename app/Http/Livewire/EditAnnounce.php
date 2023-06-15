@@ -7,6 +7,7 @@ use Livewire\Component;
 use App\Models\Announce;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\File;
 
 class EditAnnounce extends Component
@@ -75,6 +76,7 @@ class EditAnnounce extends Component
                 $newFileName = "announces/{$this->announce->id}";
                 $newImage =  $this->announce->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
             }
         }
 
