@@ -60,7 +60,7 @@
                                                     @foreach ($announce_to_check->images as $image)
                                                         <div class="carousel-item active">
                                                             <img src="{{ $image->getUrl(300, 300) }}"
-                                                                class="d-block img-fluid" alt="DefaultImage">
+                                                                class="d-block img-fluid" alt="Default Image">
                                                         </div>
                                                     @endforeach
                                                 </div>
