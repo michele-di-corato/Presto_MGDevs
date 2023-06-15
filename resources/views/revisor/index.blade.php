@@ -44,7 +44,7 @@
                         <div class="col-12">
                             <div class="card card-pers pt-3">
                                 <div class="row justify-content-center align-items-center p-3">
-                                    <div class="col-12 col-md-3 text-center">
+                                    <div class="col-12 col-md-4 text-center">
                                         <h2>{{ $announce_to_check->name }}</h2>
                                         <h3>{{ $announce_to_check->category->name }}</h3>
                                         <h3>{{ $announce_to_check->price }} €</h3>
@@ -54,14 +54,43 @@
                                             {{ $announce_to_check->created_at->format('d/m/Y') }}</h5>
                                     </div>
                                     @if (!$announce_to_check->images()->get()->isEmpty())
-                                        <div class="col-12 col-md-4 py-3 d-flex justify-content-center">
+                                        <div class="col-12 col-md-8 py-3 d-flex justify-content-center">
                                             <div id="carouselExampleControls" class="carousel slide"
                                                 data-bs-ride="carousel">
                                                 <div class="carousel-inner">
                                                     @foreach ($announce_to_check->images as $image)
                                                         <div class="carousel-item active">
-                                                            <img src="{{ $image->getUrl(300, 300) }}"
-                                                                class="d-block img-fluid" alt="DefaultImage">
+                                                            <div class="d-flex flex-column align-items-center">
+                                                                <img src="{{ $image->getUrl(300, 300) }}"
+                                                                    class="d-block img-fluid" alt="DefaultImage">
+                                                                <div class="card-body text-center">
+                                                                    <h5>Etichette</h5>
+                                                                    <div class="p-2">
+                                                                        @if ($image->labels)
+                                                                            @foreach ($image->labels as $label)
+                                                                                <p class="d-inline">
+                                                                                    - {{ $label }}
+                                                                                </p>
+                                                                            @endforeach
+                                                                        @endif
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h5>Revisione immagini</h5>
+                                                                    <p>Adulti: <span
+                                                                            class="{{ $image->adult }}"></span>
+                                                                    </p>
+                                                                    <p>Satira: <span
+                                                                            class="{{ $image->spoof }}"></span>
+                                                                    </p>
+                                                                    <p>Medicina: <span
+                                                                            class="{{ $image->medical }}"></span></p>
+                                                                    <p>Violenza: <span
+                                                                            class="{{ $image->violence }}"></span></p>
+                                                                    <p>Ammiccante: <span
+                                                                            class="{{ $image->racy }}"></span></p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -116,7 +145,7 @@
                                             </div>
                                         </div>
                                     @endif
-                                    <div class="col-6 col-md-2">
+                                    {{-- <div class="col-6 col-md-2">
                                         <div class="card-body">
                                             <h5>Etichette</h5>
                                             <div class="p-2">
@@ -137,7 +166,7 @@
                                             <p>Violenza: <span class="{{ $image->violence }}"></span></p>
                                             <p>Ammiccante: <span class="{{ $image->racy }}"></span></p>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="row my-4">
                                     <div class="col-6 d-flex justify-content-center">
