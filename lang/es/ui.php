@@ -115,5 +115,15 @@ return [
     'revisor-form-title' => 'Envía tu aplicación',
     'label-revisor-form' => 'Escribe una carta de presentación',
     'btn-send' => 'Envía',
-    
+    // Sezione categorie
+    'category-1' => 'Ropa y accesorios',
+    'category-2' => 'Muebles y artículos para el hogar',
+    'category-3' => 'Electrónica',
+    'category-4' => 'Deportes y ocio',
+    'category-5' => 'Libros y cómics',
+    'category-6' => 'Herramientas y equipamiento',
+    'category-7' => 'Juegos y juguetes',
+    'category-8' => 'Antigüedades y coleccionables',
+    'category-9' => 'Belleza y cuidado personal',
+    'category-10' => 'Suministros para mascotas'
 ];
