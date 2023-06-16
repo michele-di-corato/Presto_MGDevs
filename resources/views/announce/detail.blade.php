@@ -18,7 +18,7 @@
 
 
                         @if (!$announce->images()->get()->isEmpty())
-                            <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+                            <div class="col-12 col-md-4 p-3 d-flex justify-content-center">
                                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         @foreach ($announce->images as $image)
@@ -44,7 +44,7 @@
                             </div>
                     </div>
                 @else
-                    <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-4 p-3 d-flex justify-content-center">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
