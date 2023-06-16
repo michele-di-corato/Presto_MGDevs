@@ -117,4 +117,15 @@ return [
     'revisor-form-title' => 'Senden Sie Ihre Bewerbung',
     'label-revisor-form' => 'Schreiben Sie hier ein Anschreiben',
     'btn-send' => 'Senden',
+    // Sezione categorie
+    'category-1' => 'Kleidung und Accessoires',
+    'category-2' => 'Möbel und Haushaltsgegenstände',
+    'category-3' => 'Elektronik',
+    'category-4' => 'Sport und Freizeit',
+    'category-5' => 'Bücher und Comics',
+    'category-6' => 'Werkzeuge und Ausrüstung',
+    'category-7' => 'Spiele und Spielzeug',
+    'category-8' => 'Vintage und Sammlerstücke',
+    'category-9' => 'Schönheit und Körperpflege',
+    'category-10' => 'Artikel für Haustiere',
 ];
