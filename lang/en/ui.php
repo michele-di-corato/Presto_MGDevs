@@ -73,6 +73,13 @@ return [
     'table-status-approved' => 'Approved',
     'table-status-pending' => 'Pending',
     'table-status-rejected' => 'Refused',
+    'tags' => 'Tags',
+    'images-revision' => 'Images Revise',
+    'image-adult' => ' Explicit content:',
+    'image-spoof' => 'Spoof:',
+    'image-medical' => 'Medical explicit content:',
+    'image-violence' => 'Violence:',
+    'image-racy' => 'Racy content:',
     // Sezione profilo
     'profile-username' => 'Username:',
     'profile-email' => 'E-mail:',

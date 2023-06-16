@@ -80,7 +80,7 @@
                                 </div>
                                 <button type="button" class="btn bth-outline-danger mx-auto"
                                     wire:click="removeImage({{ $key }})">
-                                    Cancella
+                                    {{__('ui.btn-delete')}}
                                 </button>
                             </div>
                         @endforeach
