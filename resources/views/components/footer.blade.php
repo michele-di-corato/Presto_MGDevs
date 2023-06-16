@@ -1,4 +1,4 @@
-<footer id="footer" class="text-center text-lg-start bg-white col-text">
+<footer id="footer" class="text-center text-lg-start bg-white col-text pt-5">
 
     <!-- Section: Social media -->
     <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 py-3">
@@ -113,7 +113,8 @@
                 </h6>
                 <p>{{ __('ui.work-contact-sub') }}</p>
                 <a href="{{ route('form_revisor') }}"
-                    class="btn mt-3 ms-md-3 button_revisor">{{ __('ui.work-btn') }}</a>
+                    class="btn mt-3 ms-md-3 button_revisor">{{ __('ui.work-btn') }}
+                </a>
             </div>
 
         </div>

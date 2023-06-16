@@ -64,7 +64,7 @@
             </div>
 
             @if (!empty($images))
-                <div class="row my-5">
+                <div class="row">
                     <div class="col-12">
                         <p>{{ __('ui.img-preview') }}</p>
                         <div class="row">
@@ -73,7 +73,7 @@
                                     <div class="img-preview mx-auto rounded mb-3"
                                         style="background-image: url({{ $image->temporaryUrl() }});">
                                     </div>
-                                    <button type="button" class="btn bth-outline-danger mx-auto"
+                                    <button type="button" class="btn btn-create mx-auto"
                                         wire:click="removeImage({{ $key }})">
                                         {{ __('ui.img-delete') }}
                                     </button>

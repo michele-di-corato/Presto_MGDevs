@@ -18,15 +18,15 @@
 
                 <div id="annunci" class="mb-2">
 
-                    <h1 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h1>
+                    <h2 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h2>
                     <x-navCategory />
 
                 </div>
 
-                <div class="card card-pers card-elem p-3">
+                <div class="card card-pers card-elem px-3 pb-3">
                     <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
-                            <div class="col-8 col-md-5 col-lg-4">
+                            <div class="col-12 col-md-4 col-lg-2 px-0 px-md-2 mb-3 mb-lg-0">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
@@ -35,10 +35,11 @@
                             </div>
                         @endforelse
                     </div>
-                </div>
 
-                <div class="d-flex justify-content-center">
-                    {{ $announces->links() }}
+                    <div class="d-flex justify-content-center align-items-center h-100 pt-4">
+                        {{ $announces->links() }}
+                    </div>
+
                 </div>
 
             </div>

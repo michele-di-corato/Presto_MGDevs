@@ -33,18 +33,18 @@
         </div>
 
         <div class="col-4 d-flex justify-content-center text-center">
-            <div class="col-4">
-                <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann">
+            <div class="col-4 px-2">
+                <a href="{{ route('announce_detail', $announce->id) }}" class="btn pe-md-1 btn-index btn-ann w-100">
                     {{ __('ui.btn-details') }}
                 </a>
             </div>
             @if ($announce->user_id == Auth::id() && Auth::check())
-                <div class="col-4">
-                    <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann px-1">
+                <div class="col-4 px-2">
+                    <a href="{{ route('edit_announce', compact('announce')) }}" class="btn pe-md-1 btn-index btn-ann w-100">
                         {{ __('ui.btn-modify') }}
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-4 px-2">
                     @livewire('delete-announce', compact('announce'))
                 </div>
             @endif

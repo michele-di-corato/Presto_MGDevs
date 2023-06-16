@@ -175,7 +175,7 @@
                                         <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                                     </div>
                                     <div class="col-3 text-center">
-                                        <p><strong>{{ __('ui.revision-table-status') }}</strong></p>
+                                        <p><strong>{{ __('ui.revision-table-creation') }}</strong></p>
                                     </div>
                                 </div>
                                 @forelse ($announces_queue as $announce)

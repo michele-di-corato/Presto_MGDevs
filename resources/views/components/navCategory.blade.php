@@ -16,14 +16,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="row justify-content-center pt-3">
                     @foreach ($categories as $category)
-                        <div class="col-5 col-md-2 mb-4 w-50">
+                        <div class="col-6 col-md-3 pt-3">
                             <a class="card card-bg p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                                 style="height: 8vh;" href="{{ route('show_per_category', compact('category')) }}">
                                 {{ __('ui.category-' . $category->id) }}
                             </a>
                         </div>
                     @endforeach
-                    <div class="col-12 mb-1">
+                    <div class="col-12 col-md-6 pt-3">
                         <a class="card card-bg p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                             style="height: 8vh;" href="{{ route('show_announces') }}">
                             {{ __('ui.nav-all-categories') }}

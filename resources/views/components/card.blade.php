@@ -1,5 +1,5 @@
-<div class="card card-bg p-2 mb-3">
-    <img src="{{ !$announce->images()->get()->isEmpty()? $announce->images()->first()->getUrl(300, 300): Storage::url('public/media/DefaultImage.jpg') }}"
+<div class="card card-bg mb-3 h-100">
+    <img src="{{ !$announce->images()->get()->isEmpty() ? $announce->images()->first()->getUrl(300, 300): Storage::url('public/media/DefaultImage.jpg') }}"
         class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
         <div>
@@ -10,7 +10,7 @@
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
-                <div class="col-12 col-md-12 justify-content-evenly">
+                <div class="col-12">
                     <div class="py-2">
                         <a href="{{ route('announce_detail', $announce->id) }}"
                             class="btn pe-md-1 btn-index btn-ann w-100">{{ __('ui.btn-details') }}</a>

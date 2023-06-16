@@ -1,25 +1,26 @@
 <x-layout namePage="{{ Auth::user()->name }}">
 
     <div class="container-fluid bg-profile">
-        <div class="row justify-content-center align-items-center py-5">
-            <div class="col-12 col-md-10 py-5">
+        <div class="row justify-content-center align-items-center pt-5">
+            <div class="col-12 col-md-10 pt-5">
 
                 {{-- Dati Profilo --}}
                 <h2 id="annunci" class="text-center col-text display-6 pb-2">Profilo di {{ Auth::user()->name }}</h2>
-                <div class="card card-elem px-3 pb-3 mb-3 col-text">
+                <div class="card card-pers card-elem px-3 pb-3 mb-5">
                     <div class="card card-bg p-3">
 
                         <div class="row justify-content-center align-items-center">
-                            <div class="col-12 col-md-6 text-end">
+                            <div class="col-12 col-md-6 text-center">
                                 <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
                                     class="img-thumbnail img-fluid" style="width:100px">
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 text-center col-text">
                                 <h4><strong>{{ __('ui.profile-username') }}</strong> <i>{{ Auth::user()->name }}</i>
                                 </h4>
                                 <h5><strong>{{ __('ui.profile-email') }}</strong> <i>{{ Auth::user()->email }}</i></h5>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 
