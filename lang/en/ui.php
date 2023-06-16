@@ -116,4 +116,16 @@ return [
     'revisor-form-title' => 'Send your candidature',
     'label-revisor-form' => 'Write here a presentation letter',
     'btn-send' => 'Send',
+    //Sezione Categorie
+    'category-1' => 'Clothing and Accessories',
+    'category-2' => 'Furniture and Home Decor',
+    'category-3' => 'Electronics',
+    'category-4' => 'Sports and Leisure',
+    'category-5' => 'Books and Comics',
+    'category-6' => 'Tools and Equipment',
+    'category-7' => 'Games and Toys',
+    'category-8' => 'Vintage and Collectibles',
+    'category-9' => 'Beauty and Personal Care',
+    'category-10' => 'Pet Supplies',
+
 ];
