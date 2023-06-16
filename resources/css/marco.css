@@ -4,7 +4,6 @@
     font-family: var(--font-head);
     transition: 0.4s;
     padding-bottom: 12px;
-    background-color: var(--elemdark);
 }
 
 /* Nav Link */
