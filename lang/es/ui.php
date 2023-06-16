@@ -72,6 +72,13 @@ return [
     'table-status-approved' => 'Aprobado',
     'table-status-pending' => 'En espera',
     'table-status-rejected' => 'Rechazado',
+    'tags' => 'Etiquetas',
+    'images-revision' => 'Revision de imagen',
+    'image-adult' => 'Contenido explícito:',
+    'image-spoof' => 'Autenticidad:',
+    'image-medical' => 'Contenido médico explícito:',
+    'image-violence' => 'Violencia:',
+    'image-racy' => 'Contenido inapropiado:',
     // Sezione profilo
     'profile-username' => 'Nombre de usuario:',
     'profile-email' => 'E-mail:',
@@ -108,4 +115,5 @@ return [
     'revisor-form-title' => 'Envía tu aplicación',
     'label-revisor-form' => 'Escribe una carta de presentación',
     'btn-send' => 'Envía',
+    
 ];
