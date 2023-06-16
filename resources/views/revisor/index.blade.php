@@ -69,7 +69,7 @@
                                                             <img src="{{ $image->getUrl(300, 300) }}"
                                                                 class="d-block img-fluid" alt="DefaultImage">
                                                             <div class="card-body text-center">
-                                                                <h5>Etichette</h5>
+                                                                <h5>{{ __('ui.tags') }}</h5>
                                                                 <div class="p-2">
                                                                     @if ($image->labels)
                                                                         @foreach ($image->labels as $label)
@@ -81,18 +81,18 @@
                                                                 </div>
                                                             </div>
                                                             <div class="card-body">
-                                                                <h5>Revisione immagini</h5>
-                                                                <p>Contenuti espliciti: <span
+                                                                <h5>{{ __('ui.images-revision') }}</h5>
+                                                                <p>{{ __('ui.image-adult') }} <span
                                                                         class="{{ $image->adult }}"></span>
                                                                 </p>
-                                                                <p>Autenticità: <span
+                                                                <p>{{ __('ui.image-spoof') }} <span
                                                                         class="{{ $image->spoof }}"></span>
                                                                 </p>
-                                                                <p>Contenuto medico esplicito: <span
+                                                                <p>{{ __('ui.image-medical') }} <span
                                                                         class="{{ $image->medical }}"></span></p>
-                                                                <p>Violenza: <span
+                                                                <p>{{ __('ui.image-violence') }} <span
                                                                         class="{{ $image->violence }}"></span></p>
-                                                                <p>Contenuti inappropriati: <span
+                                                                <p>{{ __('ui.image-racy') }} <span
                                                                         class="{{ $image->racy }}"></span></p>
                                                             </div>
                                                         </div>

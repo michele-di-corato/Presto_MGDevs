@@ -8,7 +8,7 @@
 
                     <h1 class="text-center col-text display-6 p-2 pb-3">{{ $category->name }}</h1>
                     <x-navCategory />
-                    
+
                 </div>
 
                 <div class="card card-pers p-3">
@@ -19,7 +19,7 @@
                             </div>
                         @empty
                             <div class="alert alert-success fade show d-flex mt-3" role="alert">
-                                <p>Nessun annuncio trovato!</p>
+                                <p>{{ __('ui.no-article-home') }}</p>
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">
