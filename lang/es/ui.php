@@ -52,7 +52,7 @@ return [
     'btn-delete' => 'Eliminar',
     // Sezione revisione annunci
     'undo-phrase' => '¿Cambió de opinión sobre el último anuncio?',
-    'btn-undo' => 'Annulla',
+    'btn-undo' => 'Cancela',
     'none-to-revise' => 'No hay anuncios para revisar',
     'to-revise' => 'Anuncio a revisar',
     'created-at' => 'Creado el:',
