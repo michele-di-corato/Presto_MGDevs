@@ -11,15 +11,15 @@
                     
                 </div>
 
-                <div class="card card-pers p-3">
-                    <div class="row justify-content-center align-items-center">
+                <div class="card card-pers card-bg p-3">
+                    <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
                             <div class="col-12 col-md-3">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-                            <div class="alert alert-success fade show d-flex mt-3" role="alert">
-                                <p>Nessun annuncio trovato!</p>
+                            <div class="alert alert-success fade show d-flex my-0 h-100" role="alert">
+                                <p>{{ __('ui.no-result-alert') }}</p>
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">

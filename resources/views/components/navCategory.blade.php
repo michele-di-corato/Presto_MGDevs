@@ -4,7 +4,7 @@
 
             <button id="bottone-category" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="card p-3 navbar-brand">
+                <div class="card card-elem p-3 navbar-brand">
 
                     <p class="d-flex align-items-center">
                         {{ __('ui.nav-category') }}<i id="icona-row" class="bi bi-arrow-down-short fs-5"></i>
@@ -18,14 +18,14 @@
                 <div class="row justify-content-center pt-3">
                     @foreach ($categories as $category)
                         <div class="col-5 col-md-2 mb-4 w-50">
-                            <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
+                            <a class="card card-elem p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                                 style="height: 8vh;" href="{{ route('show_per_category', compact('category')) }}">
                                 {{ $category->name }}
                             </a>
                         </div>
                     @endforeach
                     <div class="col-12 mb-1">
-                        <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
+                        <a class="card card-elem p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                             style="height: 8vh;" href="{{ route('show_announces') }}">
                             {{ __('ui.nav-all-categories') }}
                         </a>

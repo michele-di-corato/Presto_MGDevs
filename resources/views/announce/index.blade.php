@@ -1,8 +1,8 @@
 <x-layout namePage="Annunci">
 
     <div class="container-fluid bg-create">
-        <div class="row justify-content-center align-items-center py-5">
-            <div class="col-12 col-md-10 py-5">
+        <div id="min-row" class="row justify-content-center align-items-center pt-5 pb-3">
+            <div class="col-12 col-md-10 pt-5">
 
                 <div class="container-fluid">
                     <div class="row justify-content-center text-center">
@@ -23,7 +23,7 @@
 
                 </div>
 
-                <div class="card card-pers p-3">
+                <div class="card card-pers card-bg p-3">
                     <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
                             <div class="col-8 col-md-5 col-lg-4">

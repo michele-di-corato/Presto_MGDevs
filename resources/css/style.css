@@ -1,22 +1,30 @@
 :root {
-    --text: #291711;
 
-    --bg: rgb(152, 219, 198);
-    --bgtransp: rgba(152, 219, 198, 0.7);
-    --bglight: rgb(174, 237, 217);
-    --bglighttransp: rgb(174, 237, 217, 0.7);
+    /* Background */
+    --bg: rgb(97, 146, 132);
+    --bgtransp: rgba(97, 146, 132, 0.7);
+
+    --bglight: rgb(111, 159, 144);
+    --bglighttransp: rgba(111, 159, 144, 0.7);
+
     --bgdark: rgb(59, 94, 83);
-    --bgdarktransp: rgba(59, 94, 83, 0.6);
+    --bgdarktransp: rgba(59, 94, 83, 0.96);
 
-    --elem: rgb(255, 216, 191);
-    --elemtransp: rgba(255, 216, 191, 0.7);
-    --elemlight: rgb(255, 228, 212);
-    --elemlighttransp: rgba(255, 228, 212, 0.5);
+    /* Elementi */
+    --elem: rgb(185, 144, 119);
+    --elemtransp: rgba(185, 144, 119, 0.7);
+
+    --elemlight: rgb(205, 176, 157);
+    --elemlighttransp: rgba(205, 176, 157, 0.5);
+
     --elemdark: rgb(163, 118, 90);
     --elemdarktransp: rgba(163, 118, 90, 0.8);
 
+    /* Font */
     --font-head: "Montserrat", sans-serif;
     --font-body: "Lato", sans-serif;
+
+    --text: #291711;
 }
 
 .col-text {

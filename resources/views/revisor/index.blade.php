@@ -147,6 +147,7 @@
                         </div>
                     @endif
                 </div>
+
                 <div class="row my-4">
                     <div class="col-6 d-flex justify-content-center">
                         <form method="POST"
@@ -165,6 +166,7 @@
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     @else

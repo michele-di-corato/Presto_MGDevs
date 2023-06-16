@@ -6,7 +6,7 @@
 
                 <h1 id="annunci" class="text-center col-text display-6 pb-2">{{ __('ui.login-title') }}</h1>
 
-                <div class="card card-pers p-3">
+                <div class="card card-pers card-bg p-3">
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
