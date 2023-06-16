@@ -47,6 +47,12 @@ class ResizeImage implements ShouldQueue
         
         $croppedImage = Image::load($srcPath)
                         ->crop(Manipulations::CROP_CENTER, $w, $h)
+                        ->watermark(base_path('public/media/presto.png'))
+                        ->watermarkPosition('top-left')
+                        ->watermarkPadding(10,10,Manipulations::UNIT_PIXELS)
+                        ->watermarkWidth(40,Manipulations::UNIT_PIXELS)
+                        ->watermarkHeight(40,Manipulations::UNIT_PIXELS)
+                        ->watermarkFit(Manipulations::FIT_STRETCH)
                         ->save($destPath);
     }
 }

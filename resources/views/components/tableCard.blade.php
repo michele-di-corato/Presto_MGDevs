@@ -6,7 +6,7 @@
             <p>{{ $announce->name }}</p>
         </div>
         <div class="col-2">
-            <p>{{ $announce->category->name }}</p>
+            <p>{{ __('ui.category-' . $announce->category->id) }}</p>
         </div>
         <div class="col-1">
             <p>{{ $announce->price }}€</p>
@@ -18,15 +18,15 @@
 
             @if ($announce->is_accepted == true)
                 <div class="b-true">
-                    Approvato
+                    {{ __('ui.table-status-approved') }}
                 </div>
             @elseif ($announce->is_accepted === null)
                 <div class="b-null">
-                    In Attesa
+                    {{ __('ui.table-status-pending') }}
                 </div>
             @elseif ($announce->is_accepted == false)
                 <div class="b-false">
-                    Rifiutato
+                    {{ __('ui.table-status-rejected') }}
                 </div>
             @endif
 
@@ -35,13 +35,13 @@
         <div class="col-4 d-flex justify-content-center text-center">
             <div class="col-4">
                 <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann">
-                    Dettagli
+                    {{ __('ui.btn-details') }}
                 </a>
             </div>
             @if ($announce->user_id == Auth::id() && Auth::check())
                 <div class="col-4">
                     <a href="{{ route('edit_announce', compact('announce')) }}" class="btn btn-ann px-1">
-                        Modifica
+                        {{ __('ui.btn-modify') }}
                     </a>
                 </div>
                 <div class="col-4">

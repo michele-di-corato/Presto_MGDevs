@@ -1,4 +1,4 @@
-<x-layout namePage="{{ $category->name }}">
+<x-layout namePage="{{ __('ui.category-' . $category->id) }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">
@@ -6,9 +6,9 @@
 
                 <div id="annunci" class="mb-2">
 
-                    <h1 class="text-center col-text display-6 p-2 pb-3">{{ $category->name }}</h1>
+                    <h1 class="text-center col-text display-6 p-2 pb-3">{{ __('ui.category-' . $category->id) }}</h1>
                     <x-navCategory />
-                    
+
                 </div>
 
                 <div class="card card-pers card-bg p-3">
@@ -18,8 +18,13 @@
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
+<<<<<<< HEAD
                             <div class="alert alert-success fade show d-flex my-0 h-100" role="alert">
                                 <p>{{ __('ui.no-result-alert') }}</p>
+=======
+                            <div class="alert alert-success fade show d-flex mt-3" role="alert">
+                                <p>{{ __('ui.no-article-home') }}</p>
+>>>>>>> 6172a9e09eb34bc7a59ce2c11da05b258421bba8
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">

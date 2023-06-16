@@ -19,7 +19,7 @@ return [
     'welcome' => 'Benvenuto su Presto.it!',
     'welcome2' => 'Qui puoi caricare e trovare ogni tipo di prodotto',
     'latest-ann' => 'Ultimi annunci',
-    'no-article-home' => 'Nessun articolo trovato!',
+    'no-article-home' => 'Nessun annuncio trovato!',
     // Sezione footer
     'social-links' => 'Collegati con noi sui social media:',
     'products' => 'Prodotti',
@@ -38,8 +38,8 @@ return [
     'add-category-placehold' => 'Scegli categoria',
     'add-image-btn' => 'Carica file',
     'add-image-placehold' => 'Nessun file selezionato',
-    'img-preview' => 'Anteprima immagini:', //da aggiungere
-    'img-delete' => 'Elimina', //da aggiungere
+    'img-preview' => 'Anteprima immagini:',
+    'img-delete' => 'Elimina',
     'add-announce-btn' => 'Invia',
     // Sezione mostra annunci
     'show-title' => 'Annunci',
@@ -50,20 +50,20 @@ return [
     'btn-details' => 'Dettagli',
     'btn-modify' => 'Modifica',
     'btn-delete' => 'Elimina',
-    'no-result-alert' => 'La tua ricerca non ha prodotto risultati. Prova a modificare i campi di ricerca.', //da aggiungere
+    'no-result-alert' => 'La tua ricerca non ha prodotto risultati. Prova a modificare i campi di ricerca.',
     // Sezione revisione annunci
     'undo-phrase' => 'Hai cambiato idea sull\'ultimo annuncio?',
     'btn-undo' => 'Annulla',
     'none-to-revise' => 'Non ci sono annunci da revisionare',
     'to-revise' => 'Annunci da revisionare',
-    'created-at' => 'Creato il:', // da aggiungere
-    'created-by' => 'Creato da', // da aggiungere
+    'created-at' => 'Creato il:',
+    'created-by' => 'Creato da',
     'btn-approve' => 'Approva',
     'btn-reject' => 'Rifiuta',
     'revision-queue' => 'Coda annunci',
-    'no-revision-queue' => 'Non ci sono annunci in coda', // da aggiungere
+    'no-revision-queue' => 'Non ci sono annunci in coda',
     'history-revisions' => 'Cronologia revisioni annunci',
-    'no-history-revisions' => 'Non ci sono cronologie degli annunci', //da aggiungere
+    'no-history-revisions' => 'Non ci sono cronologie degli annunci',
     'revision-table-name' => 'Nome',
     'revision-table-category' => 'Categoria',
     'revision-table-price' => 'Prezzo',
@@ -73,6 +73,13 @@ return [
     'table-status-approved' => 'Approvato',
     'table-status-pending' => 'In sospeso',
     'table-status-rejected' => 'Rifiutato',
+    'tags' => 'Etichette',
+    'images-revision' => 'Revisione immagini',
+    'image-adult' => 'Contenuti espliciti:',
+    'image-spoof' => 'Autenticità:',
+    'image-medical' => 'Contenuto medico esplicito:',
+    'image-violence' => 'Violenza:',
+    'image-racy' => 'Contenuti inappropriati:',
     // Sezione profilo
     'profile-username' => 'Username:',
     'profile-email' => 'E-mail:',
@@ -109,4 +116,15 @@ return [
     'revisor-form-title' => 'Invia la tua candidatura',
     'label-revisor-form' => 'Scrivi qui una lettera di presentazione',
     'btn-send' => 'Invia',
+    // Sezione categorie
+    'category-1' => 'Abbigliamento e accessori',
+    'category-2' => 'Arredamento e oggetti da casa',
+    'category-3' => 'Elettronica',
+    'category-4' => 'Sport e tempo libero',
+    'category-5' => 'Libri e fumetti',
+    'category-6' => 'Strumenti e attrezzature',
+    'category-7' => 'Giochi e giocattoli',
+    'category-8' => 'Vintage e collezionismo',
+    'category-9' => 'Bellezza e cura personale',
+    'category-10' => 'Articoli per animali domestici',
 ];

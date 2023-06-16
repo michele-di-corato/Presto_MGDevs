@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\RemoveFaces;
 use App\Models\Image;
 use Livewire\Component;
 use App\Models\Announce;
@@ -69,9 +70,7 @@ class CreateAnnounce extends Component
             foreach ($this->images as $image) {
                 $newFileName = "announces/{$this->announce->id}";
                 $newImage =  $this->announce->images()->create(['path' => $image->store($newFileName, 'public')]);
-                dispatch(new ResizeImage($newImage->path, 300, 300));
-                dispatch(new GoogleVisionSafeSearch($newImage->id));
-                dispatch(new GoogleVisionLabelImage($newImage->id));
+                RemoveFaces::withChain([new ResizeImage($newImage->path, 300, 300), new GoogleVisionSafeSearch($newImage->id), new GoogleVisionLabelImage($newImage->id)])->dispatch($newImage->id);
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
@@ -80,9 +79,8 @@ class CreateAnnounce extends Component
         return redirect(route('show_announces'))->with('confirm', 'Annuncio creato correttamente.');
     }
 
-    public function updated($propertyName)
+    public function updatedTemporaryImages()
     {
-        $this->validateOnly($propertyName);
         if ($this->validate([
             'temporary_images.*' => 'image|max:1024',
         ])) {
@@ -90,6 +88,11 @@ class CreateAnnounce extends Component
                 $this->images[] = $image;
             }
         }
+    }
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
     }
 
 
