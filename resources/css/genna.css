@@ -3,11 +3,6 @@
     width: 50px;
 }
 
-/* Main */
-#main {
-    padding-top: 8.8dvh;
-}
-
 p {
     padding: 0;
     margin: 0;
@@ -32,7 +27,7 @@ p {
 
 /* Dropdown */
 .dropdown-menu {
-    border: 0px solid var(--elemtransp);
+    border: 0px solid black;
     background-color: var(--elemdarktransp);
     transition: 0.4s;
 }
@@ -118,11 +113,11 @@ p {
 }
 
 .card-elem {
-    background-color: var(--elemdarktransp);
+    background-color: var(--elemtransp);
 }
 
 .card-bg {
-    background-color: var(--bgdarktransp);
+    background-color: var(--bgtransp);
 }
 
 /* Effetto di sfocatura all'immagine */
@@ -136,22 +131,22 @@ p {
 
 /* Annunci */
 #annunci {
-    background-color: var(--bgdark);
+    background-color: var(--bg);
     border-radius: 10px 10px 0px 0px;
 }
 
 #annunci2 {
-    background-color: var(--elemdark);
+    background-color: var(--elem);
     border-radius: 10px 10px 0px 0px;
 }
 
 #annuncio {
-    background-color: var(--bgdark);
+    background-color: var(--bg);
     border-radius: 10px;
 }
 
 #annuncio2 {
-    background-color: var(--elemdark);
+    background-color: var(--elem);
     border-radius: 10px;
 }
 
@@ -161,7 +156,7 @@ p {
 }
 
 #footer {
-    background: linear-gradient(var(--bgdark), var(--bgdarktransp), var(--elemdark));
+    background: linear-gradient(var(--bgdark), var(--elemdark));
 }
 
 main {
@@ -309,6 +304,6 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(59, 94, 83, 0.4);
+    background-color: rgba(59, 94, 83, 0.3);
     border-radius: 8px;
 }

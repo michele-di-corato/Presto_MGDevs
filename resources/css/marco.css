@@ -81,16 +81,6 @@
     box-shadow: none;
 }
 
-.user-dropdown:hover {
-    background-color: var(--bgdarktransp);
-}
-
-.user-dropdown {
-    border: 0px solid var(--elemtransp);
-    background-color: var(--elemdarktransp);
-    transition: 0.4s;
-}
-
 .a-la {
     padding: 10px 20px;
     font-size: 15px;

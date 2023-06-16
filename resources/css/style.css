@@ -1,24 +1,24 @@
 :root {
 
     /* Background */
-    --bg: rgb(97, 146, 132);
-    --bgtransp: rgba(97, 146, 132, 0.7);
+    --bg: #638a78;
+    --bgtransp: rgba(99, 138, 120, 0.8);
 
-    --bglight: rgb(111, 159, 144);
-    --bglighttransp: rgba(111, 159, 144, 0.7);
+    --bglight: #7fa592;
+    --bglighttransp: rgba(127, 165, 146, 0.8);
 
-    --bgdark: rgb(59, 94, 83);
-    --bgdarktransp: rgba(59, 94, 83, 0.96);
+    --bgdark: #4d725f;
+    --bgdarktransp: rgba(77, 114, 95, 0.8);
 
     /* Elementi */
-    --elem: rgb(185, 144, 119);
-    --elemtransp: rgba(185, 144, 119, 0.7);
+    --elem: #c0a286;
+    --elemtransp: rgba(192, 162, 134, 0.8);
 
-    --elemlight: rgb(205, 176, 157);
-    --elemlighttransp: rgba(205, 176, 157, 0.5);
+    --elemlight: #d8c6b3;
+    --elemlighttransp: rgba(216, 198, 179, 0.8);
 
-    --elemdark: rgb(163, 118, 90);
-    --elemdarktransp: rgba(163, 118, 90, 0.8);
+    --elemdark: #a88b73;
+    --elemdarktransp: rgba(168, 139, 115, 0.8);
 
     /* Font */
     --font-head: "Montserrat", sans-serif;

@@ -8,7 +8,7 @@
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">{{ __('ui.language') }}</a>
-                <ul class="dropdown-menu drop-li drop-menu">
+                <ul class="dropdown-menu drop-li">
                     <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
                     </li>
@@ -52,14 +52,15 @@
                             {{ __('ui.welcome-user') }}
                             @endauth
                         </a>
-                        <ul id="dropdown" class="user-dropdown dropdown-menu drop-menu">
+                        <ul class="dropdown-menu">
                             @if (Auth::check() && Auth::user()->is_revisor)
                                 <li>
                                     <a class="dropdown-item position-relative"
                                         href="{{ route('revisor_index') }}">{{ __('ui.drop-revise') }}
                                         <span
                                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ App\Models\Announce::ToBeRevisionedCount() }}
-                                        </span> </a>
+                                        </span> 
+                                    </a>
                                 </li>
                                 <li><a class="dropdown-item a-profile"
                                         onmouseover="document.a.style.backgroundColor ='blue'"

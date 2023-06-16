@@ -5,7 +5,7 @@
             <div class="col-12 col-md-10 py-5">
 
                 {{-- Dati Profilo --}}
-                <div class="card p-3 mb-3 col-text">
+                <div class="card card-bg p-3 mb-3 col-text">
                     <div class="text-center">
                         <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
                             class="img-thumbnail img-fluid" style="width:100px">
@@ -17,7 +17,7 @@
                 {{-- Annunci --}}
                 <h1 id="annunci" class="text-center col-text display-6 pb-2">{{ __('ui.profile-announces') }}</h1>
 
-                <div class="card card-pers p-3 col-text">
+                <div class="card card-pers card-bg p-3 col-text">
 
                     {{-- Categorie --}}
                     <div id="annunci2" class="d-flex justify-content-center p-3">

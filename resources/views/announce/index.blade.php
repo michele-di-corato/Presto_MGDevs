@@ -1,7 +1,7 @@
 <x-layout namePage="Annunci">
 
     <div class="container-fluid bg-create">
-        <div id="min-row" class="row justify-content-center align-items-center pt-5 pb-3">
+        <div class="row justify-content-center pt-5">
             <div class="col-12 col-md-10 pt-5">
 
                 <div class="container-fluid">
@@ -37,13 +37,12 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="d-flex justify-content-center">
+                    {{ $announces->links() }}
+                </div>
 
-            <div class="d-flex justify-content-center">
-                {{ $announces->links() }}
             </div>
         </div>
-
     </div>
 
 </x-layout>

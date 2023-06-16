@@ -18,13 +18,8 @@
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-<<<<<<< HEAD
-                            <div class="alert alert-success fade show d-flex my-0 h-100" role="alert">
-                                <p>{{ __('ui.no-result-alert') }}</p>
-=======
                             <div class="alert alert-success fade show d-flex mt-3" role="alert">
                                 <p>{{ __('ui.no-article-home') }}</p>
->>>>>>> 6172a9e09eb34bc7a59ce2c11da05b258421bba8
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">

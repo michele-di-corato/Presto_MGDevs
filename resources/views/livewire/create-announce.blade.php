@@ -2,7 +2,7 @@
 
     <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3">{{ __('ui.add-announce-title') }}</h1>
 
-    <div class="card card-pers p-3">
+    <div class="card card-pers card-bg p-3">
         <div class="mb-3">
             <input type="text" class="py-3 form-control @error('name') is-invalid @enderror" id="productName"
                 placeholder="{{ __('ui.add-product-placehold') }}" wire:model="name">

@@ -14,8 +14,8 @@
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
                         <div class="card card-bg p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong" width="150"
-                                    height="150" />
+                                <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong"
+                                    width="150" height="150" />
                             </div>
                             <h5 class="mb-3">Pino Rossi</h5>
                             <h6 class="mb-3">Impiegato</h6>
