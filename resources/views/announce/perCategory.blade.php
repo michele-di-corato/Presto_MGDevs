@@ -1,4 +1,4 @@
-<x-layout namePage="{{ $category->name }}">
+<x-layout namePage="{{ __('ui.category-' . $category->id) }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">
@@ -6,7 +6,7 @@
 
                 <div id="annunci" class="mb-2">
 
-                    <h1 class="text-center col-text display-6 p-2 pb-3">{{ $category->name }}</h1>
+                    <h1 class="text-center col-text display-6 p-2 pb-3">{{ __('ui.category-' . $category->id) }}</h1>
                     <x-navCategory />
 
                 </div>

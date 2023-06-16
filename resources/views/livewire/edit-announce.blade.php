@@ -39,7 +39,7 @@
                     wire:model="category_id">
                     <option value="">Seleziona...</option>
                     @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{ __('ui.category-' . $category->id) }}</option>
                     @endforeach
                 </select>
             </div>
@@ -80,7 +80,7 @@
                                 </div>
                                 <button type="button" class="btn bth-outline-danger mx-auto"
                                     wire:click="removeImage({{ $key }})">
-                                    {{__('ui.btn-delete')}}
+                                    {{ __('ui.btn-delete') }}
                                 </button>
                             </div>
                         @endforeach

@@ -20,7 +20,7 @@
                         <div class="col-5 col-md-2 mb-4 w-50">
                             <a class="card p-2 nav-link-category text-decoration-none col-text w-100 d-flex align-items-center justify-content-center"
                                 style="height: 8vh;" href="{{ route('show_per_category', compact('category')) }}">
-                                {{ $category->name }}
+                                {{ __('ui.category-' . $category->id) }}
                             </a>
                         </div>
                     @endforeach

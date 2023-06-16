@@ -9,7 +9,7 @@
                     <div class="row justify-content-center">
 
                         <div class="col-12 col-md-6 p-3 row justify-content-center">
-                            <h3>{{ $announce->category->name }}</h3>
+                            <h3>{{ __('ui.category-' . $announce->category->id) }}</h3>
                             <h3>{{ $announce->price }} €</h3>
                             <p>{{ $announce->description }}</p>
                             <h5>{{ __('ui.details-createdBy') }} {{ $announce->user->name }}</h5>

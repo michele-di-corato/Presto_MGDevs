@@ -37,7 +37,7 @@
                                     <p>{{ $announce->name }}</p>
                                 </div>
                                 <div class="col-3">
-                                    <p>{{ $announce->category->name }}</p>
+                                    <p>{{ __('ui.category-' . $announce->category->id) }}</p>
                                 </div>
                                 <div class="col-1">
                                     <p>{{ $announce->price }}€</p>
@@ -62,12 +62,13 @@
                                     @endif
                                 </div>
                                 <div class="col-3 d-flex justify-content-center">
-                                    <a href="{{ route('announce_detail', $announce->id) }}"
-                                        class="btn btn-ann"> {{ __('ui.btn-details') }}</a>
+                                    <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann">
+                                        {{ __('ui.btn-details') }}</a>
                                     <form method="POST" action="{{ route('undo_announce') }}">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="ms-md-2 btn btn-ann"> {{ __('ui.btn-undo') }}</button>
+                                        <button type="submit" class="ms-md-2 btn btn-ann">
+                                            {{ __('ui.btn-undo') }}</button>
                                     </form>
                                 </div>
                             </div>

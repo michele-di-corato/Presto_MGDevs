@@ -46,7 +46,7 @@
                                 <div class="row justify-content-center align-items-center p-3">
                                     <div class="col-12 col-md-4 text-center">
                                         <h2>{{ $announce_to_check->name }}</h2>
-                                        <h3>{{ $announce_to_check->category->name }}</h3>
+                                        <h3>{{ __('ui.category-' . $announce_to_check->category->id) }}</h3>
                                         <h3>{{ $announce_to_check->price }} €</h3>
                                         <p>{{ $announce_to_check->description }}</p>
                                         <h5>{{ __('ui.created-by') }} {{ $announce_to_check->user->name }}</h5>
@@ -213,7 +213,7 @@
                                 <p>{{ $announce->name }}</p>
                             </div>
                             <div class="col-4">
-                                <p>{{ $announce->category->name }}</p>
+                                <p>{{ __('ui.category-' . $announce->category->id) }}</p>
                             </div>
                             <div class="col-2 text-center">
                                 <p>{{ $announce->price }}€</p>
@@ -276,7 +276,7 @@
                                 <p>{{ $announce->name }}</p>
                             </div>
                             <div class="col-2">
-                                <p>{{ $announce->category->name }}</p>
+                                <p>{{ __('ui.category-' . $announce->category->id) }}</p>
                             </div>
                             <div class="col-2 text-center">
                                 <p>{{ $announce->price }}€</p>

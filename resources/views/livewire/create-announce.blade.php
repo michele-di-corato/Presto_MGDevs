@@ -36,7 +36,7 @@
                     wire:model="category_id">
                     <option class="text-col" value="">{{ __('ui.add-category-placehold') }}</option>
                     @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{ __('ui.category-' . $category->id) }}</option>
                     @endforeach
                 </select>
             </div>
@@ -47,10 +47,12 @@
             @enderror
         </div>
         <div class="form-floating mb-3">
-                <label for="temporary_images" class="custom-file-upload text-center">
-                    {{ __('ui.add-image-btn') }}
-                </label>
-                <input type="file" multiple class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror" id="temporary_images" wire:model="temporary_images">
+            <label for="temporary_images" class="custom-file-upload text-center">
+                {{ __('ui.add-image-btn') }}
+            </label>
+            <input type="file" multiple
+                class="custom-file-input py-3 form-control @error('temporary_images.*') is-invalid @enderror"
+                id="temporary_images" wire:model="temporary_images">
             @error('temporary_images.*')
                 <div class="text-danger mt-1">
                     <p>{{ $message }}</p>

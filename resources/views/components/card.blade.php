@@ -4,7 +4,7 @@
     <div class="card-body justify-content-evenly">
         <div>
             <h4 class="card-title">{{ $announce->name }}</h4>
-            <h6 class="card-title">{{ __('ui.category-card') }} {{ $announce->category->name }}</h6>
+            <h6 class="card-title">{{ __('ui.category-card') }} {{ __('ui.category-' . $announce->category->id) }}</h6>
             <h5 class="card-subtitle ms-auto">{{ __('ui.price-card') }} {{ $announce->price }}€</h5>
             <p class="card-text">{{ $announce->description }}</p>
         </div>

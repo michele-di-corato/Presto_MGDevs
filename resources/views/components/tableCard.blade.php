@@ -6,7 +6,7 @@
             <p>{{ $announce->name }}</p>
         </div>
         <div class="col-2">
-            <p>{{ $announce->category->name }}</p>
+            <p>{{ __('ui.category-' . $announce->category->id) }}</p>
         </div>
         <div class="col-1">
             <p>{{ $announce->price }}€</p>
