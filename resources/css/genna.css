@@ -220,7 +220,7 @@ main {
 }
 
 .btn-search:hover {
-   color: var(--bg) !important;
+   color: var(--bgdark) !important;
 }
 
 .search-form:hover {

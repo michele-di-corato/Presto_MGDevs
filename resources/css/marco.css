@@ -386,7 +386,7 @@
 
 .nav-link-category:hover {
     letter-spacing: 1px;
-    color: var(--bglight) !important;
+    color: var(--bg) !important;
 }
 
 /* Spinner */

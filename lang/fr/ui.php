@@ -116,8 +116,8 @@ return [
     'revisor-form-title' => 'Envoyez votre candidature',
     'label-revisor-form' => 'Écrivez ici une lettre de présentation',
     'btn-send' => 'Envoyer',
-    'category-1' => 'Vêtements et accessoires',
     // Sezione categorie
+    'category-1' => 'Vêtements et accessoires',
     'category-2' => 'Mobilier et objets pour la maison',
     'category-3' => 'Électronique',
     'category-4' => 'Sport et loisirs',
