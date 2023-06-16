@@ -73,6 +73,13 @@ return [
     'table-status-approved' => 'Approuvé',
     'table-status-pending' => 'En attente',
     'table-status-rejected' => 'Refusé',
+    'Etichette' => 'Étiquettes',
+    'Revisione immagini' => 'Révision des images',
+    'Contenuti espliciti:' => 'Contenu explicite :',
+    'Autenticità:' => 'Authenticité :',
+    'Contenuto medico esplicito:' => 'Contenu médical explicite :',
+    'Violenza:' => 'Violence :',
+    'Contenuti inappropriati:' => 'Contenu inapproprié :',
     // Sezione profilo
     'profile-username' => 'Nom d\'utilisateur :',
     'profile-email' => 'E-mail :',

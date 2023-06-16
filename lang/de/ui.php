@@ -74,6 +74,13 @@ return [
     'table-status-approved' => 'Genehmigt',
     'table-status-pending' => 'Ausstehend',
     'table-status-rejected' => 'Abgelehnt',
+    'Etichette' => 'Etiketten',
+    'Revisione immagini' => 'Bilderüberarbeitung',
+    'Contenuti espliciti:' => 'Explizite Inhalte:',
+    'Autenticità:' => 'Authentizität:',
+    'Contenuto medico esplicito:' => 'Expliziter medizinischer Inhalt:',
+    'Violenza:' => 'Gewalt:',
+    'Contenuti inappropriati:' => 'Unangemessene Inhalte:',
     // Sezione profilo
     'profile-username' => 'Benutzername:',
     'profile-email' => 'E-Mail:',
