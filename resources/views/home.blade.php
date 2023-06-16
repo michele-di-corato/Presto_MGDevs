@@ -15,7 +15,7 @@
 
 
         <div class="row align-items-center vh-100">
-            <div class="col-12 col-md-6 row">
+            <div class="col-12 col-md-6">
                 <h1 class="title-home text-center">{{ __('ui.welcome') }}</h1>
             </div>
             <div class="col-12 col-md-6">
@@ -32,5 +32,7 @@
     </div>
 
     <x-reviews />
-    
+
+    <x-card-footer />
+
 </x-layout>

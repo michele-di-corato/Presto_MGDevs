@@ -23,7 +23,7 @@
 
                 </div>
 
-                <div class="card card-pers card-bg p-3">
+                <div class="card card-pers card-elem p-3">
                     <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
                             <div class="col-8 col-md-5 col-lg-4">

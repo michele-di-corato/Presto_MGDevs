@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-10 py-5 px-0">
+        <div class="col-12 col-md-10 pb-5">
 
 
             <h2 id="annunci2" class="text-center col-text display-6 pb-2">Testimonials</h2>
-            <div class="card card-pers card-elem p-3">
+            <div class="card card-pers card-elem px-3 pb-3">
 
 
                 {{-- Recensioni --}}

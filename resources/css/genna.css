@@ -104,20 +104,8 @@ p {
 /* Effetti di transizione */
 .card {
     transition: transform 0.3s ease;
-    border: 0px solid black;
     border-radius: 10px;
-}
-
-.card-pers {
-    border-radius: 0px 0px 10px 10px;
-}
-
-.card-elem {
-    background-color: var(--elemtransp);
-}
-
-.card-bg {
-    background-color: var(--bgtransp);
+    border: 0px solid transparent;
 }
 
 /* Effetto di sfocatura all'immagine */
@@ -129,9 +117,28 @@ p {
     filter: none;
 }
 
+.card-pers {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card-elem {
+    background-color: transparent;
+    border: 8px solid var(--elem);
+    border-top: 8px solid transparent;
+}
+
+.card-footer{
+    background-color: var(--elem);
+    border-radius: 10px !important;
+}
+
+.card-bg {
+    background-color: var(--bgtransp);
+}
+
 /* Annunci */
 #annunci {
-    background-color: var(--bg);
+    background-color: var(--elem);
     border-radius: 10px 10px 0px 0px;
 }
 

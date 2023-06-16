@@ -1,7 +1,5 @@
 <footer id="footer" class="text-center text-lg-start bg-white col-text">
 
-    <x-card-footer />
-
     <!-- Section: Social media -->
     <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 py-3">
         <!-- Left -->
