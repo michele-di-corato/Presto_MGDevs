@@ -14,6 +14,7 @@ class PublicController extends Controller
         $announces = Announce::where('is_accepted', true)->orderBy('created_at', 'desc')->limit(4)->get();
         return view('home', compact('announces'));
     }
+
     public function categoryShow(Category $category)
     {
         $announces = Announce::where('category_id', $category->id)->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);

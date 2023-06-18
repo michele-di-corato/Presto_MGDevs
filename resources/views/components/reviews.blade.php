@@ -12,7 +12,7 @@
 
                     {{-- Pino --}}
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card card-bg p-3 col-text">
+                        <div class="card card-bg-1 p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
                                 <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong"
                                     width="150" height="150" />

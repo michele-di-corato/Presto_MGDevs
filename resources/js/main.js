@@ -145,7 +145,6 @@ if (button) {
 
 let navTog = document.querySelector('#bars')
 let faBars = document.querySelector('.fa-bars')
-
 let isClicked = true;
 
 navTog.innerHTML = '<i class="fa-solid fa-bars"></i>';
@@ -193,3 +192,7 @@ if (Start) {
         End.classList.remove('d-none');
     }, 1000)
 }
+
+
+let bgCard = document.querySelector('.card-bg-1')
+let isHover = true;
