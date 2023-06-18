@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-10 pb-5">
+        <div class="col-9 col-md-10 pb-5">
 
 
             <h2 id="annunci2" class="text-center col-text display-6 pb-2">Testimonials</h2>
@@ -8,15 +8,17 @@
 
 
                 {{-- Recensioni --}}
+                <div class="container-reviews">
                 <div class="row text-center">
 
                     {{-- Pino --}}
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card card-bg-1 p-3 col-text">
+                        <div class="card card-bg card-bg-1 p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong"
+                                <img src="/media/reviews/pino.jpg" class="rounded-circle img-1 shadow-1-strong"
                                     width="150" height="150" />
                             </div>
+                            <div class="enter">
                             <h5 class="mb-3">Pino Rossi</h5>
                             <h6 class="mb-3">Impiegato</h6>
 
@@ -27,7 +29,8 @@
                                 tenetur.
                             </p>
 
-                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <ul class="list-unstyled
+                             d-flex justify-content-center mb-0">
                                 <li>
                                     <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
@@ -44,16 +47,19 @@
                                     <i class="fas fa-star fa-sm text-warning"></i>
                                 </li>
                             </ul>
+                            </div>
                         </div>
                     </div>
 
                     {{-- Linda --}}
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card card-bg p-3 col-text">
+                        <div class="card card-bg-2 p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
                                 <img src="/media/reviews/linda.jpg" class="rounded-circle shadow-1-strong"
                                     width="150" height="150" />
                             </div>
+                            <div class="enter-2">
+
                             <h5 class="mb-3">Linda Smantha</h5>
                             <h6 class="mb-3">Interior Designer</h6>
 
@@ -81,17 +87,19 @@
                                     <i class="fas fa-star-half-alt fa-sm text-warning"></i>
                                 </li>
                             </ul>
+                            </div>
                         </div>
                     </div>
 
                     {{-- Pablo --}}
                     <div class="col-12 col-md-4">
-                        <div class="card card-bg p-3 col-text">
+                        <div class="card card-bg-3 p-3 col-text">
 
                             <div class="d-flex justify-content-center mb-4">
                                 <img src="/media/reviews/pablo.jpg" class="rounded-circle shadow-1-strong"
                                     width="150" height="150" />
                             </div>
+                            <div class="enter-3">
                             <h5 class="mb-3">Pablo Smith</h5>
                             <h6 class="mb-3">Musician</h6>
                             <p class="col-text">
@@ -117,9 +125,11 @@
                                     <i class="far fa-star fa-sm text-warning"></i>
                                 </li>
                             </ul>
+                            </div>
                         </div>
                     </div>
 
+                </div>
                 </div>
 
             </div>

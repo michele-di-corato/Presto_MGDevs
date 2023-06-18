@@ -132,10 +132,6 @@ p {
     border-radius: 10px !important;
 }
 
-.card-bg {
-    background-color: var(--bgtransp);
-}
-
 /* Annunci */
 #annunci {
     background-color: var(--elem);

@@ -193,6 +193,11 @@ if (Start) {
     }, 1000)
 }
 
+let Img1 = document.querySelector('.img-1');
+let cardBg = document.querySelector('.card-bg');
 
-let bgCard = document.querySelector('.card-bg-1')
-let isHover = true;
+if (cardBg) {
+cardBg.addEventListener('mouseover', () => {
+    Img1.classList.add = ('opacity-0');
+})
+}
