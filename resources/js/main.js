@@ -152,7 +152,7 @@ navTog.innerHTML = '<i class="fa-solid fa-bars"></i>';
 navTog.addEventListener('click', () => {
     if (isClicked == true) {
         navTog.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        navTog.style.transform = 'rotate(180deg)';
+        navTog.style.transform = 'rotate(-180deg)';
         navTog.style.fontSize = '2rem'
         isClicked = false;
     } else {
@@ -195,6 +195,7 @@ if (Start) {
 
 let Img1 = document.querySelector('.img-1');
 let cardBg = document.querySelector('.card-bg');
+let isOver = true;
 
 if (cardBg) {
 cardBg.addEventListener('mouseover', () => {
