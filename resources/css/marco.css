@@ -445,6 +445,7 @@
     }
 }
 
+
 .container-reviews {
 	position: relative;
 	z-index: 1;
@@ -485,34 +486,36 @@
 	transform: translateY(-10px);
 }
 
-.container-reviews .card-bg .enter{
-	list-style: none;
-	margin: 0 10px;
-	transform: translateY(-20px);
-	transition: 0.5s;
-	opacity: 0;
-    font-size: 1;
-	font-weight: 300;
-}
-
-.card-bg-2 .enter-2{
-	list-style: none;
-	margin: 0 10px;
-	transform: translateY(-20px);
-	transition: 0.5s;
-	opacity: 0;
-    font-size: 1;
-	font-weight: 300;
-}
-
-.card-bg-3 .enter-3{
-	list-style: none;
-	margin: 0 10px;
-	transform: translateY(-20px);
-	transition: 0.5s;
-	opacity: 0;
-    font-size: 1;
-	font-weight: 300;
+@media (min-width: 767px) {
+    .container-reviews .card-bg .enter{
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(-20px);
+        transition: 0.5s;
+        opacity: 0;
+        font-size: 1;
+        font-weight: 300;
+    }
+    
+    .card-bg-2 .enter-2{
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(-20px);
+        transition: 0.5s;
+        opacity: 0;
+        font-size: 1;
+        font-weight: 300;
+    }
+    
+    .card-bg-3 .enter-3{
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(-20px);
+        transition: 0.5s;
+        opacity: 0;
+        font-size: 1;
+        font-weight: 300;
+    }
 }
 
 .card-bg:hover
