@@ -23,9 +23,9 @@ return [
     // Sezione footer
     'social-links' => 'Collegati con noi sui social media:',
     'products' => 'Prodotti',
-    'links' => 'Link',
+    'links' => 'Link Utili',
     'contact' => 'Contattaci',
-    'work-contact-title' => 'Unisciti a noi',
+    'work-contact-title' => 'Lavora con noi',
     'work-contact-sub' => 'Registrati e candidati qui',
     'work-btn' => 'Diventa revisore',
     'work-site' => 'Roma, IT',

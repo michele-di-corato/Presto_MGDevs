@@ -50,27 +50,29 @@
                                     <div class="col-1">
 
                                         @if ($announce->is_accepted == true)
-                                            <div class="b-true">
-                                                {{ __('ui.table-status-approved') }}
+                                            <div class="b-true px-3 py-2 fs-5">
+                                                <i class="bi bi-check-circle"></i>
                                             </div>
                                         @elseif ($announce->is_accepted === null)
-                                            <div class="b-null">
-                                                {{ __('ui.table-status-pending') }}
+                                            <div class="b-null px-3 py-2 fs-5">
+                                                <i class="bi bi-hourglass-split"></i>
                                             </div>
                                         @elseif ($announce->is_accepted == false)
-                                            <div class="b-false">
-                                                {{ __('ui.table-status-rejected') }}
+                                            <div class="b-false px-3 py-2 fs-5">
+                                                <i class="bi bi-slash-circle"></i>
                                             </div>
                                         @endif
                                     </div>
-                                    <div class="col-3 d-flex justify-content-center">
-                                        <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann">
-                                            {{ __('ui.btn-details') }}</a>
+                                    <div class="col-1 d-flex justify-content-center">
+                                        <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann fs-5">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
                                         <form method="POST" action="{{ route('undo_announce') }}">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="ms-md-2 btn btn-ann">
-                                                {{ __('ui.btn-undo') }}</button>
+                                            <button type="submit" class="ms-md-2 btn btn-ann fs-5">
+                                                <i class="bi bi-x-circle"></i>
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

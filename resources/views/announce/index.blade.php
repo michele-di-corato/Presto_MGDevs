@@ -26,19 +26,28 @@
                 <div class="card card-pers card-elem px-3 pb-3">
                     <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
-                            <div class="col-12 col-md-4 col-lg-2 px-0 px-md-2 mb-3 mb-lg-0">
+                            <div class="col-12 col-md-4 col-lg-2 px-0 px-md-2 mb-3 mb-lg-0 pb-4">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-                            <div class="alert alert-success fade show d-flex my-0 h-100" role="alert">
-                                <p>{{ __('ui.no-result-alert') }}</p>
+                            <div class="col-12">
+                                <div class="card card-bg p-3">
+                                    <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center" role="alert">
+                                        <p>{{ __('ui.no-result-alert') }}</p>
+                                    </div>
+                                </div>
                             </div>
                         @endforelse
+
+                        <div class="d-flex justify-content-center">
+                            <div class="px-3 pt-2">
+                                {{ $announces->links() }}
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center h-100 pt-4">
-                        {{ $announces->links() }}
-                    </div>
+
 
                 </div>
 

@@ -32,10 +32,10 @@
 
                         {{-- Categorie --}}
                         <div id="annunci2" class="d-flex justify-content-center p-3">
-                            <div class="col-2">
+                            <div class="col-3">
                                 <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                             </div>
-                            <div class="col-2">
+                            <div class="col-3">
                                 <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                             </div>
                             <div class="col-1">
@@ -47,7 +47,7 @@
                             <div class="col-1">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-2">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                             </div>
                         </div>

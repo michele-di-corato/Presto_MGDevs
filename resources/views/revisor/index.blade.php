@@ -2,7 +2,7 @@
     
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">
-            <div class="col-12 col-md-10 pt-5 pb-3">
+            <div class="col-12 col-md-10 pt-5">
                 
                 {{-- Alert --}}
                 <div class="container-fluid">
@@ -38,7 +38,6 @@
                 
                 <div class="card card-pers card-elem pb-3 px-3">
                     <div class="card card-bg p-3">
-                        
                         
                         @if ($announce_to_check)
                         <div class="col-12">
@@ -155,9 +154,10 @@
                 </div>
                 
                 {{-- Seconda Sezione --}}
-                <div class="col-12 col-md-10 row">
+                <div class="row justify-content-center">
+                    
                     {{-- Annunci in Coda --}}
-                    <div class="col-12 col-md-6 px-0 pe-0 pe-md-2 mb-3">
+                    <div class="col-12 col-lg-5 pt-5 px-0 pe-0 pe-lg-2 mb-3">
                         <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                             {{ __('ui.revision-queue') }}
                         </h2>
@@ -207,7 +207,7 @@
                     </div>
                     
                     {{-- Annunci Revisionati --}}
-                    <div class="col-12 col-md-6 px-0 ps-md-2 ps-0">
+                    <div class="col-12 col-lg-5 pt-5 px-0 ps-lg-2 ps-0">
                         <h2 id="annunci" class="text-center display-6 p-2 pb-3">
                             <a class="text-decoration-none col-text" href="{{ route('log_revisions') }}">
                                 {{ __('ui.history-revisions') }}
@@ -217,17 +217,14 @@
                             <div class="card card-bg p-3">
                                 {{-- Categorie --}}
                                 <div id="annunci2" class="d-flex justify-content-center p-3">
-                                    <div class="col-2">
+                                    <div class="col-3">
                                         <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-3">
                                         <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                                     </div>
                                     <div class="col-2 text-center">
                                         <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
-                                    </div>
-                                    <div class="col-2">
-                                        <p><strong>{{ __('ui.revision-table-creation') }}</strong></p>
                                     </div>
                                     <div class="col-2">
                                         <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
@@ -239,37 +236,34 @@
                                 {{-- Annunci --}} @forelse ($revisioned_announces as $announce)
                                 <div class="table-pers mt-2 p-3">
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <div class="col-2">
+                                        <div class="col-3">
                                             <p>{{ $announce->name }}</p>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-3">
                                             <p>{{ __('ui.category-' . $announce->category->id) }}</p>
                                         </div>
                                         <div class="col-2 text-center">
                                             <p>{{ $announce->price }}€</p>
                                         </div>
-                                        <div class="col-2">
-                                            <p>{{ $announce->created_at }}</p>
-                                        </div>
-                                        <div class="col-2 text-center">
+                                        <div class="col-2 d-flex justify-content-center">
                                             @if ($announce->is_accepted == true)
-                                            <div class="b-true">
-                                                {{ __('ui.table-status-approved') }}
+                                            <div class="b-true px-3 py-2 fs-5">
+                                                <i class="bi bi-check-circle"></i>
                                             </div>
                                             @elseif ($announce->is_accepted === null)
-                                            <div class="b-null">
-                                                {{ __('ui.table-status-pending') }}
+                                            <div class="b-null px-3 py-2 fs-5">
+                                                <i class="bi bi-hourglass-split"></i>
                                             </div>
                                             @elseif ($announce->is_accepted == false)
-                                            <div class="b-false">
-                                                {{ __('ui.table-status-rejected') }}
+                                            <div class="b-false px-3 py-2 fs-5">
+                                                <i class="bi bi-slash-circle"></i>
                                             </div>
                                             @endif
                                         </div>
                                         <div class="col-2 text-center">
                                             <form method="POST" action="{{ route('undo_announce') }}">
                                                 @csrf @method('PATCH')
-                                                <button type="submit" class="ms-md-2 btn btn-ann">{{ __('ui.btn-undo') }}</button>
+                                                <button type="submit" class="btn btn-ann fs-5"><i class="bi bi-x-circle"></i></button>
                                             </form>
                                         </div>
                                     </div>
@@ -284,7 +278,9 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                
                 
             </div>
         </div>

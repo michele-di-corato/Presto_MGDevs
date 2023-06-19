@@ -1,3 +1,3 @@
 <form wire:submit.prevent='destroy'>
-    <button class="btn pe-md-1 btn-index btn-ann w-100" type='submit'>{{ __('ui.btn-delete') }}</button>
+    <button class="btn btn-index btn-ann fs-5" type='submit'><i class="bi bi-trash"></i></button>
 </form>

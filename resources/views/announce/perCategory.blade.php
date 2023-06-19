@@ -11,22 +11,31 @@
 
                 </div>
 
-                <div class="card card-pers card-bg p-3">
+                <div class="card card-pers card-elem pb-3 px-3">
+
                     <div class="row justify-content-center px-2 px-md-0">
                         @forelse ($announces as $announce)
                             <div class="col-12 col-md-3">
                                 <x-card :announce="$announce" />
                             </div>
                         @empty
-                            <div class="alert alert-success fade show d-flex mt-3" role="alert">
-                                <p>{{ __('ui.no-article-home') }}</p>
+                            <div class="col-12">
+                                <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center"
+                                    role="alert">
+                                    <p>{{ __('ui.no-article-home') }}</p>
+                                </div>
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center">
-                            {{ $announces->links() }}
+                            <div class="px-3 pt-2">
+                                {{ $announces->links() }}
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
