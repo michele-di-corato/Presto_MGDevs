@@ -175,7 +175,7 @@ cardBg.addEventListener('mouseenter', () => {
     enter.classList.remove('opacity-0');
     enter.classList.add('opacity-1');
     enter.classList.add('animationFadeInBottom');
-    img1.style.marginTop = '-8dvh';
+    img1.style.marginTop = '-6dvh';
     cardBg.style.backgroundColor = 'var(--elem)';
 })
 
@@ -196,7 +196,7 @@ cardBg2.addEventListener('mouseenter', () => {
     enter2.classList.remove('opacity-0');
     enter2.classList.add('opacity-1');
     enter2.classList.add('animationFadeInBottom');
-    img2.style.marginTop = '-8dvh';
+    img2.style.marginTop = '-6dvh';
     cardBg2.style.backgroundColor = 'var(--elem)';
 })
 
@@ -217,7 +217,7 @@ cardBg3.addEventListener('mouseenter', () => {
     enter3.classList.remove('opacity-0');
     enter3.classList.add('opacity-1');
     enter3.classList.add('animationFadeInBottom');
-    img3.style.marginTop = '-8dvh';
+    img3.style.marginTop = '-6dvh';
     cardBg3.style.backgroundColor = 'var(--elem)';
 })
 
