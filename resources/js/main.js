@@ -175,8 +175,10 @@ cardBg.addEventListener('mouseenter', () => {
     enter.classList.remove('opacity-0');
     enter.classList.add('opacity-1');
     enter.classList.add('animationFadeInBottom');
-    img1.style.marginTop = '-6dvh';
+    img1.style.marginTop = '-4dvh';
     cardBg.style.backgroundColor = 'var(--elem)';
+    cardBg.style.height = "375px";
+    img1.style.transition = '.6s';
 })
 
 cardBg.addEventListener('mouseleave', () => {
@@ -196,8 +198,11 @@ cardBg2.addEventListener('mouseenter', () => {
     enter2.classList.remove('opacity-0');
     enter2.classList.add('opacity-1');
     enter2.classList.add('animationFadeInBottom');
-    img2.style.marginTop = '-6dvh';
+    img2.style.marginTop = '-4dvh';
     cardBg2.style.backgroundColor = 'var(--elem)';
+    cardBg2.style.height = "375px";
+    img2.style.transition = '.6s';
+
 })
 
 cardBg2.addEventListener('mouseleave', () => {
@@ -217,8 +222,11 @@ cardBg3.addEventListener('mouseenter', () => {
     enter3.classList.remove('opacity-0');
     enter3.classList.add('opacity-1');
     enter3.classList.add('animationFadeInBottom');
-    img3.style.marginTop = '-6dvh';
+    img3.style.marginTop = '-4dvh';
     cardBg3.style.backgroundColor = 'var(--elem)';
+    cardBg3.style.height = "375px";
+    img3.style.transition = '.6s';
+
 })
 
 cardBg3.addEventListener('mouseleave', () => {
