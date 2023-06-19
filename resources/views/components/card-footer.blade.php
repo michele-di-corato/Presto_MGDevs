@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
         <div class="col-12 col-md-10 pb-5">
-            <h2 id="annunci2" class="text-center col-text display-6 pb-2">Cards</h2>
+            <h2 id="annunci2" class="text-center col-text display-6 pb-2">{{ __('ui.old-articles') }}</h2>
             <div class="card card-pers card-elem px-3 pb-3">
                 <div class="row justify-content-center">
 
