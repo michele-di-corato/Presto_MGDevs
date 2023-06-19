@@ -458,16 +458,6 @@
     }
 }
 
-/* Media recensioni */
-
-@media (min-width: 992px) {
-
-    #annunci2 {
-        margin-bottom: 1rem;
-    }
-
-}
-
 /* animazione card hover */
 
 @media (min-width: 767px) {
