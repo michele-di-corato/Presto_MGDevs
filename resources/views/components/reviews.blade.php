@@ -11,6 +11,7 @@
                 <div class="container-reviews">
                     <div class="row text-center">
 
+<<<<<<< HEAD
                         {{-- Pino --}}
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <div class="card card-bg-1 p-3 col-text">
@@ -21,6 +22,18 @@
                                 <div class="enter opacity-0">
                                     <h5 class="mb-3">Pino Rossi</h5>
                                     <h6 class="mb-3">{{ __('ui.employee') }}</h6>
+=======
+                    {{-- Pino --}}
+                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                        <div class="card card-bg-1 p-3 col-text">
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong img-1"
+                                    width="150" height="150" />
+                            </div>
+                            <div class="enter">
+                            <h5 class="mb-3">Pino Rossi</h5>
+                            <h6 class="mb-3">Impiegato</h6>
+>>>>>>> 89220b7 (push)
 
                                     <p class="col-text">
                                         <i class="fas fa-quote-left pe-2"></i>
@@ -95,6 +108,7 @@
                             </div>
                         </div>
 
+<<<<<<< HEAD
                         {{-- Pablo --}}
                         <div class="col-12 col-md-4">
                             <div class="card card-bg-3 p-3 col-text">
@@ -131,6 +145,42 @@
                                         </li>
                                     </ul>
                                 </div>
+=======
+                    {{-- Pablo --}}
+                    <div class="col-12 col-md-4">
+                        <div class="card card-bg-3 p-3 col-text">
+
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="/media/reviews/pablo.jpg" class="rounded-circle shadow-1-strong img-3"
+                                    width="150" height="150" />
+                            </div>
+                            <div class="enter-3">
+                            <h5 class="mb-3">Pablo Smith</h5>
+                            <h6 class="mb-3">Musician</h6>
+                            <p class="col-text">
+                                <i class="fas fa-quote-left pe-2"></i>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                                tenetur.
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm text-warning"></i>
+                                </li>
+                            </ul>
+>>>>>>> 89220b7 (push)
                             </div>
                         </div>
 
