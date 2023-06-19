@@ -1,44 +1,37 @@
 <footer id="footer" class="text-center text-lg-start bg-white col-text pt-5">
 
     <!-- Section: Social media -->
-    <div id="footer-top" class="d-flex justify-content-center py-3">
-
+    <div id="footer-top" class="d-flex justify-content-center justify-content-lg-between px-5 py-3">
         <!-- Left -->
-        <div class="col-12 col-md-5">
-            <div class="me-5 d-none d-lg-block col-text">
-                <span>{{ __('ui.social-links') }}</span>
-            </div>
+        <div class="me-5 d-none d-lg-block col-text">
+            <span>{{ __('ui.social-links') }}</span>
         </div>
-
 
         <!-- Right -->
-        <div class="col-12 col-md-5 text-lg-end">
-            <div>
-                <a href="{{ route('home') }}" class="me-4  text-decoration-none">
-                    <i class="footer-icon fab fa-facebook-f"></i>
-                </a>
-                <a href="{{ route('home') }}" class="me-4 text-decoration-none">
-                    <i class="footer-icon fab fa-twitter"></i>
-                </a>
-                <a href="{{ route('home') }}" class="me-4 text-decoration-none">
-                    <i class="footer-icon fab fa-google"></i>
-                </a>
-                <a href="{{ route('home') }}" class="me-4 text-decoration-none">
-                    <i class="footer-icon fab fa-instagram"></i>
-                </a>
-                <a href="{{ route('home') }}" class="me-4 text-decoration-none">
-                    <i class="footer-icon fab fa-linkedin"></i>
-                </a>
-                <a href="{{ route('home') }}" class="me-4 text-decoration-none">
-                    <i class="footer-icon fab fa-github"></i>
-                </a>
-            </div>
+        <div>
+            <a href="{{ route('home') }}" class="me-4  text-decoration-none">
+                <i class="footer-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-twitter"></i>
+            </a>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-google"></i>
+            </a>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-instagram"></i>
+            </a>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-linkedin"></i>
+            </a>
+            <a href="{{ route('home') }}" class="me-4 text-decoration-none">
+                <i class="footer-icon fab fa-github"></i>
+            </a>
         </div>
-
     </div>
 
     <!-- Section: Links  -->
-    <div class="container-fluid text-center text-md-start pt-5">
+    <div class="container-fluid text-center text-md-start px-5 pt-5">
         <div class="row justify-content-center">
 
             <!-- Lorem -->
@@ -90,7 +83,7 @@
             </div>
 
             <!-- Work -->
-            <div class="col-12 col-md-2 mb-4 text-lg-end">
+            <div class="col-12 col-md-4 mb-4 text-lg-end">
                 <!-- Lavora con noi -->
                 <h6 class="text-uppercase fw-bold mb-4">
                     {{ __('ui.work-contact-title') }}
