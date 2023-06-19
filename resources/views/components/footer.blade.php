@@ -66,7 +66,7 @@
                     <a href="{{ route('show_announces') }}" class="footer-link text-reset">{{ __('ui.show-announces') }}</a>
                 </p>
                 <p>
-                    <a href="{{ route('home') }}" class="footer-link text-reset">Chi siamo</a>
+                    <a href="{{ route('register') }}" class="footer-link text-reset">{{ __('ui.drop-register') }}</a>
                 </p>
             </div>
 

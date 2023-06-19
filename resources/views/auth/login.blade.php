@@ -31,10 +31,13 @@
                                     </div>
                                 @enderror
                             </div>
-                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
                                 <button type="submit" class="btn btn-ann">{{ __('ui.login-btn') }}</button>
-                                <p>{{ __('ui.login-to-register') }} <a href="{{ route('register') }}"
-                                        class="btn">{{ __('ui.link-to-register') }}</a></p>
+                                <p class="text-end d-flex align-items-center">{{ __('ui.login-to-register') }} 
+                                    <a href="{{ route('register') }}"
+                                        class="btline ms-2">{{ __('ui.link-to-register') }}
+                                    </a>
+                                </p>
                             </div>
                         </form>
                     </div>

@@ -52,12 +52,12 @@
                                     </div>
                                 @enderror
                             </div>
-                            <div class="d-flex justify-content-end justify-content-evenly align-items-center">
+                            <div class="d-flex justify-content-end justify-content-between align-items-center">
                                 <button type="submit" class="btn btn-ann">{{ __('ui.register-btn') }}</button>
-                                <p>
+                                <p class="text-end d-flex align-items-center">
                                     {{ __('ui.register-to-login') }} 
                                     <a href="{{ route('login') }}"
-                                        class="btn mb-1">{{ __('ui.link-to-login') }}
+                                        class="btline ms-2">{{ __('ui.link-to-login') }}
                                     </a>
                                 </p>
                             </div>

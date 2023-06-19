@@ -64,6 +64,14 @@ p {
 .desc{
     min-height: 200px;
 }
+
+.btline{
+    border-bottom: 1px solid var(--text);
+    border-radius: 0px;
+    text-decoration: none;
+    color: var(--text);
+}
+
 @media (min-width: 992px) {
     .card-img-top {
         filter: blur(2px);

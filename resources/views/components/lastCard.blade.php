@@ -5,7 +5,7 @@
             <div class="card card-pers card-elem px-3 pb-3">
                 <div class="row justify-content-center">
                     @forelse ($announces as $announce)
-                        <div class="animationUp last-card col-6 col-lg-3 mb-3">
+                        <div class="animationUp last-card col-12 col-md-6 col-lg-3 mb-3">
                             <div class="card card-bg p-2">
                                 <img class="card-img-top img-fluid img-last"
                                     src="{{ !$announce->images()->get()->isEmpty()? $announce->images()->first()->getUrl(300, 300): Storage::url('public/media/DefaultImage.jpg') }}"
