@@ -1,14 +1,14 @@
 <?php
 return [
     // Sezione nomi delle pagine
-    'page-create' => 'Crea annuncio',
-    'page-modify' => 'Modifica',
-    'page-index-ann' => 'Annunci',
-    'page-login' => 'Accedi',
-    'page-register' => 'Registrati',
-    'page-index-rev' => 'Revisore',
-    'page-log-rev' => 'Storico annunci',
-    'page-form-rev' => 'Diventa revisore',
+    'page-create' => 'Create Announce',
+    'page-modify' => 'Edit Announce',
+    'page-index-ann' => 'Announces',
+    'page-login' => 'Login',
+    'page-register' => 'Register',
+    'page-index-rev' => 'Revisor',
+    'page-log-rev' => 'Announces History',
+    'page-form-rev' => 'Become Revisor',
     // Sezione navbar
     'language' => 'Language',
     'add-announce' => 'Add announce',
