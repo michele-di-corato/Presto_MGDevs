@@ -1,8 +1,8 @@
-<div class="card card-bg mb-3 h-100">
+<div class="card card-bg mb-3">
     <img src="{{ !$announce->images()->get()->isEmpty()? $announce->images()->first()->getUrl(300, 300): Storage::url('public/media/DefaultImage.jpg') }}"
         class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
-        <div>
+        <div class="desc">
             <h6>
                 <strong class="font-head">{{ __('ui.name-card') }}</strong>
                 {{ $announce->name }}

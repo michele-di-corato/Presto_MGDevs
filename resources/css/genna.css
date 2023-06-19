@@ -61,6 +61,9 @@ p {
 }
 
 /* Card Prodotti */
+.desc{
+    min-height: 200px;
+}
 @media (min-width: 992px) {
     .card-img-top {
         filter: blur(2px);
