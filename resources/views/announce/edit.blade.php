@@ -1,4 +1,4 @@
-<x-layout namePage="Modifica {{ $announce->name }}">
+<x-layout namePage="{{ __('ui.page-modify') . $announce->name }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">

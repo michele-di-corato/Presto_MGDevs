@@ -1,4 +1,4 @@
-<x-layout namePage="Login">
+<x-layout namePage="{{ __('ui.page-login') }}">
 
     <div class="container-fluid bg-profile">
         <div class="row justify-content-center align-items-center vh-100 pt-5">

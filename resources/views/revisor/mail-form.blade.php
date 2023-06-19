@@ -1,4 +1,4 @@
-<x-layout namePage="Diventa Revisore">
+<x-layout namePage="{{ __('ui.page-form-rev') }}">
 
     <div class="container-fluid bg-profile">
         <div class="row justify-content-center align-items-center vh-100 pt-5">

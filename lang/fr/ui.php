@@ -1,5 +1,14 @@
 <?php
 return [
+    // Sezione nomi delle pagine
+    'page-create' => 'Créer une annonce',
+    'page-modify' => 'Modifier',
+    'page-index-ann' => 'Annonces',
+    'page-login' => 'Se connecter',
+    'page-register' => 'S\'inscrire',
+    'page-index-rev' => 'Réviseur',
+    'page-log-rev' => 'Historique des annonces',
+    'page-form-rev' => 'Devenir réviseur',
     // Sezione navbar
     'language' => 'Langue',
     'add-announce' => 'Ajouter une annonce',

@@ -1,6 +1,15 @@
 
 <?php
 return [
+    // Sezione nomi delle pagine
+    'page-create' => 'Anzeige erstellen',
+    'page-modify' => 'Bearbeiten',
+    'page-index-ann' => 'Anzeigen',
+    'page-login' => 'Anmelden',
+    'page-register' => 'Registrieren',
+    'page-index-rev' => 'Prüfer',
+    'page-log-rev' => 'Anzeigenverlauf',
+    'page-form-rev' => 'Prüfer werden',
     // Sezione navbar
     'language' => 'Sprache',
     'add-announce' => 'Anzeige hinzufügen',

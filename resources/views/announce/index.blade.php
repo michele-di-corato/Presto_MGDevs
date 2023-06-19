@@ -1,4 +1,4 @@
-<x-layout namePage="Annunci">
+<x-layout namePage="{{ __('ui.page-index-ann') }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center pt-5">
