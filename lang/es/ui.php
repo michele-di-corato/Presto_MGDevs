@@ -1,14 +1,14 @@
 <?php
 return [
     // Sezione nomi delle pagine
-    'page-create' => 'Crea annuncio',
-    'page-modify' => 'Modifica',
-    'page-index-ann' => 'Annunci',
-    'page-login' => 'Accedi',
-    'page-register' => 'Registrati',
-    'page-index-rev' => 'Revisore',
-    'page-log-rev' => 'Storico annunci',
-    'page-form-rev' => 'Diventa revisore',
+    'page-create' => 'Crea Anuncio',
+    'page-modify' => 'Editar',
+    'page-index-ann' => 'Anuncios',
+    'page-login' => 'Inicia sesión',
+    'page-register' => 'Regístrate',
+    'page-index-rev' => 'Revisor',
+    'page-log-rev' => 'Histórico anuncios',
+    'page-form-rev' => 'Conviértate en revisor',
     // Sezione navbar
     'language' => 'Idioma',
     'add-announce' => 'Publica anuncio',
@@ -22,7 +22,7 @@ return [
     'drop-revise' => 'Revisa anuncios',
     'placehold-search' => 'Busca',
     // Sezione navbar categorie
-    'nav-category' => 'Categoría',
+    'nav-category' => 'Categorías',
     'nav-all-categories' => 'Todas las categorías',
     // Sezione home
     'welcome' => 'Bienvenido a Presto.it!',
