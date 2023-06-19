@@ -13,12 +13,12 @@
 
                     {{-- Pino --}}
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
-                        <div class="card card-bg card-bg-1 p-3 col-text">
+                        <div class="card card-bg-1 p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="/media/reviews/pino.jpg" class="rounded-circle img-1 shadow-1-strong"
+                                <img src="/media/reviews/pino.jpg" class="rounded-circle shadow-1-strong img-1"
                                     width="150" height="150" />
                             </div>
-                            <div class="enter">
+                            <div class="enter opacity-0">
                             <h5 class="mb-3">Pino Rossi</h5>
                             <h6 class="mb-3">Impiegato</h6>
 
@@ -55,10 +55,10 @@
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
                         <div class="card card-bg-2 p-3 col-text">
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="/media/reviews/linda.jpg" class="rounded-circle shadow-1-strong"
+                                <img src="/media/reviews/linda.jpg" class="rounded-circle shadow-1-strong img-2"
                                     width="150" height="150" />
                             </div>
-                            <div class="enter-2">
+                            <div class="enter-2  opacity-0">
 
                             <h5 class="mb-3">Linda Smantha</h5>
                             <h6 class="mb-3">Interior Designer</h6>
@@ -96,10 +96,10 @@
                         <div class="card card-bg-3 p-3 col-text">
 
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="/media/reviews/pablo.jpg" class="rounded-circle shadow-1-strong"
+                                <img src="/media/reviews/pablo.jpg" class="rounded-circle shadow-1-strong img-3"
                                     width="150" height="150" />
                             </div>
-                            <div class="enter-3">
+                            <div class="enter-3  opacity-0">
                             <h5 class="mb-3">Pablo Smith</h5>
                             <h6 class="mb-3">Musician</h6>
                             <p class="col-text">
