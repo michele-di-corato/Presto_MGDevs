@@ -89,6 +89,7 @@ return [
     'Violenza:' => 'Gewalt:',
     'Contenuti inappropriati:' => 'Unangemessene Inhalte:',
     // Sezione profilo
+    'your-profile' => 'Dein Profil',
     'profile-username' => 'Benutzername:',
     'profile-email' => 'E-Mail:',
     'profile-announces' => 'Anzeigen',

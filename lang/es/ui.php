@@ -87,6 +87,7 @@ return [
     'image-violence' => 'Violencia:',
     'image-racy' => 'Contenido inapropiado:',
     // Sezione profilo
+    'your-profile' => 'Tu perfil',
     'profile-username' => 'Nombre de usuario:',
     'profile-email' => 'E-mail:',
     'profile-announces' => 'Anuncios',

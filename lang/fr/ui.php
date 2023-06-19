@@ -88,6 +88,7 @@ return [
     'Violenza:' => 'Violence :',
     'Contenuti inappropriati:' => 'Contenu inapproprié :',
     // Sezione profilo
+    'your-profile' => 'Ton profil',
     'profile-username' => 'Nom d\'utilisateur :',
     'profile-email' => 'E-mail :',
     'profile-announces' => 'Annonces',

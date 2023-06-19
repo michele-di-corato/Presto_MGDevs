@@ -5,7 +5,7 @@
             <div class="col-12 col-md-10 pt-5">
 
                 {{-- Dati Profilo --}}
-                <h2 id="annunci" class="text-center col-text display-6 pb-2">Profilo di {{ Auth::user()->name }}</h2>
+                <h2 id="annunci" class="text-center col-text display-6 pb-2">{{ __('ui.your-profile') }}</h2>
                 <div class="card card-pers card-elem px-3 pb-3 mb-5">
                     <div class="card card-bg p-3">
 
@@ -20,7 +20,7 @@
                                 <h5><strong>{{ __('ui.profile-email') }}</strong> <i>{{ Auth::user()->email }}</i></h5>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
