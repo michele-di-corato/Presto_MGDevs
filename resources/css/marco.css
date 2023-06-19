@@ -119,6 +119,7 @@
     animation: fade-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+
 @keyframes fade-in-left {
     0% {
         transform: translateX(-50px);
@@ -251,6 +252,14 @@
 .animationUp {
     animation: fade-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     animation-fill-mode: backwards;
+}
+
+
+
+.animationFadeInBottom {
+    animation-name: fade-in-bottom;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
 }
 
 @keyframes fade-in-bottom {
@@ -466,13 +475,13 @@
 }
 
 .img-3 {
-    transition: ease-in-out .8s;
+    transition: ease-in-out .6s;
     margin-top: 10dvh;
    
 }
 
 .enter {
-    transition: .6s;
+    transition: .8s;
     position: absolute;
     margin-top: 100px;
 }
