@@ -475,21 +475,18 @@
     transition: .6s;
     position: absolute;
     margin-top: 100px;
-    opacity: 1;
 }
 
 .enter-2 { 
     transition: .6s;
     position: absolute;
     margin-top: 100px;
-    opacity: 1;
 }
 
 .enter-3 {
     transition: .6s;
     position: absolute;
     margin-top: 100px;
-    opacity: 1;
 }
 
 .card-bg-1 {
@@ -538,41 +535,41 @@
         transition: .6s;
         position: absolute;
         margin-top: 18dvh;
-        opacity: 1;
+        opacity: 1 !important;
     }
     
     .enter-2 { 
         transition: .6s;
         position: absolute;
         margin-top: 18dvh;
-        opacity: 1;
+        opacity: 1 !important;
     }
     
     .enter-3 {
         transition: .6s;
         position: absolute;
         margin-top: 18dvh;
-        opacity: 1;
+        opacity: 1 !important;
     }
     
     .card-bg-1 {
         position: relative;
         height: 46dvh;
-        background-color: var(--bgdark);
+        background-color: var(--elem) !important;
         transition: .8s;
     }
     
     .card-bg-2 {
         position: relative;
         height: 46dvh;
-        background-color: var(--bgdark);
+        background-color: var(--elem) !important;
         transition: .8s;
     }
     
     .card-bg-3 {
         position: relative;
         height: 46dvh;
-        background-color: var(--bgdark);
+        background-color: var(--elem) !important;
         transition: .8s;
     }
     }

@@ -208,8 +208,8 @@ let enter3 = document.querySelector('.enter-3');
 let img3 = document.querySelector('.img-3');
 
 cardBg3.addEventListener('mouseenter', () => {
-    enter2.classList.remove('opacity-0');
-    enter2.classList.add('opacity-1');
+    enter3.classList.remove('opacity-0');
+    enter3.classList.add('opacity-1');
     img3.style.marginTop = '-10dvh';
     cardBg3.style.backgroundColor = 'var(--elem)';
 })
