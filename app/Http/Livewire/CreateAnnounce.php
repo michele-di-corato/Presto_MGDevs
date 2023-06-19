@@ -48,7 +48,6 @@ class CreateAnnounce extends Component
         'temporary_images.*.max' => 'Le dimensioni dell\' immagine non devono superare 1MB',
     ];
 
-
     public function removeImage($key)
     {
         if (in_array($key, array_keys($this->images))) {
@@ -94,7 +93,6 @@ class CreateAnnounce extends Component
     {
         $this->validateOnly($propertyName);
     }
-
 
     public function render()
     {
