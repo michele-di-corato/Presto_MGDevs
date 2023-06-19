@@ -13,15 +13,15 @@
 
                             <div class="col-12 col-md-6 p-3 row justify-content-center">
                                 <h5>
-                                    <strong class="font-head">Categoria:</strong>
+                                    <strong class="font-head">{{__('ui.revision-table-category')}}:</strong>
                                     {{ __('ui.category-' . $announce->category->id) }}
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">Prezzo:</strong> 
+                                    <strong class="font-head">{{__('ui.revision-table-price')}}:</strong> 
                                     {{ $announce->price }}€
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">Descrizione:</strong> 
+                                    <strong class="font-head">{{__('ui.edit-description-placehold')}}:</strong> 
                                     {{ $announce->description }}
                                 </h5>
                                 <h5>
