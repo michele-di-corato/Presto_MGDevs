@@ -30,7 +30,8 @@
                         @empty
                             <div class="col-12">
                                 <div class="card card-bg p-3">
-                                    <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center" role="alert">
+                                    <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center"
+                                        role="alert">
                                         <p>{{ __('ui.no-result-alert') }}</p>
                                     </div>
                                 </div>
