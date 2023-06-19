@@ -1,7 +1,7 @@
 <footer id="footer" class="text-center text-lg-start bg-white col-text pt-5">
 
     <!-- Section: Social media -->
-    <div id="footer-top" class="row justify-content-center py-3">
+    <div id="footer-top" class="d-flex justify-content-center py-3">
 
         <!-- Left -->
         <div class="col-12 col-md-5">
