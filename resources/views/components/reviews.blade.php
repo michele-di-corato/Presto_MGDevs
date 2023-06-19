@@ -10,7 +10,11 @@
                 {{-- Recensioni --}}
                 <div class="container-reviews">
                     <div class="row text-center">
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> 6a0173e (pull)
                     {{-- Pino --}}
                     <div class="col-12 col-md-4 mb-3 mb-md-0">
                         <div class="card card-bg-1 p-3 col-text">
