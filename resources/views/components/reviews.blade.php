@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
-        <div class="col-9 col-md-10 pb-5">
+        <div class="col-12 col-md-10 pb-5">
 
 
             <h2 id="annunci2" class="text-center col-text display-6 pb-2">Testimonials</h2>
