@@ -9,7 +9,7 @@
             </a>
             <div class="dropdown nav-item me-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">{{ __('ui.language') }}</a>
+                    aria-expanded="false"><i class="bi bi-translate"></i></a>
                 <ul class="dropdown-menu drop-li">
                     <li class="dropdown-item a-la">
                         <x-_locale lang="it" text="Italiano" />
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="a-nav1 mb-2 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                        <a class="a-nav1 nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     @auth
                         <li class="nav-item">
@@ -114,16 +114,16 @@
                 </ul>
 
                 <ul class="navbar-nav pe-3">
-                    <li class="nav-item mt-3">
+                    <li class="nav-item">
                         <form class="search-form" method="GET" action="{{ route('search_announce') }}">
-                            <input class="search-input" type="search" placeholder="{{ __('ui.placehold-search') }}"
-                                aria-label="Search" name='searched'>
-                            <button class="btn" type="submit">
-                                <i class="btn-search fa fa-search"></i>
-                            </button>
+                            <div class="search-container">
+                                <input type="text" class="search-click" name="searched" placeholder="{{ __('ui.placehold-search') }}" />
+                                <i class="fas fa-search"></i>
+                            </div>
+
                         </form>
                     </li>
-                </ul>
+                </ul>                
 
             </div>
         </div>
