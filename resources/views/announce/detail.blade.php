@@ -12,11 +12,26 @@
                         <div class="row justify-content-center">
 
                             <div class="col-12 col-md-6 p-3 row justify-content-center">
-                                <h3>{{ __('ui.category-' . $announce->category->id) }}</h3>
-                                <h3>{{ $announce->price }} €</h3>
-                                <p>{{ $announce->description }}</p>
-                                <h5>{{ __('ui.details-createdBy') }} {{ $announce->user->name }}</h5>
-                                <h5>{{ __('ui.details-createdDate') }} {{ $announce->created_at->format('d/m/Y') }}</h5>
+                                <h5>
+                                    <strong class="font-head">Categoria:</strong>
+                                    {{ __('ui.category-' . $announce->category->id) }}
+                                </h5>
+                                <h5>
+                                    <strong class="font-head">Prezzo:</strong> 
+                                    {{ $announce->price }}€
+                                </h5>
+                                <h5>
+                                    <strong class="font-head">Descrizione:</strong> 
+                                    {{ $announce->description }}
+                                </h5>
+                                <h5>
+                                    <strong class="font-head">{{ __('ui.details-createdBy') }}</strong> 
+                                    {{ $announce->user->name }}
+                                </h5>
+                                <h5>
+                                    <strong class="font-head">{{ __('ui.details-createdDate') }}</strong> 
+                                    {{ $announce->created_at->format('d/m/Y') }}
+                                </h5>
                             </div>
 
 
@@ -85,6 +100,7 @@
                             {{ __('ui.btn-back-details') }}
                         </a>
                     </div>
+
                 </div>
 
             </div>

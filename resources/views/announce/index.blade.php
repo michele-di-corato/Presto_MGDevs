@@ -17,10 +17,8 @@
                 </div>
 
                 <div id="annunci" class="mb-2">
-
                     <h2 class="text-center col-text display-6 p-2">{{ __('ui.show-title') }}</h2>
                     <x-navCategory />
-
                 </div>
 
                 <div class="card card-pers card-elem px-3 pb-3">
@@ -46,9 +44,6 @@
                         </div>
 
                     </div>
-
-
-
                 </div>
 
             </div>

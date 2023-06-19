@@ -1,3 +1,5 @@
+<div id="line" class="position-fixed w-100"></div>
+
 <div class="container-navbar">
     <nav id="nav" class="navbar navbar-expand-lg fixed-top">
 

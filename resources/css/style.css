@@ -27,6 +27,18 @@
     --text: #291711;
 }
 
+*{
+    font-family: var(--font-body);
+}
+
+.font-head{
+    font-family: var(--font-head);
+}
+
+.font-body{
+    font-family: var(--font-body);
+}
+
 .col-text {
     color: var(--text);
 }

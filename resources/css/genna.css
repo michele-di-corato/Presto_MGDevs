@@ -1,3 +1,8 @@
+#line{
+    border: 2px solid var(--text);
+    z-index: 99999;
+}
+
 /* Logo */
 .logo {
     width: 50px;

@@ -3,10 +3,22 @@
         class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
         <div>
-            <h4 class="card-title">{{ $announce->name }}</h4>
-            <h6 class="card-title">{{ __('ui.category-card') }} {{ __('ui.category-' . $announce->category->id) }}</h6>
-            <h5 class="card-subtitle ms-auto">{{ __('ui.price-card') }} {{ $announce->price }}€</h5>
-            <p class="card-text">{{ $announce->description }}</p>
+            <h6>
+                <strong class="font-head">Nome:</strong>
+                {{ $announce->name }}
+            </h6>
+            <h6>
+                <strong class="font-head">{{ __('ui.category-card') }}</strong>
+                {{ __('ui.category-' . $announce->category->id) }}
+            </h6>
+            <h6>
+                <strong class="font-head">{{ __('ui.price-card') }}</strong>
+                {{ $announce->price }}€
+            </h6>
+            <h6>
+                <strong class="font-head">Descrizione:</strong>
+                {{ $announce->description }}
+            </h6>
         </div>
 
         <div class="row justify-content-center text-center">

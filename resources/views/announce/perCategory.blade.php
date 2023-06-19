@@ -20,12 +20,15 @@
                             </div>
                         @empty
                             <div class="col-12">
-                                <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center"
-                                    role="alert">
-                                    <p>{{ __('ui.no-article-home') }}</p>
+                                <div class="card card-bg p-3">
+                                    <div class="alert alert-success fade show d-flex my-0 h-100 d-flex justify-content-center"
+                                        role="alert">
+                                        <p>{{ __('ui.no-article-home') }}</p>
+                                    </div>
                                 </div>
                             </div>
                         @endforelse
+                        
                         <div class="d-flex justify-content-center">
                             <div class="px-3 pt-2">
                                 {{ $announces->links() }}
