@@ -3,7 +3,7 @@
         <div class="col-12 col-md-10 pb-5">
 
 
-            <h2 id="annunci2" class="text-center mb-md-5 col-text display-6 pb-2">{{ __('ui.reviews') }}</h2>
+            <h2 id="annunci2" class="text-center mb-md-5 mb-lg-5  col-text display-6 pb-2">{{ __('ui.reviews') }}</h2>
             <div class="card card-pers card-elem px-3 pb-3">
 
 
