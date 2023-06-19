@@ -38,7 +38,7 @@
                     <label for="category"> {{ __('ui.edit-category-placehold') }}</label>
                     <select class="form-control @error('category_id') is-invalid @enderror" id="category"
                         wire:model="category_id">
-                        <option value="">Seleziona...</option>
+                        <option value="">{{ __('ui.edit-category-placehold') }}</option>
                         @foreach ($categories as $category)
                             <option value="{{ $category->id }}">{{ __('ui.category-' . $category->id) }}</option>
                         @endforeach
