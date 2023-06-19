@@ -1,4 +1,4 @@
-<x-layout namePage="Crea Annuncio">
+<x-layout namePage="{{ __('ui.page-create') }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center pt-5">

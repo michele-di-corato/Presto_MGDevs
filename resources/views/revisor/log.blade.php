@@ -1,4 +1,4 @@
-<x-layout namePage="Storico revisioni">
+<x-layout namePage="{{ __('ui.page-log-rev') }}">
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center align-items-center py-5">

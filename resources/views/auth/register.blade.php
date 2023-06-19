@@ -1,4 +1,4 @@
-<x-layout namePage="Registrati">
+<x-layout namePage="{{ __('ui.page-register') }}">
 
     <div class="container-fluid bg-profile">
         <div class="row justify-content-center align-items-center vh-100 pt-5">
@@ -55,9 +55,8 @@
                             <div class="d-flex justify-content-end justify-content-evenly align-items-center">
                                 <button type="submit" class="btn btn-ann">{{ __('ui.register-btn') }}</button>
                                 <p>
-                                    {{ __('ui.register-to-login') }} 
-                                    <a href="{{ route('login') }}"
-                                        class="btn mb-1">{{ __('ui.link-to-login') }}
+                                    {{ __('ui.register-to-login') }}
+                                    <a href="{{ route('login') }}" class="btn mb-1">{{ __('ui.link-to-login') }}
                                     </a>
                                 </p>
                             </div>
