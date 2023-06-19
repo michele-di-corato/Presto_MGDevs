@@ -6,10 +6,10 @@
             <h2 id="annunci2" class="text-center col-text display-6 pb-2">{{ __('ui.reviews') }}</h2>
             <div class="card card-pers card-elem px-3 pb-3">
 
-
                 {{-- Recensioni --}}
                 <div class="container-reviews">
                     <div class="row text-center">
+                        
                         {{-- Pino --}}
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <div class="card card-bg-1 p-3 col-text">
@@ -50,7 +50,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                         {{-- Linda --}}
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -132,6 +131,7 @@
                             </div>
 
                         </div>
+
                     </div>
 
                 </div>
