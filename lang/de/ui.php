@@ -1,6 +1,15 @@
 
 <?php
 return [
+    // Sezione nomi delle pagine
+    'page-create' => 'Crea annuncio',
+    'page-modify' => 'Modifica',
+    'page-index-ann' => 'Annunci',
+    'page-login' => 'Accedi',
+    'page-register' => 'Registrati',
+    'page-index-rev' => 'Revisore',
+    'page-log-rev' => 'Storico annunci',
+    'page-form-rev' => 'Diventa revisore',
     // Sezione navbar
     'language' => 'Sprache',
     'add-announce' => 'Anzeige hinzufügen',
