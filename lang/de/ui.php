@@ -21,6 +21,11 @@ return [
     'welcome2' => 'Hier können Sie alle Arten von Produkten hochladen und finden',
     'latest-ann' => 'Neueste Anzeigen',
     'no-article-home' => 'Keine Artikel gefunden!',
+    'reviews' => 'Recensioni',
+    'old-articles' => 'Articoli vintage già venduti',
+    'employee' => 'Impiegato',
+    'interior-designer' => 'Designer d\'interni',
+    'musician' => 'Musicista',
     // Sezione footer
     'social-links' => 'Verbinden Sie sich mit uns in sozialen Medien:',
     'products' => 'Produkte',

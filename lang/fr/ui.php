@@ -20,6 +20,11 @@ return [
     'welcome2' => 'Ici, vous pouvez publier et trouver toutes sortes de produits',
     'latest-ann' => 'Dernières annonces',
     'no-article-home' => 'Aucun article trouvé !',
+    'reviews' => 'Recensioni',
+    'old-articles' => 'Articoli vintage già venduti',
+    'employee' => 'Impiegato',
+    'interior-designer' => 'Designer d\'interni',
+    'musician' => 'Musicista',
     // Sezione footer
     'social-links' => 'Liens vers nos réseaux sociaux :',
     'products' => 'Produits',
