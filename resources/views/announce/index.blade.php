@@ -2,7 +2,7 @@
 
     <div class="container-fluid bg-create">
         <div class="row justify-content-center pt-5">
-            <div class="col-12 col-md-10 pt-5">
+            <div class="col-10 col-md-12 pt-5">
 
                 <div class="container-fluid">
                     <div class="row justify-content-center text-center">

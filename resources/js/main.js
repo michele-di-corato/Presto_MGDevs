@@ -174,6 +174,7 @@ if (window.innerWidth > 992) {
 cardBg.addEventListener('mouseenter', () => {
     enter.classList.remove('opacity-0');
     enter.classList.add('opacity-1');
+    enter.classList.add('animationFadeInBottom');
     img1.style.marginTop = '-10dvh';
     cardBg.style.backgroundColor = 'var(--elem)';
 })
@@ -181,6 +182,8 @@ cardBg.addEventListener('mouseenter', () => {
 cardBg.addEventListener('mouseleave', () => {
     enter.classList.add('opacity-0');
     enter.classList.remove('opacity-1');
+    enter.classList.remove('animationFadeInBottom');
+    enter.classList.add('animationFadeAwayt');
     img1.style.marginTop = '';
     cardBg.style.backgroundColor = '';
 })
@@ -192,6 +195,7 @@ let img2 = document.querySelector('.img-2');
 cardBg2.addEventListener('mouseenter', () => {
     enter2.classList.remove('opacity-0');
     enter2.classList.add('opacity-1');
+    enter2.classList.add('animationFadeInBottom');
     img2.style.marginTop = '-10dvh';
     cardBg2.style.backgroundColor = 'var(--elem)';
 })
@@ -199,6 +203,8 @@ cardBg2.addEventListener('mouseenter', () => {
 cardBg2.addEventListener('mouseleave', () => {
     enter2.classList.add('opacity-0');
     enter2.classList.remove('opacity-1');
+    enter2.classList.remove('animationFadeInBottom');
+    enter2.classList.add('animationFadeAwayt');
     img2.style.marginTop = '';
     cardBg2.style.backgroundColor = '';
 })
@@ -210,6 +216,7 @@ let img3 = document.querySelector('.img-3');
 cardBg3.addEventListener('mouseenter', () => {
     enter3.classList.remove('opacity-0');
     enter3.classList.add('opacity-1');
+    enter3.classList.add('animationFadeInBottom');
     img3.style.marginTop = '-10dvh';
     cardBg3.style.backgroundColor = 'var(--elem)';
 })
@@ -217,6 +224,8 @@ cardBg3.addEventListener('mouseenter', () => {
 cardBg3.addEventListener('mouseleave', () => {
     enter3.classList.add('opacity-0');
     enter3.classList.remove('opacity-1');
+    enter3.classList.remove('animationFadeInBottom');
+    enter3.classList.add('animationFadeAwayt');
     img3.style.marginTop = '';
     cardBg3.style.backgroundColor = '';
 })
