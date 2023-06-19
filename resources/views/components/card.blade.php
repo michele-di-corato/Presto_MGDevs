@@ -4,7 +4,7 @@
     <div class="card-body justify-content-evenly">
         <div>
             <h6>
-                <strong class="font-head">Nome:</strong>
+                <strong class="font-head">{{ __('ui.name-card') }}</strong>
                 {{ $announce->name }}
             </h6>
             <h6>
@@ -16,7 +16,7 @@
                 {{ $announce->price }}€
             </h6>
             <h6>
-                <strong class="font-head">Descrizione:</strong>
+                <strong class="font-head">{{ __('ui.description-card') }}</strong>
                 {{ $announce->description }}
             </h6>
         </div>

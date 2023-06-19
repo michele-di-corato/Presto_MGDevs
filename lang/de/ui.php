@@ -51,6 +51,8 @@ return [
     'show-title' => 'Anzeigen',
     'categories-btn' => 'Kategorien',
     'all-categories-btn' => 'Alle Kategorien',
+    'name-card' => 'Produkt:',
+    'description-card' => 'Beschreibung:',
     'category-card' => 'Kategorie:',
     'price-card' => 'Preis:',
     'btn-details' => 'Details',

@@ -50,6 +50,8 @@ return [
     'show-title' => 'Announces',
     'categories-btn' => 'Categories',
     'all-categories-btn' => 'All categories',
+    'name-card' => 'Product:',
+    'description-card' => 'Description:',
     'category-card' => 'Category:',
     'price-card' => 'Price:',
     'btn-details' => 'Details',
