@@ -157,7 +157,7 @@
                 <div class="row justify-content-center">
                     
                     {{-- Annunci in Coda --}}
-                    <div class="col-12 col-lg-5 pt-5 px-0 pe-0 pe-lg-2 mb-3">
+                    <div class="col-12 col-md-10 col-lg-5 pt-5 px-0 pe-0 pe-lg-2 mb-3">
                         <h2 id="annunci" class="text-center col-text display-6 p-2 pb-3">
                             {{ __('ui.revision-queue') }}
                         </h2>
@@ -207,7 +207,7 @@
                     </div>
                     
                     {{-- Annunci Revisionati --}}
-                    <div class="col-12 col-lg-5 pt-5 px-0 ps-lg-2 ps-0">
+                    <div class="col-12 col-md-10 col-lg-5 pt-5 px-0 ps-lg-2 ps-0">
                         <h2 id="annunci" class="text-center display-6 p-2 pb-3">
                             <a class="text-decoration-none col-text" href="{{ route('log_revisions') }}">
                                 {{ __('ui.history-revisions') }}

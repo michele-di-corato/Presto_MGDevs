@@ -15,9 +15,14 @@
                                     class="img-thumbnail img-fluid" style="width:100px">
                             </div>
                             <div class="col-12 col-md-6 text-center col-text">
-                                <h4><strong>{{ __('ui.profile-username') }}</strong> <i>{{ Auth::user()->name }}</i>
-                                </h4>
-                                <h5><strong>{{ __('ui.profile-email') }}</strong> <i>{{ Auth::user()->email }}</i></h5>
+                                <h6>
+                                    <strong class="font-head">{{ __('ui.profile-username') }}</strong>
+                                    {{ Auth::user()->name }}
+                                </h6>
+                                <h6>
+                                    <strong class="font-head">{{ __('ui.profile-email') }}</strong>
+                                    {{ Auth::user()->email }}
+                                </h6>
                             </div>
                         </div>
                         
@@ -32,22 +37,22 @@
 
                         {{-- Categorie --}}
                         <div id="annunci2" class="d-flex justify-content-center p-3">
-                            <div class="col-3">
+                            <div class="col-4 col-md-2 col-lg-2">
                                 <p><strong>{{ __('ui.revision-table-name') }}</strong></p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-5 col-md-2 col-lg-2">
                                 <p><strong>{{ __('ui.revision-table-category') }}</strong></p>
                             </div>
-                            <div class="col-1">
+                            <div class="col-2 col-md-1 col-lg-1 text-center">
                                 <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                             </div>
-                            <div class="col-2">
+                            <div class="col-4 col-md-2 col-lg-3 text-center d-none d-md-block">
                                 <p><strong>{{ __('ui.created-at') }}</strong></p>
                             </div>
-                            <div class="col-1">
+                            <div class="col-2 col-md-1 col-lg-1 d-none d-md-block">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                             </div>
-                            <div class="col-2">
+                            <div class="col-10 col-md-4 col-lg-3 d-none d-md-block">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                             </div>
                         </div>
