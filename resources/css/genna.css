@@ -122,6 +122,11 @@ p {
     border-radius: 0px 0px 10px 10px;
 }
 
+.card-bg {
+    background-color: var(--bg);
+    border: 0px solid transparent;
+}
+
 .card-elem {
     background-color: transparent;
     border: 8px solid var(--elem);

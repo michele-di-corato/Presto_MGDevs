@@ -20,6 +20,11 @@ return [
     'welcome2' => 'Here you can upload, And find all kinds of Products',
     'latest-ann' => 'Latest Announces',
     'no-article-home' => 'No articles found!',
+    'reviews' => 'Reviews',
+    'old-articles' => 'Sold Articles',
+    'employee' => 'Employee',
+    'interior-designer' => 'Interior Designer',
+    'musician' => 'Musician',
     // Sezione footer
     'social-links' => 'Link with us on social medias:',
     'products' => 'Products',

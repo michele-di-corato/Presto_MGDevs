@@ -64,7 +64,8 @@
                                         @endif
                                     </div>
                                     <div class="col-1 d-flex justify-content-center">
-                                        <a href="{{ route('announce_detail', $announce->id) }}" class="btn btn-ann fs-5">
+                                        <a href="{{ route('announce_detail', $announce->id) }}"
+                                            class="btn btn-ann fs-5">
                                             <i class="bi bi-eye"></i>
                                         </a>
                                         <form method="POST" action="{{ route('undo_announce') }}">
@@ -78,7 +79,13 @@
                                 </div>
                             </div>
                         @empty
-                            <h4> {{ __('ui.no-history-revisions') }}</h4>
+                            <div class="col-12">
+                                <div class="table-pers2 mt-2 p-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <h4>{{ __('ui.no-history-revisions') }}</h4>
+                                    </div>
+                                </div>
+                            </div>
                         @endforelse
                         <div class="d-flex justify-content-center">
                             {{ $revisioned_announces->links() }}

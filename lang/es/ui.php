@@ -20,6 +20,11 @@ return [
     'welcome2' => 'Aquí Podràs cargar, Y Encontrar Productos De Todo Tipo',
     'latest-ann' => 'Últimos anuncios',
     'no-article-home' => '¡No se encontraron anuncios!',
+    'reviews' => 'Reseñas',
+    'old-articles' => 'Artículos antiguos ya vendidos',
+    'employee' => 'Empleado',
+    'interior-designer' => 'Diseñador de interiores',
+    'musician' => 'Músico',
     // Sezione footer
     'social-links' => 'Conéctate con nosotros en las redes sociales:',
     'products' => 'Productos',

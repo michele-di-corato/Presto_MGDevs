@@ -21,6 +21,11 @@ return [
     'welcome2' => 'Hier können Sie alle Arten von Produkten hochladen und finden',
     'latest-ann' => 'Neueste Anzeigen',
     'no-article-home' => 'Keine Artikel gefunden!',
+    'reviews' => 'Bewertungen',
+    'old-articles' => 'Alte Artikel, bereits verkauft',
+    'employee' => 'Mitarbeiter',
+    'interior-designer' => 'Innenarchitekt',
+    'musician' => 'Musiker',
     // Sezione footer
     'social-links' => 'Verbinden Sie sich mit uns in sozialen Medien:',
     'products' => 'Produkte',

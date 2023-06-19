@@ -17,6 +17,6 @@ class DeleteAnnounce extends Component
     {
         $this->announce->images()->delete();
         $this->announce->delete();
-        return redirect(route('show_announces'))->with('confirm', 'Annuncio eliminato con successo');
+        return redirect(route('show_profile'))->with('confirm', 'Annuncio eliminato con successo');
     }
 }

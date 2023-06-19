@@ -164,41 +164,60 @@ navTog.addEventListener('click', () => {
 })
 
 
-//Observer last card 
+let cardBg = document.querySelector('.card-bg-1');
+let enter = document.querySelector('.enter');
+let img1 = document.querySelector('.img-1');
 
-let lastCard = document.querySelectorAll('.last-card');
-let Pointer = document.querySelector('.point');
 
-let observerCard = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            lastCard.forEach((card, i) => {
-                card.classList.remove('opacity-0');
-                card.classList.add('animationUp');
-                card.style.animationDelay = `${i * 0.5}s`
-            })
-        }
-    })
+if (window.innerWidth > 992) {
+    
+cardBg.addEventListener('mouseenter', () => {
+    enter.classList.remove('opacity-0');
+    enter.classList.add('opacity-1');
+    img1.style.marginTop = '-10dvh';
+    cardBg.style.backgroundColor = 'var(--elem)';
 })
 
-observerCard.observe(Pointer);
+cardBg.addEventListener('mouseleave', () => {
+    enter.classList.add('opacity-0');
+    enter.classList.remove('opacity-1');
+    img1.style.marginTop = '';
+    cardBg.style.backgroundColor = '';
+})
 
-let Start = document.querySelector('#Start');
-let End = document.querySelector('#End');
+let cardBg2 = document.querySelector('.card-bg-2');
+let enter2 = document.querySelector('.enter-2');
+let img2 = document.querySelector('.img-2');
 
-if (Start) {
-    setTimeout(() => {
-        Start.classList.add('d-none');
-        End.classList.remove('d-none');
-    }, 1000)
-}
+cardBg2.addEventListener('mouseenter', () => {
+    enter2.classList.remove('opacity-0');
+    enter2.classList.add('opacity-1');
+    img2.style.marginTop = '-10dvh';
+    cardBg2.style.backgroundColor = 'var(--elem)';
+})
 
-let Img1 = document.querySelector('.img-1');
-let cardBg = document.querySelector('.card-bg');
-let isOver = true;
+cardBg2.addEventListener('mouseleave', () => {
+    enter2.classList.add('opacity-0');
+    enter2.classList.remove('opacity-1');
+    img2.style.marginTop = '';
+    cardBg2.style.backgroundColor = '';
+})
 
-if (cardBg) {
-cardBg.addEventListener('mouseover', () => {
-    Img1.classList.add = ('opacity-0');
+let cardBg3 = document.querySelector('.card-bg-3');
+let enter3 = document.querySelector('.enter-3');
+let img3 = document.querySelector('.img-3');
+
+cardBg3.addEventListener('mouseenter', () => {
+    enter2.classList.remove('opacity-0');
+    enter2.classList.add('opacity-1');
+    img3.style.marginTop = '-10dvh';
+    cardBg3.style.backgroundColor = 'var(--elem)';
+})
+
+cardBg3.addEventListener('mouseleave', () => {
+    enter3.classList.add('opacity-0');
+    enter3.classList.remove('opacity-1');
+    img3.style.marginTop = '';
+    cardBg3.style.backgroundColor = '';
 })
 }

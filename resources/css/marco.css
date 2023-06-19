@@ -94,6 +94,10 @@
     box-shadow: inset 400px 0 0 0 rgba(232, 155, 107, 0.7);
 }
 
+.dropdown-toggle{
+    transition: .6s;
+}
+
 /* Anchor Dropdown */
 
 /* .a-profile, .a-logout, .a-register, .a-login{
@@ -445,99 +449,132 @@
     }
 }
 
+/* animazione card hover */
 
-.card-bg,
-.card-bg-2,
+@media (min-width: 767px) {
+
+.img-1 {
+    transition: ease-in-out .8s;
+    margin-top: 10dvh;
+   
+}
+
+.img-2 {
+    transition: ease-in-out .8s;
+    margin-top: 10dvh;
+   
+}
+
+.img-3 {
+    transition: ease-in-out .8s;
+    margin-top: 10dvh;
+   
+}
+
+.enter {
+    transition: .6s;
+    position: absolute;
+    margin-top: 100px;
+    opacity: 1;
+}
+
+.enter-2 { 
+    transition: .6s;
+    position: absolute;
+    margin-top: 100px;
+    opacity: 1;
+}
+
+.enter-3 {
+    transition: .6s;
+    position: absolute;
+    margin-top: 100px;
+    opacity: 1;
+}
+
+.card-bg-1 {
+    position: relative;
+    height: 46dvh;
+    background-color: var(--bgdark);
+    transition: .8s;
+}
+
+.card-bg-2 {
+    position: relative;
+    height: 46dvh;
+    background-color: var(--bgdark);
+    transition: .8s;
+}
+
 .card-bg-3 {
-    background-color: var(--bgtransp);
+    position: relative;
+    height: 46dvh;
+    background-color: var(--bgdark);
+    transition: .8s;
+}
 }
 
-.container-reviews .card-bg:hover {
-    transform: translateY(-10px);
-}
+@media (max-width: 767px) {
 
-.card-bg-2:hover {
-    transform: translateY(-10px);
-}
-
-.card-bg-3:hover {
-    transform: translateY(-10px);
-}
-
-@media (min-width: 992px) {
-
-    .container-reviews {
+    .img-1 {
+        transition: ease-in-out .8s;
+        margin-top: -4dvh;
+       
+    }
+    
+    .img-2 {
+        transition: ease-in-out .8s;
+        margin-top: -4dvh;
+       
+    }
+    
+    .img-3 {
+        transition: ease-in-out .8s;
+        margin-top: -4dvh;
+       
+    }
+    
+    .enter {
+        transition: .6s;
+        position: absolute;
+        margin-top: 18dvh;
+        opacity: 1;
+    }
+    
+    .enter-2 { 
+        transition: .6s;
+        position: absolute;
+        margin-top: 18dvh;
+        opacity: 1;
+    }
+    
+    .enter-3 {
+        transition: .6s;
+        position: absolute;
+        margin-top: 18dvh;
+        opacity: 1;
+    }
+    
+    .card-bg-1 {
         position: relative;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 40px 0;
+        height: 46dvh;
+        background-color: var(--bgdark);
+        transition: .8s;
     }
-
-    .container-reviews .card-bg .enter {
-        list-style: none;
-        margin: 0 10px;
-        transform: translateY(-20px);
-        transition: 0.5s;
-        opacity: 0;
-        font-size: 1;
-        font-weight: 300;
+    
+    .card-bg-2 {
+        position: relative;
+        height: 46dvh;
+        background-color: var(--bgdark);
+        transition: .8s;
     }
-
-    .card-bg-2 .enter-2 {
-        list-style: none;
-        margin: 0 10px;
-        transform: translateY(-20px);
-        transition: 0.5s;
-        opacity: 0;
-        font-size: 1;
-        font-weight: 300;
-    }
-
-    .card-bg-3 .enter-3 {
-        list-style: none;
-        margin: 0 10px;
-        transform: translateY(-20px);
-        transition: 0.5s;
-        opacity: 0;
-        font-size: 1;
-        font-weight: 300;
-    }
-
-    .container-reviews .card-bg,
-    .card-bg-2,
+    
     .card-bg-3 {
         position: relative;
-        width: 300px;
-        height: 400px;
-        background: rgba(255, 255, 255, 0.05);
-        margin: 20px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(10px);
+        height: 46dvh;
+        background-color: var(--bgdark);
+        transition: .8s;
     }
-}
+    }
+    
 
-.card-bg:hover .enter {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.card-bg-2:hover .enter-2 {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.card-bg-3:hover .enter-3 {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.enter .enter-2 .enter-3 {
-    font-size: 1rem;
-}
