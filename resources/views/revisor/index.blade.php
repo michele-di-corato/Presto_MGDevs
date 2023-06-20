@@ -283,7 +283,7 @@
                                     @endif
                                 </div>
                                 <div class="col-2 text-center">
-                                    <form method="POST" action="{{ route('undo_revision', $announce) }}">
+                                    <form method="POST" action="{{ route('undo_revision', compact('announce')) }}">
                                         @csrf @method('PATCH')
                                         <button type="submit" class="btn btn-ann fs-5"><i
                                                 class="bi bi-x-circle"></i></button>
