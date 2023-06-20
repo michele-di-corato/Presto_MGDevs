@@ -1,5 +1,5 @@
 <div class="card card-bg mb-3">
-    <img src="{{ !$announce->images()->get()->isEmpty()? $announce->images()->first()->getUrl(300, 300): Storage::url('public/media/DefaultImage.jpg') }}"
+    <img src="{{ !$announce->images()->get()->isEmpty()? $announce->images()->first()->getUrl(300, 300): '/media/DefaultImage.jpg' }}"
         class="card-img-top p-3" alt="Immagine annuncio">
     <div class="card-body justify-content-evenly">
         <div class="desc">

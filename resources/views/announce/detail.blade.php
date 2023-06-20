@@ -66,15 +66,13 @@
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid"
-                                            alt="DefaultImage">
+                                        <img src="/media/DefaultImage.jpg" class="d-block img-fluid" alt="DefaultImage">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid"
-                                            alt="DefaultImage">
+                                        <img src="/media/DefaultImage.jpg" class="d-block img-fluid" alt="DefaultImage">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid "
+                                        <img src="/media/DefaultImage.jpg" class="d-block img-fluid "
                                             alt="DefaultImage">
                                     </div>
                                 </div>

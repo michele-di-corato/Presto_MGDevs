@@ -11,8 +11,8 @@
 
                         <div class="row justify-content-center align-items-center">
                             <div class="col-12 col-md-6 text-center">
-                                <img src="{{ Storage::url('public/media/DefaultUser.jpg') }}" alt="Immagine profilo"
-                                    class="img-thumbnail img-fluid" style="width:100px">
+                                <img src="/media/DefaultUser.jpg" alt="Immagine profilo" class="img-thumbnail img-fluid"
+                                    style="width:100px">
                             </div>
                             <div class="col-12 col-md-6 text-center col-text">
                                 <h6>
