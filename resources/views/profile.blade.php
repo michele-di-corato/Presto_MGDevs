@@ -46,13 +46,13 @@
                             <div class="col-2 col-md-1 col-lg-1 text-center">
                                 <p><strong>{{ __('ui.revision-table-price') }}</strong></p>
                             </div>
-                            <div class="col-4 col-md-2 col-lg-3 text-center d-none d-md-block">
+                            <div class="col-4 col-md-3 col-lg-3 text-center d-none d-md-block">
                                 <p><strong>{{ __('ui.created-at') }}</strong></p>
                             </div>
                             <div class="col-2 col-md-1 col-lg-1 d-none d-md-block">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-status') }}</strong></p>
                             </div>
-                            <div class="col-10 col-md-4 col-lg-3 d-none d-md-block">
+                            <div class="col-10 col-md-3 col-lg-3 d-none d-md-block">
                                 <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                             </div>
                         </div>

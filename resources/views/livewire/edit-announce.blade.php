@@ -1,4 +1,4 @@
-<form class="form-create p-5" wire:submit.prevent="editAnnounce">
+<form class="form-create" wire:submit.prevent="editAnnounce">
 
     <h1 id="annunci" class="text-center col-text display-6 p-2 pb-3"> {{ __('ui.edit-announce-title') }}</h1>
     <div class="card card-pers card-elem px-3 pb-3">
