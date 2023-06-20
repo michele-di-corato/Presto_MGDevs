@@ -13,23 +13,23 @@
 
                             <div class="col-12 col-md-6 p-3 row justify-content-center">
                                 <h5>
-                                    <strong class="font-head">{{__('ui.revision-table-category')}}:</strong>
+                                    <strong class="font-head">{{ __('ui.revision-table-category') }}:</strong>
                                     {{ __('ui.category-' . $announce->category->id) }}
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">{{__('ui.revision-table-price')}}:</strong> 
+                                    <strong class="font-head">{{ __('ui.revision-table-price') }}:</strong>
                                     {{ $announce->price }}€
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">{{__('ui.edit-description-placehold')}}:</strong> 
+                                    <strong class="font-head">{{ __('ui.edit-description-placehold') }}:</strong>
                                     {{ $announce->description }}
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">{{ __('ui.details-createdBy') }}</strong> 
+                                    <strong class="font-head">{{ __('ui.details-createdBy') }}</strong>
                                     {{ $announce->user->name }}
                                 </h5>
                                 <h5>
-                                    <strong class="font-head">{{ __('ui.details-createdDate') }}</strong> 
+                                    <strong class="font-head">{{ __('ui.details-createdDate') }}</strong>
                                     {{ $announce->created_at->format('d/m/Y') }}
                                 </h5>
                             </div>
@@ -66,16 +66,16 @@
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}"
-                                            class="d-block img-fluid" alt="DefaultImage">
+                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid"
+                                            alt="DefaultImage">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}"
-                                            class="d-block img-fluid" alt="DefaultImage">
+                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid"
+                                            alt="DefaultImage">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{ Storage::url('public/media/DefaultImage.jpg') }}"
-                                            class="d-block img-fluid " alt="DefaultImage">
+                                        <img src="public/media/DefaultImage.jpg" class="d-block img-fluid "
+                                            alt="DefaultImage">
                                     </div>
                                 </div>
                                 <div class="container container-control">
