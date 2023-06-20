@@ -254,7 +254,8 @@
                             <p class="text-center"><strong>{{ __('ui.revision-table-actions') }}</strong></p>
                         </div>
                     </div>
-                    {{-- Annunci --}} @forelse ($revisioned_announces as $announce)
+                    {{-- Annunci --}}
+                    @forelse ($revisioned_announces as $announce)
                         <div class="table-pers mt-2 p-3">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="col-3">
@@ -282,7 +283,7 @@
                                     @endif
                                 </div>
                                 <div class="col-2 text-center">
-                                    <form method="POST" action="{{ route('undo_announce') }}">
+                                    <form method="POST" action="{{ route('undo_revision', $announce) }}">
                                         @csrf @method('PATCH')
                                         <button type="submit" class="btn btn-ann fs-5"><i
                                                 class="bi bi-x-circle"></i></button>
