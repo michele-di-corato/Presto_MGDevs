@@ -68,7 +68,8 @@
                                             class="btn btn-ann fs-5">
                                             <i class="bi bi-eye"></i>
                                         </a>
-                                        <form method="POST" action="{{ route('undo_announce') }}">
+                                        <form method="POST"
+                                            action="{{ route('undo_revision', compact('announce')) }}">
                                             @csrf
                                             @method('PATCH')
                                             <button type="submit" class="ms-md-2 btn btn-ann fs-5">
